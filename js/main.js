@@ -152,35 +152,35 @@ function initMap() {
 		            '<h4 id="firstHeading" class="firstHeading">LAU SINCERE AUTOWAGON SERVICES SDN BHD</h4>'+
 		            '<div id="bodyContent">'+
 		            '<p>Adress</p>'+
-		            '<p>No.1,Jalan Anggerik 3/1,Taman Anggerik.81200,Johor Bahru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-		            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-		            '(last visited June 22, 2009).</p>'+
+		            '<p>No.1,Jalan Anggerik 3/1,Taman Anggerik.81200,Johor Bahru, <a target="_blank" href="https://www.google.la/maps/place/Jalan+Anggerik+3%2F1,+Taman+Anggerik,+81200+Johor+Bahru,+Johor,+Malaysia/@1.5345018,103.6891713,880m/data=!3m2!1e3!4b1!4m5!3m4!1s0x31da7237d36a0091:0x25b164cfc3ce8153!8m2!3d1.5345018!4d103.69136?hl=en">'+
+		            'https://www.google.la/maps/place/</a> '+
+		            // '(last visited June 22, 2009).</p>'+
 		            '</div>'+
 		            '</div>';
 
 				var contentString1 = '<div id="content">'+
-								'<div id="siteNotice">'+
-								'</div>'+
-								'<h4 id="firstHeading" class="firstHeading">LAU BROTHERS Auto Tyres&Battery Services</h4>'+
-								'<div id="bodyContent">'+
-								'<p>Adress</p>'+
-								'<p>No.1,Jalan Anggerik 3/1,Taman Anggerik.81200,Johor Bahru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-								'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-								'(last visited June 22, 2009).</p>'+
-								'</div>'+
-								'</div>';
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<h4 id="firstHeading" class="firstHeading">LAU BROTHERS Auto Tyres&Battery Services</h4>'+
+					'<div id="bodyContent">'+
+					'<p>Adress</p>'+
+					'<p>No.1,Jalan Pakis,Taman Handal,81400 Senai,Johor, <a target="_blank" href="https://www.google.la/maps/place/1,+Jalan+Pakis,+Taman+Handal,+81400+Senai,+Johor,+Malaysia/@1.6094253,103.6588465,17z/data=!3m1!4b1!4m5!3m4!1s0x31da70eacd010857:0x8fa8b4e0f58f2d9d!8m2!3d1.6094253!4d103.6610352?hl=en">'+
+					'https://www.google.la/maps/place/</a> </br>'+
+					// '(last visited June 22, 2009).</p>'+
+					'</div>'+
+					'</div>';
 
 				var contentString2 = '<div id="content">'+
-								'<div id="siteNotice">'+
-								'</div>'+
-								'<h4 id="firstHeading" class="firstHeading">Mee Auto TYRES BATTERY SERVICES(JM0655091-K)</h4>'+
-								'<div id="bodyContent">'+
-								'<p>Adress</p>'+
-								'<p>No.1,Jalan Anggerik 3/1,Taman Anggerik.81200,Johor Bahru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-								'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-								'(last visited June 22, 2009).</p>'+
-								'</div>'+
-								'</div>';
+					'<div id="siteNotice">'+
+					'</div>'+
+					'<h4 id="firstHeading" class="firstHeading">Mee Auto TYRES BATTERY SERVICES(JM0655091-K)</h4>'+
+					'<div id="bodyContent">'+
+					'<p>Adress</p>'+
+					'<p>No.2 & 4,Jalan Dian8,Taman Munsyi Ibrahim,81200 Johor Bahru, <a target="_blank" href="https://www.google.la/maps/place/4,+Jalan+Dian+8,+Taman+Munsyi+Ibrahim,+81200+Johor+Bahru,+Johor,+Malaysia/@1.5614378,103.6469808,12z/data=!4m13!1m7!3m6!1s0x31da72561b82b8cb:0x2ea52e2c150c35c0!2s4,+Jalan+Dian+8,+Taman+Munsyi+Ibrahim,+81200+Johor+Bahru,+Johor,+Malaysia!3b1!8m2!3d1.5148888!4d103.6886873!3m4!1s0x31da72561b82b8cb:0x2ea52e2c150c35c0!8m2!3d1.5148888!4d103.6886873?hl=en">'+
+					' https://www.google.la/maps/place/</a>'+
+					// '(last visited June 22, 2009).</p>'+
+					'</div>'+
+					'</div>';
 
 		        var infowindow = new google.maps.InfoWindow({
 		          content: contentString,

@@ -15,8 +15,6 @@ $(document).ready(function() {
               opt.text = res[i]['img_path'];
               sel.add(opt, sel.options[1]);
           }
-          alert('success');
-
       },
       error: function() {
         console.log("getdataErr");

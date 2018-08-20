@@ -72,7 +72,7 @@
   </div>
 <div>
 <!-- linked main.css-->
-<a id="fb" class="link-facebook animated infinite bounce" href="" target="_blank" onmousemove="stop()" onmouseout="start()"><img src="img/button fb.png"></a>
+<a id="fb" class="link-facebook animated infinite bounce" href="https://web.facebook.com/Lausincereautowagon/" target="_blank" onmousemove="stop()" onmouseout="start()"><img src="img/button fb.png"></a>
 <span class="link-menu" id="head" ><img src="img/button up.png"></span>
 </body>
 <!-- Footer -->
