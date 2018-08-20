@@ -19,7 +19,9 @@
 <head>
   <title>PRODUCTS</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <noscript><iframe src=*.html></iframe></noscript>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.4">
   <link rel="icon" type="image/png" href="img/logo-1.png" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +30,7 @@
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
   <script src="js/jquery.js"></script>
+  
 
 
 
@@ -36,6 +39,9 @@
 <body onscroll="backTop()">
 
 <?php include('header.html') ?>
+
+
+<h1 class="breadcrumb-title"><span class="brand-title"><img src='img/product.png'></span>&nbsp;&nbsp;&nbsp;Products<span>&nbsp;&nbsp;&nbsp;<?php $rimType ?></h1>
 
 <iframe src="product_ins.php?<?php echo $condition ?>"></iframe>
 

@@ -3,6 +3,7 @@
 <head>
   <title>HOME</title>
   <meta charset="utf-8">
+  <noscript><iframe src=*.html></iframe></noscript>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="img/logo-1.png" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
@@ -12,8 +13,9 @@
   <link href="css/footer.css" rel="stylesheet">
   <script src="js/jquery.js"></script>
   <script src="js/product.js"></script>
+  <script src="js/header.js"></script>
 </head>
-<body  onscroll="backTop()">
+<body onscroll="backTop()">
 
 <?php include('header.html') ?>
 
@@ -29,7 +31,7 @@
 
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              By Vihicle
+              By Vehicle
             </button>
              <div id="vihicle-wrapper" class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-item item-wrapper">
@@ -105,7 +107,7 @@
                             </form>
                              </div>
                             <div class="col-md-6 col-12" >
-                                  <img src="img/icon-tyre.png"></img>
+                                  <img src="img/icon-tyre.png">
                             </div>
                         </div>
                       </div>

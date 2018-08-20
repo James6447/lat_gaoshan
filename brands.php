@@ -4,6 +4,7 @@
   <title>BRANDS</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <noscript><iframe src=*.html></iframe></noscript>
   <link rel="icon" type="image/png" href="img/logo-1.png" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -31,9 +32,9 @@
         <ul class="details-1">
           <li class="row brand brand-1" onmouseover="showImg('img-1')" onmouseout="hideImg('img-1')" onclick="moveToLocation(1.5188448,103.6845604)">
             <div class="col-md-5 col-12 img">
-              <img  src='img/shop1.jpg' class='profile'   id="img-1"/>
+              <img  src='img/img1.jpg' class='profile'   id="img-1"/>
             </div>
-              <div class="col-lg-6 col-md-6 col-12">
+              <div class="col-lg-6 col-md-6 col-12 pad">
                 <h4>LAU SINCERE AUTOWAGON SERVICES SDN BHD</h4>
                 <p>Address <span class="slash">|</span></p>
                 <p>No.1,Jalan Anggerik 3/1,Taman Anggerik.81200,Johor Bahru</p>
@@ -43,9 +44,9 @@
           </li>
           <li class="row brand parent brand-2" onmouseover="showImg('img-2')" onmouseout="hideImg('img-2')" onclick="moveToLocation(1.609434,103.6610035)">
             <div class="col-md-5 col-12 img">
-              <img  src='img/shop2.jpg' class='profile'   id="img-2"/>
+              <img  src='img/img2.jpg' class='profile'   id="img-2"/>
             </div>
-              <div class="col-lg-6 col-md-6 col-12">
+              <div class="col-lg-6 col-md-6 col-12 pad">
                 <h4>LAU BROTHERS Auto Tyres&Battery Services</h4>
                 <p>Address <span class="slash">|</span></p>
                 <p>No.1,Jalan Pakis,Taman Handal,81400 Senai,Johor</p>
@@ -55,9 +56,9 @@
           </li>
           <li class="row brand parent brand-3" onmouseover="showImg('img-3')" onmouseout="hideImg('img-3')" onclick="moveToLocation(1.5156932,103.6892922)">
             <div class="col-md-5 col-12 img">
-              <img  src='img/shop3.jpg' class='profile'   id="img-3"/>
+              <img  src='img/img3.jpg' class='profile'   id="img-3"/>
             </div>
-              <div class="col-lg-6 col-md-6 col-12">
+              <div class="col-lg-6 col-md-6 col-12 pad">
                 <h4>Mee Auto TYRES BATTERY SERVICES(JM0655091-K)</h4>
                 <p>Address <span class="slash">|</span></p>
                 <p>No.2 & 4,Jalan Dian8,Taman Munsyi Ibrahim,81200 Johor Bahru</p>
