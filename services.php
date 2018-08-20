@@ -43,11 +43,11 @@
           <h4 class ="card-title">cardtitle</h4>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <!-- Button trigger modal -->
-          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal10">
+          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal0">
             <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
           </button>
               <!-- Modal -->
-          <div id="myModal10" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div id="myModal0" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -89,11 +89,11 @@
           <h4 class ="card-title">cardtitle</h4>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <!-- Button trigger modal -->
-          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal10">
+          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal1">
             <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
           </button>
               <!-- Modal -->
-          <div id="myModal10" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div id="myModal1" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -134,11 +134,11 @@
           <h4 class ="card-title">cardtitle</h4>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <!-- Button trigger modal -->
-          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal10">
+          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal2">
             <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
           </button>
               <!-- Modal -->
-          <div id="myModal10" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div id="myModal2" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -179,11 +179,11 @@
           <h4 class ="card-title">cardtitle</h4>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <!-- Button trigger modal -->
-          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal10">
+          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal3">
             <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
           </button>
               <!-- Modal -->
-          <div id="myModal10" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div id="myModal3" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -224,11 +224,11 @@
           <h4 class ="card-title">cardtitle</h4>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <!-- Button trigger modal -->
-          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal10">
+          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal4">
             <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
           </button>
               <!-- Modal -->
-          <div id="myModal10" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div id="myModal4" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -269,11 +269,11 @@
           <h4 class ="card-title">cardtitle</h4>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
           <!-- Button trigger modal -->
-          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal10">
+          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal5">
             <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
           </button>
               <!-- Modal -->
-          <div id="myModal10" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div id="myModal5" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
