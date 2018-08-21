@@ -21,7 +21,7 @@ $start = ($item_row*$item_column)*($p-1);
 $count=$item_row*$item_column;
 if($car_search == ''){
     ?>
-
+    <body>
     <div class="numeric">
         <p><strong>Car</strong> > <?php echo $car_name.">".$p?></p>
     </div>
@@ -82,7 +82,7 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3">
-             <img class="card-img-top" src="<?php echo '/gaoshan/img/car/'.$row['img_path'].'.png' ?>" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/car/'.$row['img_path'].'.png' ?>" alt="Card image cap">
              <div class="card-body">
                  <?php
                     $plot = preg_split("/\//",$row['img_path']);
@@ -131,3 +131,4 @@ $pages=ceil($total/$count);
     </li> -->
   </ul>
 </nav>
+</body>

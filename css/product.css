@@ -4,7 +4,7 @@ body {
 
 iframe {
   width: 100%;
-  height: 1360px;
+  height: 1300px;
   border: 0;
 }
 
@@ -51,10 +51,19 @@ iframe {
   color: #fff;
 }
 
+.active-choose{
+    background-color: bisque;
+    transform: scale(1.05);
+}
+
 /* Alternative Sub Menu */
 .list-group-item {
   border: 0.5px solid rgb(255, 141, 0);
   padding: 0;
+}
+
+#startUp li ,#car li , #access li{
+    cursor: pointer;
 }
 
 .alt-nav {
@@ -191,11 +200,11 @@ iframe {
 .arrow .page-link:hover {
   background-color: white;
   color: #ff9933;
+  border: 1px solid #ff9933;
 }
 
 .page-link {
   color: black;
-  border: none;
 }
 
 .page-item span:hover {

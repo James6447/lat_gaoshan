@@ -19,8 +19,8 @@
 <head>
   <title>PRODUCTS</title>
   <meta charset="utf-8">
-  <noscript><iframe src=*.html></iframe></noscript>
-  
+  <noscript><iframe src="product_ins.php?<?php echo $condition ?>"></iframe></noscript>
+
   <meta name="viewport" content="width=device-width, initial-scale=0.4">
   <link rel="icon" type="image/png" href="img/logo-1.png" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
@@ -30,8 +30,12 @@
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
   <script src="js/jquery.js"></script>
+<<<<<<< HEAD
   <script src="js/win.js"></script>
   
+=======
+
+>>>>>>> 6184f58378a87e3314964bbf361886d134eb03ee
 
 
 

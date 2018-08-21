@@ -20,6 +20,12 @@ $(document).ready(function() {
         console.log("getdataErr");
       }
     });
+
+    $("#test1").click(function() {
+        $('html, body').animate({
+            scrollTop: $("html").offset().top
+        }, 250);
+    });
 });
 
 
@@ -57,10 +63,9 @@ function TypeFunc(){
     });
 }
 
-
 function getProduct(pageName){
   var req=new XMLHttpRequest();
-  req.open("get","http://localhost:5566/gaoshan/product/"+pageName);
+  req.open("get","http://localhost:5566/lat_gaoshan/product/"+pageName);
   req.onload=function(){
     var content=document.getElementById("change");
     change.innerHTML=this.responseText;
@@ -80,10 +85,11 @@ function getProduct(pageName){
 
 function getData(pageName){
   var req=new XMLHttpRequest();
-  req.open("get","http://localhost:5566/gaoshan/product/"+pageName);
+  req.open("get","http://localhost:5566/lat_gaoshan/product/"+pageName);
   req.onload=function(){
     var content=document.getElementById("change");
     change.innerHTML=this.responseText;
+    // console.log(document.getElementById("test").textContent);
   };
   req.send();
 }
@@ -96,3 +102,9 @@ function getData(pageName){
 //   };
 //   req.send();
 // }
+
+function reset(){
+    alert('hi');
+
+    console.log(document.getElementById("test").textContent);
+}
