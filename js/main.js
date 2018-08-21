@@ -267,12 +267,18 @@ function initMap() {
 
   $("#brand1").click(function() {
     infowindow.open(map, marker);
+    infowindow1.close(map, marker1);
+    infowindow2.close(map, marker2);
   });
   $("#brand2").click(function() {
     infowindow1.open(map, marker1);
+    infowindow.close(map, marker);
+    infowindow2.close(map, marker2);
   });
   $("#brand3").click(function() {
     infowindow2.open(map, marker2);
+    infowindow1.close(map, marker1);
+    infowindow.close(map, marker);
   });
 }
 
