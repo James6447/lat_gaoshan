@@ -14,6 +14,7 @@
   <script src="js/jquery.js"></script>
   <script src="js/product.js"></script>
   <script src="js/header.js"></script>
+  <script src="js/win.js"></script>
 </head>
 <body onscroll="backTop()">
 

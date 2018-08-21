@@ -5,7 +5,7 @@
         $car_model = $_POST['carModel'];
         //$rim_size = explode('/',$car_model)[1];
         if ($car_model == ''){
-            $condition = 'rim_size=18';
+            $condition = 'rim_size='.$rimType;
         }
         else{
             $condition = 'carModel='.$car_model;
@@ -30,7 +30,8 @@
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
   <script src="js/jquery.js"></script>
-
+  <script src="js/win.js"></script>
+  
 
 
 
@@ -41,7 +42,7 @@
 <?php include('header.html') ?>
 
 
-<h1 class="breadcrumb-title"><span class="brand-title"><img src='img/product.png'></span>&nbsp;&nbsp;&nbsp;Products<span>&nbsp;&nbsp;&nbsp;<?php $rimType ?></h1>
+<h1 class="breadcrumb-title"><span class="brand-title"><img src='img/product.png'></span>&nbsp;&nbsp;&nbsp;Products<span>&nbsp;&nbsp;&nbsp;</h1>
 
 <iframe src="product_ins.php?<?php echo $condition ?>"></iframe>
 
@@ -59,5 +60,4 @@ include('footer.html');
 <script src="js/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/header.js"></script>
-
 </body>
