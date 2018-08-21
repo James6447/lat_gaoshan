@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>HOME</title>
+  <title>LAUSINCERE-HOME</title>
   <meta charset="utf-8">
   <noscript><iframe src=*.html></iframe></noscript>
   <meta name="viewport" content="width=device-width, initial-scale=1">

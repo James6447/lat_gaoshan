@@ -17,7 +17,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>PRODUCTS</title>
+  <title>LAUSINCERE-PRODUCTS</title>
   <meta charset="utf-8">
   <noscript><iframe src="product_ins.php?<?php echo $condition ?>"></iframe></noscript>
 

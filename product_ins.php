@@ -53,7 +53,7 @@
                  <li class="list-group-item" onclick="getProduct('rim.php?inch=15')">15'inch</li>
                  <li class="list-group-item" onclick="getProduct('rim.php?inch=16')">16'inch</li>
                  <li class="list-group-item" onclick="getProduct('rim.php?inch=17')">17'inch</li>
-                 <li class="list-group-item" onclick="getProduct('rim.php?inch=18')">18'inch</li>
+                 <li id="first" class="list-group-item" onclick="getProduct('rim.php?inch=18')">18'inch</li>
                  <li class="list-group-item" onclick="getProduct('rim.php?inch=19')">19'inch</li>
                  <li class="list-group-item"></li>
               </ul>
