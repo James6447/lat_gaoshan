@@ -82,6 +82,7 @@ $("#head").click(function() {
     }, 250);
 });
 
+
 function backTop() {
 	var top = window.pageYOffset;
 
@@ -220,6 +221,16 @@ function initMap() {
 		});
 
 		marker2.addListener('click', function() {
+			infowindow2.open(map, marker2);
+		});
+
+		$("#brand1").click(function() {
+			infowindow.open(map, marker);
+		});
+		$("#brand2").click(function() {
+			infowindow1.open(map, marker1);
+		});
+		$("#brand3").click(function() {
 			infowindow2.open(map, marker2);
 		});
 }
