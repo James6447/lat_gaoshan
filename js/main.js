@@ -1,14 +1,7 @@
 $(document).ready(function() {
-<<<<<<< HEAD
 	// when a nav parent is clicked
 	$(".alt-nav > ul > li").children("#startUp").slideDown();
 	$("#startUp #first").addClass("active-choose");
-=======
-  // when a nav parent is clicked
-  $(".alt-nav > ul > li")
-    .children("#startUp")
-    .slideDown();
->>>>>>> f37639a9463c4378320b502711adb6858c2df6bf
 
   $(".alt-nav > ul > li").click(function() {
     // if section is already active and clicked again
