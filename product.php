@@ -30,12 +30,8 @@
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
   <script src="js/jquery.js"></script>
-<<<<<<< HEAD
   <script src="js/win.js"></script>
   
-=======
-
->>>>>>> 6184f58378a87e3314964bbf361886d134eb03ee
 
 
 
