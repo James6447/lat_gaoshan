@@ -59,7 +59,7 @@
               </ul>
 						</li>
 						<li><a href="">Car Type<span>+</span></a>
-              <ul class="list-group list-group-flush">
+              <ul id="car" class="list-group list-group-flush">
                  <li class="list-group-item space">&nbsp;</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=1&name=AUDI')">Audi</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=2&name=BMW')">BMW</li>
@@ -86,7 +86,7 @@
               </ul>
 						</li> -->
 						<li><a href="">ACCESSORIES<span>+</span></a>
-              <ul class="list-group list-group-flush">
+              <ul id="access" class="list-group list-group-flush">
                  <li class="list-group-item space">&nbsp;</li>
                  <li class="list-group-item" onclick="getProduct('rim.php')">RIM</li>
                  <li class="list-group-item">Dapibus ac facilisis in</li>

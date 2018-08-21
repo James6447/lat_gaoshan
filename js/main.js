@@ -5,17 +5,52 @@ $(document).ready(function() {
 
 	$(".alt-nav > ul > li").click(function() {
 		// if section is already active and clicked again
+
 		if ( $(this).hasClass("active-click") ) {
       return false;
 		} else {
 		// if section is made active
+
 			$(".alt-nav ul ul").slideUp();
 			$(".alt-nav li").removeClass("active-click");
+			$("#startUp li").removeClass("active-choose");
+			$("#car li").removeClass("active-choose");
+			$("#access li").removeClass("active-choose");
 			$(this).addClass("active-click");
 			$(this).children("ul").slideDown();
 			return false;
 		}
 	}); // end click event handler
+
+
+	$("#startUp > li").click(function() {
+		if ( $(this).hasClass("active-choose") ) {
+	  return false;
+		} else {
+			$("#startUp li").removeClass("active-choose");
+			$(this).addClass("active-choose");
+			return false;
+		}
+	});
+	$("#car > li").click(function() {
+		if ( $(this).hasClass("active-choose") ) {
+	  return false;
+		} else {
+			$("#car li").removeClass("active-choose");
+			$(this).addClass("active-choose");
+			return false;
+		}
+	});
+	$("#access > li").click(function() {
+		if ( $(this).hasClass("active-choose") ) {
+	  return false;
+		} else {
+			$("#access li").removeClass("active-choose");
+			$(this).addClass("active-choose");
+			return false;
+		}
+	});
+
 });
 
 
