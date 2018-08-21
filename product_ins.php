@@ -30,7 +30,7 @@
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/zoom.css">
-  <script src="js/product.js"></script>
+  
   <script src="js/jquery.js"></script>
   <script src="js/header.js"></script>
 
@@ -145,5 +145,6 @@
 <script src="js/jquery.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/zoom.js"></script>
+  <script src="js/product.js"></script>
   <script src="js/transitions.js"></script>
 </body>

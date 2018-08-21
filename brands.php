@@ -13,6 +13,7 @@
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
   <script src="js/jquery.js"></script>
+  <script src="js/win.js"></script>
 </head>
 
 <body onscroll="backTop()">
