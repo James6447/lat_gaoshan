@@ -40,11 +40,11 @@
 
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
-        <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
+        <img class="card-img-top" style="display: block;"
           src="img/service1.jpg">
         <div class="card-body ">
-          <h4 class ="card-title">cardtitle</h4>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h4 class ="card-title">Tire Maintenance</h4>
+          <p class="card-text">Sometimes a pneumatic tire gets a hole or a leak through which the air inside leaks out resulting in a flat tire, a condition which must be fixed before the car can be driven safely</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal0">
             <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
@@ -54,24 +54,23 @@
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Tire Maintenance</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/service1.jpg">
+              <!-- <img class="modal-img-top" style="height: 70%; width: 100%; display: block;"
+              src="img/service1.jpg"> -->
+              <div class="videoyou">
+                  <iframe class="youtubeclass" width="100%" height="100%"
+                    src="https://youtube.com/embed/uTqkQutK_nc">
+                  </iframe>
+              </div>
               <div class="modal-body">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                 Tire maintenance for motor vehicles is based on several factors. The chief reason for tire replacement is friction from moving contact with road surfaces,
+                 causing the tread on the outer perimeter of tires to eventually wear away. When the tread depth becomes too shallow (less than 0.125in./3.2mm), the tire is worn out and should be replaced.
+                 The same wheels can usually be used throughout the lifetime of the car.</br>
+                 <span class="message-notice">* If these few following step bothering you, please contact us for more professional services.</span>
               </div>
               <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -89,8 +88,8 @@
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
           src="img/service1.jpg">
         <div class="card-body ">
-          <h4 class ="card-title">cardtitle</h4>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h4 class ="card-title">Battery Service</h4>
+          <p class="card-text">Assuming your car’s charging system is in working order, avoiding a dead battery in the dawn before cars and coffee or at sunset after a long and winding drive is simple. Maintain and clean the battery terminals and posts. </p>
           <!-- Button trigger modal -->
           <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal1">
             <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
@@ -100,7 +99,7 @@
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Battery Service</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -108,16 +107,16 @@
               <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
               src="img/service1.jpg">
               <div class="modal-body">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+              Assuming your car’s charging system is in working order, avoiding a dead battery in the dawn before cars and coffee or at sunset after a long and winding drive is simple.
+              Maintain and clean the battery terminals and posts.</br>
+              Here is the few step to easily change your battery:</br>
+              Step 1: Clean the cables</br>
+              Step 2: Check the level of the electrolyte</br>
+              Step 3: Check the condition and charge of the battery</br>
+              Step 4: To drop in the new battery first remove the cables</br>
+              Step 5: Replace the battery</br>
+              Step 6: Reinstall the clamp and cables</br>
+              <span class="message-notice">* If these few following step bothering you, please contact us for more professional services.</span>
               </div>
               <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -134,8 +133,8 @@
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
           src="img/service1.jpg">
         <div class="card-body ">
-          <h4 class ="card-title">cardtitle</h4>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h4 class ="card-title">Service</h4>
+          <p class="card-text">A motor vehicle service or tune-up is a series of maintenance procedures carried out at a set time interval or after the vehicle has travelled a certain distance.</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal2">
             <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
@@ -145,7 +144,7 @@
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Service</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -153,17 +152,28 @@
               <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
               src="img/service1.jpg">
               <div class="modal-body">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              </div>
+              A motor vehicle service or tune-up is a series of maintenance procedures carried out at a set time interval or after the vehicle has travelled a certain distance.
+              The service intervals are specified by the vehicle manufacturer in a service schedule and some modern cars display the due date for the next service electronically on the instrument panel.</br>
+              Maintenance tasks commonly carried out during a motor vehicle service include:
+              <li>Change the engine oil</li>
+              <li>Replace the oil filter</li>
+              <li>Replace the air filter</li>
+              <li>Replace the fuel filter</li>
+              <li>Replace the cabin filter</li>
+              <li>Replace the spark plugs</li>
+              <li>Tune the engine</li>
+              <li>Check level and refill brake fluid/clutch fluid</li>
+              <li>Check Brake Pads/Liners, Brake Discs/Drums, and replace if worn out.</li>
+              <li>Check level and refill power steering fluid</li>
+              <li>Check level and refill Automatic/Manual Transmission Fluid</li>
+              <li>Grease and lubricate components</li>
+              <li>Inspect and replace the timing belt or timing chain if needed</li>
+              <li>Check condition of the tires</li>
+              <li>Check for proper operation of all lights, wipers etc.</li>
+              <li>Check for any Error codes in the ECU and take corrective action.</li>
+              <li>Wash the vehicle and clean the interiors.</li>
+              <li>Use scan tool read trouble code.</li>
+              <span class="message-notice">* If these few following step bothering you, please contact us for more professional services.</span>
               <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
@@ -173,142 +183,7 @@
         </div>
       </div>
     </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
-      <div class="card box-shadow">
-        <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
-          src="img/service1.jpg">
-        <div class="card-body ">
-          <h4 class ="card-title">cardtitle</h4>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal3">
-            <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
-          </button>
-              <!-- Modal -->
-          <div id="myModal3" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/service1.jpg">
-              <div class="modal-body">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              </div>
-              <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
-      <div class="card box-shadow">
-        <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
-          src="img/service1.jpg">
-        <div class="card-body ">
-          <h4 class ="card-title">cardtitle</h4>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal4">
-            <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
-          </button>
-              <!-- Modal -->
-          <div id="myModal4" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/service1.jpg">
-              <div class="modal-body">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              </div>
-              <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
-      <div class="card box-shadow">
-        <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
-          src="img/service1.jpg">
-        <div class="card-body ">
-          <h4 class ="card-title">cardtitle</h4>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal5">
-            <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
-          </button>
-              <!-- Modal -->
-          <div id="myModal5" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-           <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/service1.jpg">
-              <div class="modal-body">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-              </div>
-              <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
   </div>
 </div>
 <!-- linked main.css-->

@@ -6,7 +6,7 @@
         $rim_size = $_GET['rim_size'];
 
         if ($car_model == ''){
-            $condition = 'rim.php?inch='.$rim_size;
+            $condition = 'rim.php?inch=18';
         }
         else{
             $condition = 'rim.php?carModel='.$car_model;
@@ -30,7 +30,7 @@
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/zoom.css">
-  
+
   <script src="js/jquery.js"></script>
   <script src="js/header.js"></script>
 

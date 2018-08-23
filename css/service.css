@@ -40,7 +40,7 @@ body {
   height: 100%;
   position: absolute;
   top: 100%;
-  transition: top 0.8s linear;
+  transition: top 0.5s linear;
 }
 .card-text {
   text-overflow: ellipsis;
@@ -51,6 +51,11 @@ body {
 }
 .card-title {
   font-size: 1.25rem;
+}
+
+.message-notice{
+  font-weight: bold;
+  color: coral;
 }
 
 .grid-item {
