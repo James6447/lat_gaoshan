@@ -61,7 +61,7 @@
 						<li><a href="">Car Type<span>+</span></a>
               <ul id="car" class="list-group list-group-flush">
                  <li class="list-group-item space">&nbsp;</li>
-                 <li class="list-group-item" onclick="getProduct('car.php?type=1&name=AUDI')">Audi</li>
+                 <li class="list-group-item" onclick="getProduct('car.php?type=1&name=AUDI')">AUDI</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=2&name=BMW')">BMW</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=3&name=FORD')">FORD</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=4&name=HONDA')">HONDA</li>
@@ -88,12 +88,9 @@
 						<li><a href="">ACCESSORIES<span>+</span></a>
               <ul id="access" class="list-group list-group-flush">
                  <li class="list-group-item space">&nbsp;</li>
-                 <li class="list-group-item" onclick="getProduct('rim.php')">RIM</li>
-                 <li class="list-group-item">Dapibus ac facilisis in</li>
-                 <li class="list-group-item">RIM</li>
-                 <li class="list-group-item">Morbi leo risus</li>
-                 <li class="list-group-item">Porta ac consectetur ac</li>
-                 <li class="list-group-item">Vestibulum at eros</li>
+                 <li class="list-group-item" onclick="getProduct('accossories.php?category=1')">ENGINE OIL CASTROL</li>
+                 <li class="list-group-item" onclick="getProduct('accossories.php?category=2')">ENGINE OIL ENEOS</li>
+                 <li class="list-group-item" onclick="getProduct('accossories.php?category=3')">BATTERY</li>
                  <li class="list-group-item"></li>
               </ul>
 						</li>

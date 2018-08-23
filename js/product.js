@@ -74,7 +74,7 @@ function getProduct(pageName){
 }
 // function getProduct(pageName){
 //   var req=new XMLHttpRequest();
-//   req.open("get","http://lausincere.com/product/"+pageName);
+//   req.open("get","http://www.lausincere.com/product/"+pageName);
 //   req.onload=function(){
 //     var content=document.getElementById("change");
 //     change.innerHTML=this.responseText;
@@ -95,16 +95,10 @@ function getData(pageName){
 }
 // function getData(pageName){
 //   var req=new XMLHttpRequest();
-//   req.open("get","http://lausincere.com/product/"+pageName);
+//   req.open("get","http://www.lausincere.com/product/"+pageName);
 //   req.onload=function(){
 //     var content=document.getElementById("change");
 //     change.innerHTML=this.responseText;
 //   };
 //   req.send();
 // }
-
-function reset(){
-    alert('hi');
-
-    console.log(document.getElementById("test").textContent);
-}
