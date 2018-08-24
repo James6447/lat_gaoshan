@@ -13,7 +13,7 @@ if($p == ''){
 
 //每次要顯示幾筆資料
 $item_column =3;
-$item_row = 2;
+$item_row = 3;
 
 $start = ($item_row*$item_column)*($p-1);
 
@@ -82,7 +82,7 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3">
-             <img class="card-img-top" src="<?php echo '/lat_gaosha/img/car/'.$row['img_path'].'.png' ?>" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/car/'.$row['img_path'].'.png' ?>" alt="Card image cap">
              <div class="card-body">
                  <?php
                     $plot = preg_split("/\//",$row['img_path']);
