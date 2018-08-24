@@ -41,7 +41,7 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
         <img class="card-img-top" style="display: block;"
-          src="img/service1.jpg">
+          src="img/Tire Maintenance.jpg">
         <div class="card-body ">
           <h4 class ="card-title">Tire Maintenance</h4>
           <p class="card-text">Sometimes a pneumatic tire gets a hole or a leak through which the air inside leaks out resulting in a flat tire, a condition which must be fixed before the car can be driven safely</p>
@@ -86,7 +86,7 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
-          src="img/service1.jpg">
+          src="img/Battery Service.jpg">
         <div class="card-body ">
           <h4 class ="card-title">Battery Service</h4>
           <p class="card-text">Assuming your car’s charging system is in working order, avoiding a dead battery in the dawn before cars and coffee or at sunset after a long and winding drive is simple. Maintain and clean the battery terminals and posts. </p>
@@ -104,8 +104,10 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/service1.jpg">
+              <div>
+                  <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
+                  src="img/service1.jpg">
+              </div>
               <div class="modal-body">
               Assuming your car’s charging system is in working order, avoiding a dead battery in the dawn before cars and coffee or at sunset after a long and winding drive is simple.
               Maintain and clean the battery terminals and posts.</br>
@@ -131,7 +133,7 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
-          src="img/service1.jpg">
+          src="img/Service.jpg">
         <div class="card-body ">
           <h4 class ="card-title">Service</h4>
           <p class="card-text">A motor vehicle service or tune-up is a series of maintenance procedures carried out at a set time interval or after the vehicle has travelled a certain distance.</p>
@@ -149,8 +151,10 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/service1.jpg">
+              <div>
+                  <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
+                  src="img/service1.jpg">
+              </div>
               <div class="modal-body">
               A motor vehicle service or tune-up is a series of maintenance procedures carried out at a set time interval or after the vehicle has travelled a certain distance.
               The service intervals are specified by the vehicle manufacturer in a service schedule and some modern cars display the due date for the next service electronically on the instrument panel.</br>
@@ -175,7 +179,7 @@
               <li>Use scan tool read trouble code.</li>
               <span class="message-notice">* If these few following step bothering you, please contact us for more professional services.</span>
               <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
               </div>
             </div>
@@ -184,6 +188,7 @@
       </div>
     </div>
     </div>
+
   </div>
 </div>
 <!-- linked main.css-->

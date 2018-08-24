@@ -176,6 +176,11 @@ iframe {
   height: 52%;
 }
 
+.card-deck .accossories img {
+  height: 200px;
+  width: 200px;
+}
+
 .card-deck .card img:hover {
   transform: scale(1.1);
 }

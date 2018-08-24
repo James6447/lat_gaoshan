@@ -32,14 +32,14 @@ $count=$item_row*$item_column;
 
 if($car_model == ''){
     ?>
-    <div class="numeric" onclick="reset()">
+    <div class="numeric">
         <p id="test"><strong>WHELL</strong> > <?php echo $rim_size."'>".$p?></p>
     </div>
     <?php
 }else{
     ?>
     <div class="numeric">
-        <p><strong><?php $plot_range[0];?></strong> > <?php echo $size_range."'>".$p?></p>
+        <p><strong><?php echo $plot_range[0];?></strong> > <?php echo $size_range."'>".$p?></p>
     </div>
     <?php
 }
@@ -87,7 +87,7 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3">
-             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/rim/'.$row['img_path'].'.jpeg' ?>" data-action="zoom" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo '/lat_gaosha/img/rim/'.$row['img_path'].'.jpeg' ?>" data-action="zoom" alt="Card image cap">
              <div class="card-body">
                <h5 class="card-title"><?php echo 'RM '.$row['price'] ?></h5>
                <p class="card-text"><?php echo $row['type'] ?></p>
@@ -117,11 +117,11 @@ $pages=ceil($total/$count);
     for($i=1;$i<=$pages;$i++){
         if($car_model == ''){
             ?>
-        <li class="page-item"><span id="reset" class="page-link" onclick="getData('rim.php?p=<?php echo $i ?>&inch=<?php echo $rim_size ?>');"><?php echo $i?></span></li>
+        <li onclick="reset()" class="page-item"><span id="reset" class="page-link" onclick="getData('rim.php?p=<?php echo $i ?>&inch=<?php echo $rim_size ?>');"><?php echo $i?></span></li>
 <?php
         }
     else {?>
-        <li class="page-item"><span id="reset" class="page-link" onclick="getData('rim.php?p=<?php echo $i ?>&carModel=<?php echo $car_model ?>');"><?php echo $i?></span></li>
+        <li onclick="reset()" class="page-item"><span id="reset" class="page-link" onclick="getData('rim.php?p=<?php echo $i ?>&carModel=<?php echo $car_model ?>');"><?php echo $i?></span></li>
     <?php
         }
     }

@@ -51,7 +51,7 @@ if($car_search == ''){
               ";
 
     //判斷幾頁
-    $query3 ="SELECT * FROM t_tyers WHERE type=$car_type";
+    $query3 ="SELECT * FROM t_tyres WHERE type=$car_type";
 }else {
     //show comment column
     $query1 ="SELECT * FROM t_tyres
@@ -62,7 +62,7 @@ if($car_search == ''){
               ";
 
     //判斷幾頁
-    $query3 ="SELECT * FROM t_tyers WHERE type=$car_search AND (size LIKE '$size%' OR size=$size)";
+    $query3 ="SELECT * FROM t_tyres WHERE type=$car_search AND (size LIKE '$size%' OR size=$size)";
 }
 
 
@@ -82,7 +82,7 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3">
-             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/car/'.$row['img_path'].'.png' ?>" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo '/lat_gaosha/img/car/'.$row['img_path'].'.png' ?>" alt="Card image cap">
              <div class="card-body">
                  <?php
                     $plot = preg_split("/\//",$row['img_path']);
@@ -116,10 +116,10 @@ $pages=ceil($total/$count);
     for($i=1;$i<=$pages;$i++){
         if($car_search == ''){
         ?>
-            <li class="page-item"><span class="page-link" onclick="getData('car.php?p=<?php echo $i ?>&type=<?php echo $car_type ?>');"><?php echo $i?></span></li>
+            <li onclick="reset()" class="page-item"><span class="page-link" onclick="getData('car.php?p=<?php echo $i ?>&type=<?php echo $car_type ?>');"><?php echo $i?></span></li>
 <?php  }else{
         ?>
-            <li class="page-item"><span class="page-link" onclick="getData('car.php?p=<?php echo $i ?>&carType=<?php echo $car_type.'&size='.$size?>');"><?php echo $i?></span></li>
+            <li onclick="reset()" class="page-item"><span class="page-link" onclick="getData('car.php?p=<?php echo $i ?>&carType=<?php echo $car_type.'&size='.$size?>');"><?php echo $i?></span></li>
        <?php }
     }
     ?>

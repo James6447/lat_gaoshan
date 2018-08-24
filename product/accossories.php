@@ -17,10 +17,21 @@ $start = ($item_row*$item_column)*($p-1);
 
 //how many per one
 $count=$item_row*$item_column;
+switch ($category) {
+    case '1':
+        $title = 'CASTROL';
+        break;
+    case '2':
+        $title = 'ENEOS';
+        break;
+    case '3':
+        $title = 'BATTERY';
+        break;
+}
     ?>
 
     <div class="numeric" onclick="reset()">
-        <p id="test"><strong>Engine Oil</strong> > <?php echo $p?></p>
+        <p id="test"><strong><?php echo $title ?></strong> > <?php echo $p?></p>
     </div>
 
     <?php
@@ -52,7 +63,7 @@ $pages=ceil($total/$count);
           while( $row = $result1->fetch_assoc())
           {
             ?>
-            <div class="card col-3">
+            <div class="card col-3 accossories">
              <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/accossories/'.$row['category'].'/'.$row['img_path'].'.jpg' ?>"  alt="Card image cap">
              <div class="card-body">
                <h5 class="card-title"><?php echo $row['img_path']?></h5>
@@ -81,7 +92,7 @@ $pages=ceil($total/$count);
     <?php
     for($i=1;$i<=$pages;$i++){
             ?>
-        <li class="page-item"><span id="reset" class="page-link" onclick="getData('accossories.php?p=<?php echo $i.'&category='.$category ?>');"><?php echo $i?></span></li>
+        <li onclick="reset()" class="page-item"><span id="reset" class="page-link" onclick="getData('accossories.php?p=<?php echo $i.'&category='.$category ?>');"><?php echo $i?></span></li>
 <?php
     }
     ?>

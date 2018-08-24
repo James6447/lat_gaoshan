@@ -21,11 +21,6 @@ $(document).ready(function() {
       }
     });
 
-    $("#test1").click(function() {
-        $('html, body').animate({
-            scrollTop: $("html").offset().top
-        }, 250);
-    });
 });
 
 
@@ -102,3 +97,10 @@ function getData(pageName){
 //   };
 //   req.send();
 // }
+
+
+function reset(){
+    $('html, body').animate({
+        scrollTop: $("html").offset().top
+    }, 250);
+}
