@@ -12,6 +12,7 @@
   <link href="css/main.css" rel="stylesheet">
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
+  <script>
   <script src="js/jquery.js"></script>
   <script src="js/win.js"></script>
 </head>
