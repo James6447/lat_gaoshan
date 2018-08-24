@@ -2,7 +2,13 @@ body {
   background-image: url("../img/service-background.jpg");
   background-size: cover;
 }
-
+.modal-header {
+  background: #eeee;
+}
+.modal-content {
+  background-image: url("../img/service-background.jpg");
+  background-size: cover;
+}
 #containersevices {
   padding: 0px 9% 0 9%;
 }
@@ -53,7 +59,7 @@ body {
   font-size: 1.25rem;
 }
 
-.message-notice{
+.message-notice {
   font-weight: bold;
   color: coral;
 }
