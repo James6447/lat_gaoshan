@@ -1,5 +1,7 @@
 body {
   font-family: Myriad Pro !important;
+  background-image: url("../img/service-background.jpg");
+  background-size: cover;
 }
 
 iframe {
@@ -72,6 +74,7 @@ iframe {
 
 .alt-nav ul ul {
   display: none;
+  box-shadow: 6px 6px 37px grey;
 }
 
 .alt-nav li li {
@@ -109,6 +112,7 @@ iframe {
   color: black;
   border-bottom: 1px solid #b2b5ab;
   padding: 10px;
+  margin-right: -3px;
 }
 
 .hot a:hover {
@@ -121,6 +125,7 @@ iframe {
   padding: 0;
   line-height: 2.2em;
   width: 101%;
+  box-shadow: 6px 6px 37px grey;
 }
 
 .list-group-item img {
@@ -168,12 +173,14 @@ iframe {
 .card-deck .card {
   border: none;
   margin-left: 34px;
+  background-color: #f9f9f900;
 }
 
 .card-deck .card img {
   cursor: pointer;
   transition: all 0.3s;
   height: 52%;
+  box-shadow: 7px 7px 8px grey;
 }
 
 .card-deck .accossories img {
@@ -194,7 +201,6 @@ iframe {
 }
 
 .numeric p {
-  padding-top: 23px;
   font-size: larger;
 }
 

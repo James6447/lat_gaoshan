@@ -1,7 +1,13 @@
 $(document).ready(function() {
 	// when a nav parent is clicked
-	$(".alt-nav > ul > li").children("#startUp").slideDown();
-	$("#startUp #first").addClass("active-choose");
+	let pattern = document.getElementById("pattern").value;
+	if(pattern == 1){
+		$(".alt-nav > ul > li").children("#startUp").slideDown();
+		$("#startUp #first").addClass("active-choose");
+	}
+	else {
+		$(".alt-nav > ul > li").children("#car").slideDown();
+	}
 
   $(".alt-nav > ul > li").click(function() {
     // if section is already active and clicked again
@@ -123,6 +129,14 @@ $("#head").click(function() {
     250
   );
 });
+$(".list-group li").click(function() {
+  $("html, body").animate(
+    {
+      scrollTop: $("html").offset().top
+    },
+    250
+  );
+});
 
 function backTop() {
   var top = window.pageYOffset;
@@ -158,15 +172,15 @@ function start() {
 }
 
 $(".brand-1").hover(function() {
-  $(".main-background").css("background-image", "url('img/brand-1.jpg')");
+  $(".main-background").css("background-image", "url('/lat_gaoshan/img/brand-1.jpg')");
 });
 
 $(".brand-2").hover(function() {
-  $(".main-background").css("background-image", "url('img/brand-2.jpg')");
+  $(".main-background").css("background-image", "url('/lat_gaoshan/img/brand-2.jpg')");
 });
 
 $(".brand-3").hover(function() {
-  $(".main-background").css("background-image", "url('img/brand-3.jpg')");
+  $(".main-background").css("background-image", "url('/lat_gaoshan/img/brand-3.jpg')");
 });
 
 /* ------------------------end-------------------------- */

@@ -18,29 +18,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Product</title>
+  <title>产品</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <META HTTP-EQUIV="Keywords" CONTENT="tyres maintenance,LauSincere Autowagon Services, Services,engine oil, services,Trading Of Tyres And Batteries Of Motor Vehicles,johor bahru,高山輪胎有限公司">
   <META HTTP-EQUIV="Description" CONTENT="LauSincere Autowagon Services Tyres Rim Preview, Car Moedel Review, Accessories, Trading Of Tyres And Batteries Of Motor Vehicles,johor bahru,高山輪胎有限公司">
   <link rel="icon" type="image/png" href="img/logo-1.png" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/product.css" rel="stylesheet">
-  <link href="css/header.css" rel="stylesheet">
-  <link href="css/footer.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/zoom.css">
-  <script src="js/win.js"></script>
-  <script src="js/jquery.js"></script>
-  <script src="js/header.js"></script>
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link href="../css/product.css" rel="stylesheet">
+  <link href="../css/header.css" rel="stylesheet">
+  <link href="../css/footer.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/zoom.css">
+  <script src="../js/win.js"></script>
+  <script src="../js/jquery.js"></script>
+  <script src="../js/header.js"></script>
 
 
 </head>
 
 <body  onscroll="backTop()" id="ins" onload="getProduct('<?php echo $condition?>');" >
 <?php include('header.html') ?>
-<h1 class="breadcrumb-title"><span class="brand-title"><img src='img/product.png'></span>&nbsp;&nbsp;&nbsp;Products<span>&nbsp;&nbsp;&nbsp;</h1>
+<h1 class="breadcrumb-title"><span class="brand-title"><img src='img/product.png'></span>&nbsp;&nbsp;&nbsp;产品<span>&nbsp;&nbsp;&nbsp;</h1>
 <!-- sidebar main.css -->
 <div class="row col-12" >
   <div class="col-lg-3 col-sm-3 col-3" >
@@ -48,7 +48,7 @@
 				<nav class="alt-nav">
                     <input id="pattern" type="hidden" value="<?php echo $pattern?>"></input>
 					<ul>
-						<li><a href="">RIM<span>+</span></a>
+						<li><a href="">轮框<span>+</span></a>
               <ul id="startUp" class="list-group list-group-flush">
                  <li class="list-group-item space">&nbsp;</li>
                  <li class="list-group-item" onclick="getProduct('rim.php?inch=13')">13'inch</li>
@@ -61,7 +61,7 @@
                  <li class="list-group-item"></li>
               </ul>
 						</li>
-						<li><a href="">Car Type<span>+</span></a>
+						<li><a href="">车款<span>+</span></a>
               <ul id="car" class="list-group list-group-flush">
                  <li class="list-group-item space">&nbsp;</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=1&name=AUDI')">AUDI</li>
@@ -88,7 +88,7 @@
                  <li class="list-group-item"></li>
               </ul>
 						</li> -->
-						<li><a href="">ACCESSORIES<span>+</span></a>
+						<li><a href="">配件<span>+</span></a>
               <ul id="access" class="list-group list-group-flush">
                  <li class="list-group-item space">&nbsp;</li>
                  <li class="list-group-item" onclick="getProduct('accossories.php?category=1')">ENGINE OIL CASTROL</li>
@@ -104,24 +104,24 @@
 
           <nav class="hot">
             <ul>
-              <li><a href="#">BEST SELLER</a>
+              <li><a href="#">热销</a>
                 <ul class="list-group list-group-flush" >
                   <li class="list-group-item space">&nbsp;</li>
-                   <li class="list-group-item"><img src="img/rim.jpg">
+                   <li class="list-group-item"><img src="../img/rim.jpg">
                      <ul>
                        <li>ABC Classic</li>
                        <li>YZ001</li>
                        <li>RM1080.00</li>
                      </ul>
                    </li>
-                   <li class="list-group-item"><img src="img/rim.jpg">
+                   <li class="list-group-item"><img src="../img/rim.jpg">
                      <ul>
                        <li>ABC Classic</li>
                        <li>YZ001</li>
                        <li>RM1080.00</li>
                      </ul>
                    </li>
-                   <li class="list-group-item"><img src="img/rim.jpg">
+                   <li class="list-group-item"><img src="../img/rim.jpg">
                      <ul>
                        <li>ABC Classic</li>
                        <li>YZ001</li>
@@ -143,8 +143,8 @@
 </div>
 
 <!-- linked main.css-->
-<a id="fb" class="link-facebook animated infinite bounce" href="https://web.facebook.com/Lausincereautowagon/" target="_blank" onmousemove="stop()" onmouseout="start()"><img src="img/button fb.png"></a>
-<span class="link-menu" id="head" ><img src="img/button up.png"></span>
+<a id="fb" class="link-facebook animated infinite bounce" href="https://web.facebook.com/Lausincereautowagon/" target="_blank" onmousemove="stop()" onmouseout="start()"><img src="../img/button fb.png"></a>
+<span class="link-menu" id="head" ><img src="../img/button up.png"></span>
 
 <!-- Footer -->
 <?php
@@ -154,9 +154,9 @@ include('footer.html');
 <script src="js/bootstrap.bundle.min.js"></script>
 <!-- <script src="js/jquery.min.js"></script> -->
  <script src="http://libs.baidu.com/jquery/1.8.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/zoom.js"></script>
-  <script src="js/product.js"></script>
-  <script src="js/transitions.js"></script>
-  <script src="js/header.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/zoom.js"></script>
+  <script src="../js/product.js"></script>
+  <script src="../js/transitions.js"></script>
+  <script src="../js/header.js"></script>
 </body>

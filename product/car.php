@@ -23,7 +23,7 @@ if($car_search == ''){
     ?>
     <body>
     <div class="numeric">
-        <p><strong>Car</strong> > <?php echo $car_name.">".$p?></p>
+        <p><strong>Car</strong> > <?php echo $car_name."> page".$p?></p>
     </div>
 
     <?php
@@ -31,7 +31,7 @@ if($car_search == ''){
     ?>
 
     <div class="numeric">
-        <p><strong>Car</strong> > Size <?php echo $size."'>".$p?></p>
+        <p><strong>Car</strong> > Size <?php echo $size."'> page".$p?></p>
     </div>
 
     <?php
@@ -119,7 +119,7 @@ $pages=ceil($total/$count);
             <li onclick="reset()" class="page-item"><span class="page-link" onclick="getData('car.php?p=<?php echo $i ?>&type=<?php echo $car_type ?>');"><?php echo $i?></span></li>
 <?php  }else{
         ?>
-            <li onclick="reset()" class="page-item"><span class="page-link" onclick="getData('car.php?p=<?php echo $i ?>&carType=<?php echo $car_type.'&size='.$size?>');"><?php echo $i?></span></li>
+            <li onclick="reset()" class="page-item"><span class="page-link" onclick="getData('car.php?p=<?php echo $i ?>&carType=<?php echo $car_search.'&size='.$size?>');"><?php echo $i?></span></li>
        <?php }
     }
     ?>

@@ -33,13 +33,13 @@ $count=$item_row*$item_column;
 if($car_model == ''){
     ?>
     <div class="numeric">
-        <p id="test"><strong>WHELL</strong> > <?php echo $rim_size."'>".$p?></p>
+        <p id="test"><strong>WHELL</strong> > <?php echo $rim_size."'> page".$p?></p>
     </div>
     <?php
 }else{
     ?>
     <div class="numeric">
-        <p><strong><?php echo $plot_range[0];?></strong> > <?php echo $size_range."'>".$p?></p>
+        <p><strong><?php echo $plot_range[0];?></strong> > <?php echo $size_range."'> page".$p?></p>
     </div>
     <?php
 }

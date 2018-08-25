@@ -31,7 +31,7 @@ switch ($category) {
     ?>
 
     <div class="numeric" onclick="reset()">
-        <p id="test"><strong><?php echo $title ?></strong> > <?php echo $p?></p>
+        <p id="test"><strong><?php echo $title ?></strong> > page<?php echo $p?></p>
     </div>
 
     <?php
