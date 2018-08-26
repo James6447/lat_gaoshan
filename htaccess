@@ -6,4 +6,3 @@ RewriteRule product.html$ product.php
 RewriteRule services.html$ services.php
 RewriteRule brands.html$ brands.php
 </IfModule>
-

@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>SERVICES</title>
+  <title>LauSincere Autowagon Services-SERVICES,高山輪胎有限公司,Johor Bahru</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <META NAME="Author" CONTENT="LauSincere Autowagon Services - 高山輪胎有限公司">
+  <META HTTP-EQUIV="Keywords" CONTENT="tyres maintenance,LauSincere,LauSincere Autowagon Services, Services, engine oil maintenance,Trading Of Tyres And Batteries Of Motor Vehicles,johor bahru,高山輪胎有限公司">
+  <META HTTP-EQUIV="Description" CONTENT="http://www.lausincere.com, Automotive Repair Shop, tyres, engine oil, vihicle services,Johor Bahru.">
+
   <noscript><iframe src=*.html></iframe></noscript>
   <link rel="icon" type="image/png" href="img/logo-1.png" />
   <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -64,7 +69,7 @@
               </iframe>
               </div>
               <div class="modal-body"><br>
-              Tire maintenance for motor vehicles is based on several factors. 
+              Tire maintenance for motor vehicles is based on several factors.
               The chief reason for tire replacement is friction from moving contact with road surfaces,causing the tread on the outer perimeter of tires to eventually wear away. When the tread depth becomes too shallow (less than 0.125in./3.2mm), the tire is worn out and should be replaced.
               The same wheels can usually be used throughout the lifetime of the car.<br><br>
               <span class="message-notice">* If these few following step bothering you, please contact us for more professional services.<br></span>
@@ -188,7 +193,7 @@
         <div class="card-body ">
           <h4 class ="card-title">Maintain Your Own Car</h4>
           <p class="card-text">Amidst all the benefits of owning an automobile, it is imperative to maintain your car if you wish to enjoy it for a long time. Frequent automobile care extends the lifespan of the vehicle and keeps it running smoothly without any safety concerns. By keeping your vehicle in its prime condition through regular maintenance, you can also retain the optimal value for when you wish to sell your car.
-          Therefore, we have compiled a list of comprehensive maintenance tips to keep the operational performance and aesthetic integrity of your car intact:</p>          
+          Therefore, we have compiled a list of comprehensive maintenance tips to keep the operational performance and aesthetic integrity of your car intact:</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal3">
             <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
@@ -302,7 +307,7 @@
               In addition, you need to keep your front, and rear view mirrors clean since they provide an essential all-encompassing view of the road necessary for safe driving. Fix any mirrors, broken in an accident, immediately and give them a regularly wipe for an unobscured sight.<br><br>
               Finally, the light fixtures on your car have important jobs and should not be overlooked during regular maintenance. To ensure that they are all in perfect working condition, ask a friend to go around the car while you switch on each light. Replace any broken or faulty bulbs immediately, especially the headlights. You can do it yourself in a few simple steps.<br><br>
               <span class="message-notice">* If these few following step bothering you, please contact us for more professional services.<br></span></div>
-              
+
               <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
