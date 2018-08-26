@@ -121,21 +121,19 @@ $(document).ready(function() {
 
 /* ------------------------end-------------------------- */
 //Animate contact icon
+function toHead(){
+	$("html, body").animate(
+	  {
+		scrollTop: $("html").offset().top
+	  },
+	  250
+	);
+}
 $("#head").click(function() {
-  $("html, body").animate(
-    {
-      scrollTop: $("html").offset().top
-    },
-    250
-  );
+	toHead();
 });
 $(".list-group li").click(function() {
-  $("html, body").animate(
-    {
-      scrollTop: $("html").offset().top
-    },
-    250
-  );
+	toHead();
 });
 
 function backTop() {
@@ -279,16 +277,25 @@ function initMap() {
   });
 
   $("#brand1").click(function() {
+	 if($(window).width() <= 768){
+		 	 toHead();
+	 }
     infowindow.open(map, marker);
     infowindow1.close(map, marker1);
     infowindow2.close(map, marker2);
   });
   $("#brand2").click(function() {
+	  if($(window).width() <= 768){
+			  toHead();
+	  }
     infowindow1.open(map, marker1);
     infowindow.close(map, marker);
     infowindow2.close(map, marker2);
   });
   $("#brand3").click(function() {
+	  if($(window).width() <= 768){
+			  toHead();
+	  }
     infowindow2.open(map, marker2);
     infowindow1.close(map, marker1);
     infowindow.close(map, marker);
@@ -300,4 +307,6 @@ function moveToLocation(lat, lng) {
   // using global variable:
   map.panTo(center);
 }
+
+
 /* ------------------------end-------------------------- */
