@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <noscript><iframe src=*.html></iframe></noscript>
-  <link rel="icon" type="image/png" href="../img/logo-1.png" />
+  <link rel="icon" type="../image/png" href="../img/logo-1.png" />
   <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/footer.css" rel="stylesheet">
