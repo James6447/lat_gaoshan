@@ -5,20 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <noscript><iframe src=*.html></iframe></noscript>
-  <link rel="icon" type="image/png" href="img/logo-1.png" />
+  <link rel="icon" type="image/png" href="../img/logo-1.png" />
   <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/footer.css" rel="stylesheet">
-  <link href="css/head.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/footer.css" rel="stylesheet">
+  <link href="../css/head.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/brands.css" integrity="sha384-VGCZwiSnlHXYDojsRqeMn3IVvdzTx5JEuHgqZ3bYLCLUBV8rvihHApoA1Aso2TZA" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
-  <link href="css/service.css" rel="stylesheet">
-  <link href="css/header.css" rel="stylesheet">
-  <script src="js/jquery.js"></script>
-  <script src="js/header.js"></script>
-  <script src="js/win.js"></script>
-  <script src="js/main.js"></script>
+  <link href="../css/service.css" rel="stylesheet">
+  <link href="../css/header.css" rel="stylesheet">
+  <script src="../js/jquery.js"></script>
+  <script src="../js/header.js"></script>
+  <script src="../js/win.js"></script>
+  <script src="../js/main.js"></script>
 </head>
 <body  onscroll="backTop()">
   <?php
@@ -41,7 +41,7 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
-          src="img/Tire Maintenance.jpg">
+          src="../img/Tire Maintenance.jpg">
         <div class="card-body ">
           <h4 class ="card-title">轮胎维护</h4>
           <p class="card-text">有的时侯，轮胎会出现内部空气泄漏导致轮胎爆裂，必须避免这种情况，以便确保驾驶者不会有任何顾虑的行驶在路上。</p>
@@ -81,7 +81,7 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
-          src="img/Battery Service.jpg">
+          src="../img/Battery Service.jpg">
         <div class="card-body ">
           <h4 class ="card-title">蓄电池服务</h4>
           <p class="card-text"> 汽车在平时状态下电池并不会出现太大问题，当经过长时间的行驶电池的状态电量可能会因此耗光，所以定期维护电池是每个驾驶所需要知道的。</p>
@@ -100,7 +100,7 @@
                 </button>
               </div>
               <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/Battery Service.jpg">
+              src="../img/Battery Service.jpg">
               <div class="modal-body"><br>
               汽车在平时状态下电池并不会出现太大问题，当经过长时间的行驶电池的状态电量可能会因此耗光，所以定期维护电池是每个驾驶所需要知道的。<br>
               以下是轻松更换电池的几个步骤：<br><br>
@@ -124,7 +124,7 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
-          src="img/Service.jpg">
+          src="../img/Service.jpg">
         <div class="card-body ">
           <h4 class ="card-title">服务</h4>
           <p class="card-text">车辆服务在车辆行驶一定距离之后设定的时间然后执行的一系列维护程序。维修间隔由车辆制造商在维修计划中指定，并且一些现代车辆在仪表板上以电子方式显示下一维修的到期日。</p>
@@ -143,7 +143,7 @@
                 </button>
               </div>
               <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/Service.jpg">
+              src="../img/Service.jpg">
               <div class="modal-body"><br>
               车辆维护在车辆行驶一定距离之后设定的时间然后执行的一系列维护程序。维修间隔由车辆制造商在维修计划中指定，并且一些现代车辆在仪表板上以电子方式显示下一维修的到期日。<br>
               通常在汽车服务期间执行的维护任务包括：<br><br>
@@ -180,7 +180,7 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
-          src="img/point.jpg">
+          src="../img/point.jpg">
         <div class="card-body ">
           <h4 class ="card-title">如何自己维护车子</h4>
           <p class="card-text">拥有汽车有非常多好处，如果您希望长时间享受汽车，必须维护您的汽车。频繁的汽车保养延长了车辆的使用寿命，使其保持平稳运行，不存在任何安全问题。通过定期维护使您的车辆保持在最佳状态，您还可以保留最佳价值，以便在您想要出售汽车时使用。因此，我们编制了一份全面的维护技巧列表，以确保您的汽车的运行性能和美观完整性</p>          
@@ -199,7 +199,7 @@
                 </button>
               </div>
               <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/point1.jpg">
+              src="../img/point1.jpg">
               <div class="modal-body"><br>
               拥有汽车有非常多好处，如果您希望长时间享受汽车，必须维护您的汽车。频繁的汽车保养延长了车辆的使用寿命，使其保持平稳运行，不存在任何安全问题。通过定期维护使您的车辆保持在最佳状态，您还可以保留最佳价值，以便在您想要出售汽车时使用。因此，我们编制了一份全面的维护技巧列表，以确保您的汽车的运行性能和美观完整性<br><br>
               您要做的事情去维护自己的汽车 
@@ -227,7 +227,7 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
-          src="img/checktyre.jpg">
+          src="../img/checktyre.jpg">
         <div class="card-body ">
           <h4 class ="card-title">检查轮胎<</h4>
           <p class="card-text">您应定期检查轮胎压力，因为它不仅会影响汽车的舒适性，安全性和操控性，还会影响燃油效率。轮胎的不充分膨胀会妨碍车轮正确停止的能力并增加轮胎爆胎的可能性。</p>
@@ -246,7 +246,7 @@
                 </button>
               </div>
               <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/checktyre1.jpg">
+              src="../img/checktyre1.jpg">
               <div class="modal-body"><br>
               您应定期检查轮胎压力，因为它不仅会影响汽车的舒适性，安全性和操控性，还会影响燃油效率。轮胎的不充分膨胀会妨碍车轮正确停止的能力并增加轮胎爆胎的可能性。<br><br>
               您可以每周检查轮胎压力，但专家建议您每次填充气体时都要这样做。频繁的监控可以让您立即发现任何问题，因为轮胎压力会因温度波动和里程积累而不断变化。制造商的手册规定了推荐的轮胎压力。<br><br>
@@ -266,7 +266,7 @@
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
-          src="img/wind.jpg">
+          src="../img/wind.jpg">
         <div class="card-body ">
           <h4 class ="card-title">清洁并修复</h4>
           <p class="card-text">清洁并固定挡风玻璃，后视镜和灯具，脏的挡风玻璃是一种安全隐患，因为它可能会在驾驶时遮挡您的视线，并且看起来也很不舒服。因此，请定期用海绵和清洁液擦拭挡风玻璃，具体取决于您当天登记的里程数，每日路线的数量以及停放车辆的位置。</p>
@@ -285,7 +285,7 @@
                 </button>
               </div>
               <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/wind1.jpg">
+              src="../img/wind1.jpg">
               <div class="modal-body"><br>
               
               清洁并固定挡风玻璃，后视镜和灯具，脏的挡风玻璃是一种安全隐患，因为它可能会在驾驶时遮挡您的视线，并且看起来也很不舒服。因此，请定期用海绵和清洁液擦拭挡风玻璃，具体取决于您当天登记的里程数，每日路线的数量以及停放车辆的位置。<br><br>
@@ -316,11 +316,11 @@ include('footer.html');
 ?>
 
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4.2.1/dist/masonry.pkgd.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/services.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/services.js"></script>
 </body>
 
 
