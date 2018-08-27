@@ -24,7 +24,11 @@
   <?php
   include('header.html');
   ?>
+<<<<<<< HEAD:chineese/services.php
+<h1 class="breadcrumb-title"><span class="brand-title"><img src='../img/Service.png'></span>&nbsp;&nbsp;&nbsp;Services</h1>
+=======
 <h1 class="breadcrumb-title"><span class="brand-title"><img src='img/Service.png'></span>&nbsp;&nbsp;&nbsp;服务</h1>
+>>>>>>> b8b00f5d7abad031e9cfcab9dd22d65e2c4f5552:chinese/services.php
 <div id="containersevices">
     <div class="videoyou">
       <iframe class="youtubeclass" width="100%" height="100%"
