@@ -24,7 +24,7 @@
   <?php
   include('header.html');
   ?>
-<h1 class="breadcrumb-title"><span class="brand-title"><img src='img/Service.png'></span>&nbsp;&nbsp;&nbsp;Services</h1>
+<h1 class="breadcrumb-title"><span class="brand-title"><img src='../img/Service.png'></span>&nbsp;&nbsp;&nbsp;Services</h1>
 <div id="containersevices">
     <div class="videoyou">
       <iframe class="youtubeclass" width="100%" height="100%"
@@ -307,8 +307,8 @@
   </div>
 </div>
 <!-- linked main.css-->
-<a id="fb" class="link-facebook animated infinite bounce" href="https://web.facebook.com/Lausincereautowagon/" target="_blank" onmousemove="stop()" onmouseout="start()"><img src="img/button fb.png"></a>
-<span class="link-menu" id="head" ><img src="img/button up.png"></span>
+<a id="fb" class="link-facebook animated infinite bounce" href="https://web.facebook.com/Lausincereautowagon/" target="_blank" onmousemove="stop()" onmouseout="start()"><img src="../img/button fb.png"></a>
+<span class="link-menu" id="head" ><img src="../img/button up.png"></span>
 
 <!-- Footer -->
 <?php
