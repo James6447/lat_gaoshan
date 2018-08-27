@@ -66,6 +66,11 @@ $("#search-bar").hover(function() {
   $("#type").toggle("fast");
 });
 
+$("#translate").hover(function() {
+  $("#text").toggle("1s");
+  $("#pic").toggle("1s");
+});
+
 $(document).ready(function() {
   var search_bar = $("#type").width();
   var select_box = search_bar / 2;
@@ -170,15 +175,15 @@ function start() {
 }
 
 $(".brand-1").hover(function() {
-  $(".main-background").css("background-image", "url('/lat_gaoshan/img/brand-1.jpg')");
+  $(".main-background").css("background-image", "url('/img/brand-1.jpg')");
 });
 
 $(".brand-2").hover(function() {
-  $(".main-background").css("background-image", "url('/lat_gaoshan/img/brand-2.jpg')");
+  $(".main-background").css("background-image", "url('/img/brand-2.jpg')");
 });
 
 $(".brand-3").hover(function() {
-  $(".main-background").css("background-image", "url('/lat_gaoshan/img/brand-3.jpg')");
+  $(".main-background").css("background-image", "url('/img/brand-3.jpg')");
 });
 
 /* ------------------------end-------------------------- */

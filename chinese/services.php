@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <noscript><iframe src=*.html></iframe></noscript>
-  <link rel="icon" type="image/png" href="../img/logo-1.png" />
+  <link rel="icon" type="../image/png" href="../img/logo-1.png" />
   <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/footer.css" rel="stylesheet">
@@ -24,7 +24,11 @@
   <?php
   include('header.html');
   ?>
+<<<<<<< HEAD:chineese/services.php
 <h1 class="breadcrumb-title"><span class="brand-title"><img src='../img/Service.png'></span>&nbsp;&nbsp;&nbsp;Services</h1>
+=======
+<h1 class="breadcrumb-title"><span class="brand-title"><img src='img/Service.png'></span>&nbsp;&nbsp;&nbsp;服务</h1>
+>>>>>>> b8b00f5d7abad031e9cfcab9dd22d65e2c4f5552:chinese/services.php
 <div id="containersevices">
     <div class="videoyou">
       <iframe class="youtubeclass" width="100%" height="100%"
@@ -183,7 +187,7 @@
           src="../img/point.jpg">
         <div class="card-body ">
           <h4 class ="card-title">如何自己维护车子</h4>
-          <p class="card-text">拥有汽车有非常多好处，如果您希望长时间享受汽车，必须维护您的汽车。频繁的汽车保养延长了车辆的使用寿命，使其保持平稳运行，不存在任何安全问题。通过定期维护使您的车辆保持在最佳状态，您还可以保留最佳价值，以便在您想要出售汽车时使用。因此，我们编制了一份全面的维护技巧列表，以确保您的汽车的运行性能和美观完整性</p>          
+          <p class="card-text">拥有汽车有非常多好处，如果您希望长时间享受汽车，必须维护您的汽车。频繁的汽车保养延长了车辆的使用寿命，使其保持平稳运行，不存在任何安全问题。通过定期维护使您的车辆保持在最佳状态，您还可以保留最佳价值，以便在您想要出售汽车时使用。因此，我们编制了一份全面的维护技巧列表，以确保您的汽车的运行性能和美观完整性</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal3">
             <div class="txtbtn">了解更多</div> <i class="fa fa-arrow-right"></i>
@@ -202,7 +206,7 @@
               src="../img/point1.jpg">
               <div class="modal-body"><br>
               拥有汽车有非常多好处，如果您希望长时间享受汽车，必须维护您的汽车。频繁的汽车保养延长了车辆的使用寿命，使其保持平稳运行，不存在任何安全问题。通过定期维护使您的车辆保持在最佳状态，您还可以保留最佳价值，以便在您想要出售汽车时使用。因此，我们编制了一份全面的维护技巧列表，以确保您的汽车的运行性能和美观完整性<br><br>
-              您要做的事情去维护自己的汽车 
+              您要做的事情去维护自己的汽车
               <br>
               <li>检查轮胎</li>
               <li>换油</li>
@@ -287,13 +291,13 @@
               <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
               src="../img/wind1.jpg">
               <div class="modal-body"><br>
-              
+
               清洁并固定挡风玻璃，后视镜和灯具，脏的挡风玻璃是一种安全隐患，因为它可能会在驾驶时遮挡您的视线，并且看起来也很不舒服。因此，请定期用海绵和清洁液擦拭挡风玻璃，具体取决于您当天登记的里程数，每日路线的数量以及停放车辆的位置。<br><br>
               挡风玻璃刮水器每年需要更换一次，因为它们在使用时会磨损。在雨季，撕裂的雨刷无法充分发挥作用，并且可能构成安全威胁，特别是如果您在倾盆大雨中行驶。您可以根据其状况仅更换雨刷片或整个组件。<br><br>
               此外，您需要保持前视镜和后视镜的清洁，因为它们提供了安全驾驶所必需的全方位视野。修理任何在事故中损坏的镜子，立即给他们定期擦拭，以防止视线模糊。<br><br>
               最后，您车上的灯具有重要的工作，在定期维护时不应忽视。为了确保它们都处于完美的工作状态，请在打开每个灯时让朋友绕过汽车。立即更换任何破损或有故障的灯泡，尤其是前灯。您可以通过几个简单的步骤自己完成。<br><br>
               <span class="message-notice">*  如果以下几个步骤困扰您，请联系我们以获得更专业的服务。<br></span></div>
-              
+
               <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
               </div>

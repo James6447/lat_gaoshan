@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <noscript><iframe src=*.html></iframe></noscript>
-  <link rel="icon" type="image/png" href="img/logo-1.png" />
+  <link rel="icon" type="../image/png" href="img/logo-1.png" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="../css/bootstrap.min.css" rel="stylesheet">

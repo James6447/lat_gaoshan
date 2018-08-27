@@ -10,7 +10,7 @@
   <META HTTP-EQUIV="Keywords" CONTENT="tyres maintenance,LauSincere Autowagon Services, Services,engine oil, services,Trading Of Tyres And Batteries Of Motor Vehicles,johor bahru,高山輪胎有限公司">
   <META HTTP-EQUIV="Description" CONTENT="http://www.lausincere.com, Automotive Repair Shop, tyres, engine oil, vihicle services">
 
-  <link rel="icon" type="image/png" href="../img/logo-1.png" />
+  <link rel="icon" type="../image/png" href="../img/logo-1.png" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/main.css" rel="stylesheet">
@@ -157,8 +157,8 @@
 
 
 <!-- linked main.css-->
-<a id="fb" class="link-facebook animated infinite bounce" href="https://web.facebook.com/Lausincereautowagon/" target="_blank" onmousemove="stop()" onmouseout="start()"><img src="img/button fb.png"></a>
-<span class="link-menu" id="head" ><img src="i../mg/button up.png"></span>
+<a id="fb" class="link-facebook animated infinite bounce" href="https://web.facebook.com/Lausincereautowagon/" target="_blank" onmousemove="stop()" onmouseout="start()"><img src="../img/button fb.png"></a>
+<span class="link-menu" id="head" ><img src="../img/button up.png"></span>
 
 <!-- Footer -->
 <?php
