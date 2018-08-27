@@ -125,6 +125,15 @@
 .closss2 {
   opacity: 0;
 }
+#translate{
+  padding: 8px 60px;
+  overflow: hidden;
+  text-align: center;
+}
+#text{
+  display: none;
+  color: black;
+}
 @media screen and (max-width: 1024.98px) {
   .logodiv {
     max-width: 100%;
