@@ -1,3 +1,9 @@
+<?php
+require 'CombainKeywords.class.php';
+$arr = array('tyres maintenance','LauSincere','LauSincere Autowagon Services', 'Services', 'engine oil maintenance','Trading Of Tyres And Batteries Of Motor Vehicles','johor bahru','高山輪胎有限公司');
+$sort_handle = new CombainKeywords();
+$sort = $sort_handle->sortKeywords($arr, 2);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +13,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <META NAME="Author" CONTENT="LauSincere Autowagon Services - 高山輪胎有限公司">
-  <META HTTP-EQUIV="Keywords" CONTENT="tyres maintenance,LauSincere,LauSincere Autowagon Services, Services, engine oil maintenance,Trading Of Tyres And Batteries Of Motor Vehicles,johor bahru,高山輪胎有限公司">
+  <!-- <META HTTP-EQUIV="Keywords" CONTENT="tyres maintenance,LauSincere,LauSincere Autowagon Services, Services, engine oil maintenance,Trading Of Tyres And Batteries Of Motor Vehicles,johor bahru,高山輪胎有限公司"> -->
+<?php
+  echo '<META HTTP-EQUIV="Keywords" CONTENT="';
+  foreach ($sort as $value) {
+      echo $value.',';
+  }
+  echo '">';
+ ?>
   <META HTTP-EQUIV="Description" CONTENT="http://www.lausincere.com, Automotive Repair Shop, tyres, engine oil, vihicle services,Johor Bahru.">
 
   <link rel="icon" type="image/png" href="img/logo-1.png" />
