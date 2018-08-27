@@ -23,7 +23,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <META HTTP-EQUIV="Keywords" CONTENT="tyres maintenance,LauSincere Autowagon Services, Services,engine oil, services,Trading Of Tyres And Batteries Of Motor Vehicles,johor bahru,高山輪胎有限公司">
   <META HTTP-EQUIV="Description" CONTENT="LauSincere Autowagon Services Tyres Rim Preview, Car Moedel Review, Accessories, Trading Of Tyres And Batteries Of Motor Vehicles,johor bahru,高山輪胎有限公司">
-  <link rel="icon" type="../image/png" href="img/logo-1.png" />
+  <link rel="icon" type="image/png" href="../img/logo-1.png" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/main.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 
 <body  onscroll="backTop()" id="ins" onload="getProduct('<?php echo $condition?>');" >
 <?php include('header.html') ?>
-<h1 class="breadcrumb-title"><span class="brand-title"><img src='img/product.png'></span>&nbsp;&nbsp;&nbsp;产品<span>&nbsp;&nbsp;&nbsp;</h1>
+<h1 class="breadcrumb-title"><span class="brand-title"><img src='../img/product.png'></span>&nbsp;&nbsp;&nbsp;产品<span>&nbsp;&nbsp;&nbsp;</h1>
 <!-- sidebar main.css -->
 <div class="row col-12" >
   <div class="col-lg-3 col-sm-3 col-3" >
@@ -151,7 +151,7 @@
 include('footer.html');
 ?>
 
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
 <!-- <script src="js/jquery.min.js"></script> -->
  <script src="http://libs.baidu.com/jquery/1.8.1/jquery.min.js"></script>
   <script src="../js/main.js"></script>

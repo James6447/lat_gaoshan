@@ -46,7 +46,7 @@
                     <p class="col-md-6">By Year</p>
                 </div> -->
                 <div class="row col-md-12">
-                 <form action="product.php" method="post">
+                 <form action="cnproduct.html" method="post">
                      <div class="col-md-6 col-xs-12 ">
                          <p class="col-md-6">车款</p>
                           <select id="typeCar" class="maintain" name="carType"  onchange="TypeFunc();">
@@ -84,7 +84,7 @@
               <div class="dropdown-item item-wrapper">
                 <div class="row col-md-12">
                      <div class="col-md-6 col-12">
-                         <form action="product.php" method="post">
+                         <form action="cnproduct.html" method="post">
                              <div class="col-md-6">
                                  <p>车款</p>
                                   <select id="typeModel" class="maintain" name="rimType">
