@@ -37,7 +37,7 @@
 
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              车款寻找
+              车款
             </button>
              <div id="vihicle-wrapper" class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-item item-wrapper">
@@ -78,7 +78,7 @@
       <div class="size">
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            尺寸寻找
+            尺寸
           </button>
           <div id="size-wrapper" class="dropdown-menu">
               <div class="dropdown-item item-wrapper">
