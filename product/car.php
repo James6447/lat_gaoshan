@@ -82,7 +82,7 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3">
-             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/car/'.$row['img_path'].'.png' ?>" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/car/'.$row['img_path'].'.png' ?>" data-action="zoom" alt="Card image cap">
              <div class="card-body">
                  <?php
                     $plot = preg_split("/\//",$row['img_path']);

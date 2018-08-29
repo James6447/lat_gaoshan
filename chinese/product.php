@@ -104,7 +104,7 @@
 
           <nav class="hot">
             <ul>
-              <li><a href="#">热销</a>
+              <li><a>热销</a>
                 <ul class="list-group list-group-flush" >
                   <li class="list-group-item space">&nbsp;</li>
                    <li class="list-group-item"><img src="../img/rim.jpg">

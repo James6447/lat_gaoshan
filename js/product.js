@@ -62,8 +62,16 @@ function getProduct(pageName){
   var req=new XMLHttpRequest();
   req.open("get","http://localhost:5566/lat_gaoshan/product/"+pageName);
   req.onload=function(){
-    var content=document.getElementById("change");
+    let app = $(window).width();
+    let content=document.getElementById("change");
     change.innerHTML=this.responseText;
+    //remove atribute zoom in photo
+    if(app <= 769){
+        let cls = document.getElementsByClassName('card-img-top');
+        for(var i = 0; i < cls.length; i++) {
+           cls[i].removeAttribute('data-action');
+        }
+    }
   };
   req.send();
 }
@@ -71,29 +79,45 @@ function getProduct(pageName){
 //   var req=new XMLHttpRequest();
 //   req.open("get","http://www.lausincere.com/product/"+pageName);
 //   req.onload=function(){
-//     var content=document.getElementById("change");
-//     change.innerHTML=this.responseText;
+//       let app = $(window).width();
+//       let content=document.getElementById("change");
+//       change.innerHTML=this.responseText;
+//       //remove atribute zoom in photo
+//       if(app <= 769){
+//           let cls = document.getElementsByClassName('card-img-top');
+//           for(var i = 0; i < cls.length; i++) {
+//              cls[i].removeAttribute('data-action');
+//           }
+//       }
 //   };
 //   req.send();
 // }
 
 
-function getData(pageName){
-  var req=new XMLHttpRequest();
-  req.open("get","http://localhost:5566/lat_gaoshan/product/"+pageName);
-  req.onload=function(){
-    var content=document.getElementById("change");
-    change.innerHTML=this.responseText;
-    // console.log(document.getElementById("test").textContent);
-  };
-  req.send();
-}
+// function getData(pageName){
+//   var req=new XMLHttpRequest();
+//   req.open("get","http://localhost:5566/lat_gaoshan/product/"+pageName);
+//   req.onload=function(){
+//     var content=document.getElementById("change");
+//     change.innerHTML=this.responseText;
+//     // console.log(document.getElementById("test").textContent);
+//   };
+//   req.send();
+// }
 // function getData(pageName){
 //   var req=new XMLHttpRequest();
 //   req.open("get","http://www.lausincere.com/product/"+pageName);
 //   req.onload=function(){
-//     var content=document.getElementById("change");
-//     change.innerHTML=this.responseText;
+//       let app = $(window).width();
+//       let content=document.getElementById("change");
+//       change.innerHTML=this.responseText;
+//       //remove atribute zoom in photo
+//       if(app <= 769){
+//           let cls = document.getElementsByClassName('card-img-top');
+//           for(var i = 0; i < cls.length; i++) {
+//              cls[i].removeAttribute('data-action');
+//           }
+//       }
 //   };
 //   req.send();
 // }

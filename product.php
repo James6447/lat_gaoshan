@@ -116,7 +116,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 
           <nav class="hot">
             <ul>
-              <li><a href="#">BEST SELLER</a>
+              <li><a >BEST SELLER</a>
                 <ul class="list-group list-group-flush" >
                   <li class="list-group-item space">&nbsp;</li>
                    <li class="list-group-item"><img src="img/rim.jpg">
