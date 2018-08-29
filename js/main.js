@@ -174,18 +174,6 @@ function start() {
   element.classList.add("bounce");
 }
 
-$(".brand-1").hover(function() {
-  $(".main-background").css("background-image", "url('/img/brand-1.jpg')");
-});
-
-$(".brand-2").hover(function() {
-  $(".main-background").css("background-image", "url('/img/brand-2.jpg')");
-});
-
-$(".brand-3").hover(function() {
-  $(".main-background").css("background-image", "url('/img/brand-3.jpg')");
-});
-
 /* ------------------------end-------------------------- */
 
 //GOOGLE MAP API
@@ -307,7 +295,48 @@ function initMap() {
   });
 }
 
-function moveToLocation(lat, lng) {
+document.getElementById("brand1").addEventListener("mouseover", function() {
+	$(".main-background").css("background-image", "url('/img/brand-1.jpg')");
+    toggle('brand1');
+});
+document.getElementById("brand2").addEventListener("mouseover", function() {
+	$(".main-background").css("background-image", "url('/img/brand-2.jpg')");
+    toggle('brand2');
+});
+document.getElementById("brand3").addEventListener("mouseover", function() {
+	$(".main-background").css("background-image", "url('/img/brand-3.jpg')");
+    toggle('brand3');
+});
+document.getElementById("brand1").addEventListener("mouseout", function() {
+    toggle('brand1','1');
+});
+document.getElementById("brand2").addEventListener("mouseout", function() {
+    toggle('brand2','1');
+});
+document.getElementById("brand3").addEventListener("mouseout", function() {
+    toggle('brand3','1');
+});
+
+
+function toggle(id,change) {
+	if(change == 1){
+		document.getElementById(id).style.opacity = '0.6';
+	}else {
+		document.getElementById(id).style.opacity = '1';
+	}
+	// alert(id);
+}
+
+function moveToLocation(lat, lng,id) {
+ let numberOfRects = 3;
+  for (var i = 1; i <= numberOfRects; i++) {
+	  document.getElementById('brand'+i).style.opacity = '0.6';
+  }
+
+  document.getElementById(id).style.opacity = '1';
+  document.getElementById(id).style.transition = 'opacity 0.3s linear';
+  document.getElementById(id).style.transform = 'scale(1.04)';
+
   var center = new google.maps.LatLng(lat, lng);
   // using global variable:
   map.panTo(center);
