@@ -118,10 +118,10 @@ if ($empty != 1){
     for($i=1;$i<=$pages;$i++){
         if($car_search == ''){
         ?>
-            <li onclick="reset()" class="page-item"><span class="page-link" onclick="getData('car.php?p=<?php echo $i ?>&type=<?php echo $car_type ?>');"><?php echo $i?></span></li>
+            <li onclick="reset()" class="page-item"><span class="page-link" onclick="getProduct('car.php?p=<?php echo $i ?>&type=<?php echo $car_type ?>');"><?php echo $i?></span></li>
 <?php  }else{
         ?>
-            <li onclick="reset()" class="page-item"><span class="page-link" onclick="getData('car.php?p=<?php echo $i ?>&carType=<?php echo $car_search.'&size='.$size?>');"><?php echo $i?></span></li>
+            <li onclick="reset()" class="page-item"><span class="page-link" onclick="getProduct('car.php?p=<?php echo $i ?>&carType=<?php echo $car_search.'&size='.$size?>');"><?php echo $i?></span></li>
        <?php }
     }
     ?>

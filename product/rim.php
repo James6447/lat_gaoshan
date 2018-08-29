@@ -121,11 +121,11 @@ if ($empty != 1){
     for($i=1;$i<=$pages;$i++){
         if($car_model == ''){
             ?>
-        <li onclick="reset()" class="page-item"><span id="reset" class="page-link" onclick="getData('rim.php?p=<?php echo $i ?>&inch=<?php echo $rim_size ?>');"><?php echo $i?></span></li>
+        <li onclick="reset()" class="page-item"><span id="reset" class="page-link" onclick="getProduct('rim.php?p=<?php echo $i ?>&inch=<?php echo $rim_size ?>');"><?php echo $i?></span></li>
 <?php
         }
     else {?>
-        <li onclick="reset()" class="page-item"><span id="reset" class="page-link" onclick="getData('rim.php?p=<?php echo $i ?>&carModel=<?php echo $car_model ?>');"><?php echo $i?></span></li>
+        <li onclick="reset()" class="page-item"><span id="reset" class="page-link" onclick="getProduct('rim.php?p=<?php echo $i ?>&carModel=<?php echo $car_model ?>');"><?php echo $i?></span></li>
     <?php
         }
     }
