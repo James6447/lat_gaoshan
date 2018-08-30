@@ -59,7 +59,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                     <p class="col-md-6">By Year</p>
                 </div> -->
                 <div class="row col-md-12">
-                 <form action="product.html" method="post">
+                 <form action="product.php" method="post">
                      <div class="col-md-6 col-xs-12 ">
                          <p class="col-md-6">CAR BRANDS</p>
                           <select id="typeCar" class="maintain" name="carType"  onchange="TypeFunc();">
@@ -97,7 +97,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
               <div class="dropdown-item item-wrapper">
                 <div class="row col-md-12">
                      <div class="col-md-6 col-12">
-                         <form action="product.html" method="post">
+                         <form action="product.php" method="post">
                              <div class="col-md-6">
                                  <p>By Brand</p>
                                   <select id="typeModel" class="maintain" name="rimType">

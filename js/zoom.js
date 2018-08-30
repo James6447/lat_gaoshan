@@ -102,7 +102,7 @@
   }
 
   ZoomService.prototype._touchStart = function (e) {
-    this._initialTouchPosition = e.touches[0].pageY
+    // this._initialTouchPosition = e.touches[0].pageY
     $(e.target).on('touchmove.zoom', $.proxy(this._touchMove, this))
   }
 
@@ -204,7 +204,7 @@
     this._translateY = viewportY - imageCenterY
     this._translateX = viewportX - imageCenterX
 
-    var targetTransform = 'scale(' + this._imgScaleFactor + ')'
+    var targetTransform = 'scale(' + 2.5 + ')'
     var imageWrapTransform = 'translate(' + this._translateX + 'px, ' + this._translateY + 'px)'
 
     if ($.support.transition) {

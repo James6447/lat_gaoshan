@@ -179,8 +179,11 @@ iframe {
 .card-deck .card img {
   cursor: pointer;
   transition: all 0.3s;
-  height: 52%;
+  height: 155px;
   box-shadow: 7px 7px 8px grey;
+  max-width: 300px;
+  min-width: 150px;
+
 }
 
 .card-deck .accossories img {
@@ -194,6 +197,7 @@ iframe {
 
 .card-img-top {
   width: 130%;
+  min-width: 180px;
 }
 
 .card-body {

@@ -73,7 +73,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                  <li class="list-group-item"></li>
               </ul>
 						</li>
-						<li><a href="">Car Type<span>+</span></a>
+						<li><a href="">CAR TYPE<span>+</span></a>
               <ul id="car" class="list-group list-group-flush">
                  <li class="list-group-item space">&nbsp;</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=1&name=AUDI')">AUDI</li>

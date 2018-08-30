@@ -53,7 +53,7 @@ if($car_model == ''){
     //show comment column
     $query1 ="SELECT * FROM t_rim
               WHERE inch=$rim_size
-              ORDER By type desc
+              -- ORDER By type desc
               limit $start,$item_column
               ";
 
@@ -63,7 +63,7 @@ if($car_model == ''){
     //show comment column
     $query1 ="SELECT * FROM t_rim
               WHERE inch BETWEEN $size_min AND $size_max
-              ORDER By type desc
+              -- ORDER By type desc
               limit $start,$item_column
               ";
     //判斷幾頁
@@ -88,7 +88,7 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3">
-             <img class="card-img-top" src="<?php echo '/img/rim/'.$row['img_path'].'.jpeg' ?>" data-action="zoom" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/rim/'.$row['img_path'].'.jpeg' ?>" data-action="zoom" alt="Card image cap">
              <div class="card-body">
                <h5 class="card-title"><?php echo 'RM '.$row['price'] ?></h5>
                <p class="card-text"><?php echo $row['type'] ?></p>
