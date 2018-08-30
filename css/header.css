@@ -125,14 +125,22 @@
 .closss2 {
   opacity: 0;
 }
-#translate{
-  padding: 7px 58px;
+#translate {
+  padding: 7px 58px 10px 58px;
   text-align: center;
 }
-#text{
+
+#translate a:hover {
+  text-decoration: unset;
+}
+
+#text {
   display: none;
-  color: black;
-  font-size: 12px;
+  color: #ffffff;
+  font-size: 16px;
+}
+#text:hover {
+  text-decoration: none;
 }
 @media screen and (max-width: 1024.98px) {
   .logodiv {
