@@ -97,6 +97,7 @@ p {
 }
 .effect {
   display: block;
+  margin-top: 15px;
 }
 .txtbtn {
   transition: margin 0.4s ease-out;
