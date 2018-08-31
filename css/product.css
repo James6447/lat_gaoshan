@@ -213,6 +213,10 @@ iframe {
   font-size: larger;
 }
 
+.page-selected{
+    color: #ff9933;
+}
+
 .arrow {
   border: 0px solid #a0a2a5;
 }

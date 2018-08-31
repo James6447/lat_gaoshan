@@ -40,4 +40,45 @@ class CombainKeywords
 
     }
 
+    public function pagination($parameters)
+    {
+        $page = isset($parameters['page']) ? $parameters['page'] : '1';
+        $p    = isset($parameters['p']) ? $parameters['p'] : '1';
+        $url_front = isset($parameters['url_front']) ? $parameters['url_front'] : '';
+        $url_back  = isset($parameters['url_back']) ? $parameters['url_back'] : '';
+
+        $tag  = '<nav aria-label="Page navigation example">';
+        $tag .= '<ul class="pagination justify-content-center">';
+        // $tag .= '<li class="page-item arrow">';
+        // $tag .= '<a class="page-link" aria-label="Previous">';
+        // $tag .= '<span aria-hidden="true">&laquo;</span>';
+        // $tag .= ' <span class="sr-only">Previous</span>';
+        // $tag .= '</a>';
+        // $tag .= '</li>';
+        for($i=1;$i<=$page;$i++){
+            $tag .= '<li onclick="reset()" class="page-item"><span id="reset" class="page-link" ';
+            $tag .= "onclick=".$url_front.$i;
+            $tag .= $url_back;
+            $tag .= "');>";
+                if($i == $p )
+                {
+                    $tag .= '<span class="page-selected">';
+                    $tag .= $i;
+                    $tag .= '<span class="sr-only">(current)</span>';
+                }else{
+                    $tag .= $i;
+                }
+            $tag .= '</span></li>';
+        }
+        // $tag .=  '<li class="page-item arrow">';
+        // $tag .=  '<a class="page-link" href="#" aria-label="Next">';
+        // $tag .=  '<span aria-hidden="true">&raquo;</span>';
+        // $tag .=  '<span class="sr-only">Next</span>';
+        // $tag .=  '</a>';
+        // $tag .=  '</li>';
+        $tag .=  '</ul>';
+        $tag .=  '</nav>';
+
+        return $tag;
+    }
 }

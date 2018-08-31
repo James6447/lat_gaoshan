@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+require '../CombainKeywords.class.php';
 require('../config.php');
 $category = $_GET['category'];
 
@@ -64,7 +65,7 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3 accossories">
-             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/accossories/'.$row['category'].'/'.$row['img_path'].'.jpg' ?>"  data-action="zoom" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo 'img/accossories/'.$row['category'].'/'.$row['img_path'].'.jpg' ?>"  data-action="zoom" alt="Card image cap">
              <div class="card-body">
                <h5 class="card-title"><?php echo $row['img_path']?></h5>
                <p class="card-text"><small class="text-muted"><?php echo'RM '.'PRICE'  ?></small></p>
@@ -78,29 +79,13 @@ $pages=ceil($total/$count);
   echo "</div>";
 }
 
+$parameters = array(
+    'page' => $pages,
+    'p'    => $p,
+    'url_front'  => "getProduct('accossories.php?p=",
+    'url_back'  => "&category=".$category,
+);
+$tag_handle = new CombainKeywords();
+$tag = $tag_handle->pagination($parameters);
+echo $tag;
 ?>
-
-
-<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <!-- <li class="page-item arrow">
-      <a class="page-link" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
-      </a>
-    </li> -->
-    <?php
-    for($i=1;$i<=$pages;$i++){
-            ?>
-        <li onclick="reset()" class="page-item"><span id="reset" class="page-link" onclick="getData('accossories.php?p=<?php echo $i.'&category='.$category ?>');"><?php echo $i?></span></li>
-<?php
-    }
-    ?>
-    <!-- <li class="page-item arrow">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
-      </a>
-    </li> -->
-  </ul>
-</nav>

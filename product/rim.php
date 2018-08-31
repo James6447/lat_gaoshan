@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+require '../CombainKeywords.class.php';
 require('../config.php');
 $rim_size = $_GET['inch'];
 $car_model = $_GET['carModel'];
@@ -88,7 +89,7 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3">
-             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/rim/'.$row['img_path'].'.jpeg' ?>" data-action="zoom" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo 'img/rim/'.$row['img_path'].'.jpeg' ?>" data-action="zoom" alt="Card image cap">
              <div class="card-body">
                <h5 class="card-title"><?php echo 'RM '.$row['price'] ?></h5>
                <p class="card-text"><?php echo $row['type'] ?></p>
@@ -108,33 +109,24 @@ if ($empty != 1){
 
 ?>
 
-
-<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <!-- <li class="page-item arrow">
-      <a class="page-link" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
-      </a>
-    </li> -->
-    <?php
-    for($i=1;$i<=$pages;$i++){
-        if($car_model == ''){
-            ?>
-        <li onclick="reset()" class="page-item"><span id="reset" class="page-link" onclick="getProduct('rim.php?p=<?php echo $i ?>&inch=<?php echo $rim_size ?>');"><?php echo $i?></span></li>
 <?php
-        }
-    else {?>
-        <li onclick="reset()" class="page-item"><span id="reset" class="page-link" onclick="getProduct('rim.php?p=<?php echo $i ?>&carModel=<?php echo $car_model ?>');"><?php echo $i?></span></li>
-    <?php
-        }
-    }
-    ?>
-    <!-- <li class="page-item arrow">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
-      </a>
-    </li> -->
-  </ul>
-</nav>
+if($car_model == ''){
+    $parameters = array(
+        'page' => $pages,
+        'p'    => $p,
+        'url_front'  => "getProduct('rim.php?p=",
+        'url_back'  => "&inch=".$rim_size,
+    );
+}else{
+    $parameters = array(
+        'page' => $pages,
+        'p'    => $p,
+        'url_front'  => "getProduct('rim.php?p=",
+        'url_back'  => "&carModel=".$car_model,
+    );
+}
+
+$tag_handle = new CombainKeywords();
+$tag = $tag_handle->pagination($parameters);
+echo $tag;
+?>

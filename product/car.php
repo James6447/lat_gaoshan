@@ -1,4 +1,5 @@
 <?php
+require '../CombainKeywords.class.php';
 require('../config.php');
 $car_search = $_GET['carType'];
 $size = $_GET['size'];
@@ -82,7 +83,7 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3">
-             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/car/'.$row['img_path'].'.png' ?>" data-action="zoom" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo 'img/car/'.$row['img_path'].'.png' ?>" data-action="zoom" alt="Card image cap">
              <div class="card-body">
                  <?php
                     $plot = preg_split("/\//",$row['img_path']);
@@ -103,33 +104,24 @@ $pages=ceil($total/$count);
 if ($empty != 1){
     echo '<h1 style="color: #9a9696; position: absolute; margin: 50% 36%;">No Result Search</h1>';
 }
+
+if($car_search == ''){
+    $parameters = array(
+        'page' => $pages,
+        'p'    => $p,
+        'url_front'  => "getProduct('car.php?p=",
+        'url_back'  => "&type=".$car_type,
+    );
+}else{
+    $parameters = array(
+        'page' => $pages,
+        'p'    => $p,
+        'url_front'  => "getProduct('car.php?p=",
+        'url_back'  => "&carType=".$car_search."&size=".$size,
+    );
+}
+
+$tag_handle = new CombainKeywords();
+$tag = $tag_handle->pagination($parameters);
+echo $tag;
 ?>
-
-
-<nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <!-- <li class="page-item arrow">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
-      </a>
-    </li> -->
-    <?php
-    for($i=1;$i<=$pages;$i++){
-        if($car_search == ''){
-        ?>
-            <li onclick="reset()" class="page-item"><span class="page-link" onclick="getProduct('car.php?p=<?php echo $i ?>&type=<?php echo $car_type ?>');"><?php echo $i?></span></li>
-<?php  }else{
-        ?>
-            <li onclick="reset()" class="page-item"><span class="page-link" onclick="getProduct('car.php?p=<?php echo $i ?>&carType=<?php echo $car_search.'&size='.$size?>');"><?php echo $i?></span></li>
-       <?php }
-    }
-    ?>
-    <!-- <li class="page-item arrow">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
-      </a>
-    </li> -->
-  </ul>
-</nav>

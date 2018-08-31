@@ -11,7 +11,7 @@ $(document).ready(function() {
               // document.getElementById("modelCar").innerHTML = "<option>"+res[i]['img_path']+"</option>";
               var sel = document.getElementById("modelCar");
               var opt = document.createElement("option");
-              opt.value = res[i]['img_path']+'/'+res[i]['size'];
+              opt.value = res[i]['img_path']+'/'+res[i]['inch'];
               opt.text = res[i]['img_path'];
               sel.add(opt, sel.options[1]);
           }

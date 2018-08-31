@@ -10,7 +10,7 @@ else{
     $condition = " WHERE type=$car_type AND img_path='$car_model'";
 }
 
-$query = "SELECT img_path,size FROM t_tyres".$condition;
+$query = "SELECT img_path,inch FROM t_tyres".$condition;
 
 $result = $con->query($query);
 
