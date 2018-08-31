@@ -297,26 +297,27 @@ function initMap() {
 
 document.getElementById("brand1").addEventListener("mouseover", function() {
 	$(".main-background").css("background-image", "url('/img/brand-1.jpg')");
-    toggle('brand1');
+    if($(window).width() <= 768) toggle('brand1');
 });
 document.getElementById("brand2").addEventListener("mouseover", function() {
 	$(".main-background").css("background-image", "url('/img/brand-2.jpg')");
-    toggle('brand2');
+    if($(window).width() <= 768) toggle('brand2');
 });
 document.getElementById("brand3").addEventListener("mouseover", function() {
 	$(".main-background").css("background-image", "url('/img/brand-3.jpg')");
-    toggle('brand3');
+    if($(window).width() <= 768) toggle('brand3');
 });
-document.getElementById("brand1").addEventListener("mouseout", function() {
-    toggle('brand1','1');
-});
-document.getElementById("brand2").addEventListener("mouseout", function() {
-    toggle('brand2','1');
-});
-document.getElementById("brand3").addEventListener("mouseout", function() {
-    toggle('brand3','1');
-});
-
+if($(window).width() <= 768){
+	document.getElementById("brand1").addEventListener("mouseout", function() {
+	    toggle('brand1','1');
+	});
+	document.getElementById("brand2").addEventListener("mouseout", function() {
+	    toggle('brand2','1');
+	});
+	document.getElementById("brand3").addEventListener("mouseout", function() {
+	    toggle('brand3','1');
+	});
+}
 
 function toggle(id,change) {
 	if(change == 1){
@@ -327,7 +328,7 @@ function toggle(id,change) {
 	// alert(id);
 }
 
-function moveToLocation(lat, lng,id) {
+function moveToLocation(lat, lng, id, img) {
  let numberOfRects = 3;
   for (var i = 1; i <= numberOfRects; i++) {
 	  document.getElementById('brand'+i).style.opacity = '0.6';
@@ -335,7 +336,7 @@ function moveToLocation(lat, lng,id) {
 
   document.getElementById(id).style.opacity = '1';
   document.getElementById(id).style.transition = 'opacity 0.3s linear';
-  document.getElementById(id).style.transform = 'scale(1.04)';
+  // document.getElementById(id).style.transform = 'scale(1.04)';
 
   var center = new google.maps.LatLng(lat, lng);
   // using global variable:
