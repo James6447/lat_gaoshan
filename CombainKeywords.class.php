@@ -40,7 +40,7 @@ class CombainKeywords
 
     }
 
-    public function pagination($parameters)
+    public static function pagination($parameters)
     {
         $page = isset($parameters['page']) ? $parameters['page'] : '1';
         $p    = isset($parameters['p']) ? $parameters['p'] : '1';

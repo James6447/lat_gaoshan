@@ -83,7 +83,7 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3">
-             <img class="card-img-top" src="<?php echo 'img/car/'.$row['img_path'].'.png' ?>" data-action="zoom" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo '/img/car/'.$row['img_path'].'.png' ?>" data-action="zoom" alt="Card image cap">
              <div class="card-body">
                  <?php
                     $plot = preg_split("/\//",$row['img_path']);
@@ -120,8 +120,5 @@ if($car_search == ''){
         'url_back'  => "&carType=".$car_search."&size=".$size,
     );
 }
-
-$tag_handle = new CombainKeywords();
-$tag = $tag_handle->pagination($parameters);
-echo $tag;
+echo CombainKeywords::pagination($parameters);
 ?>

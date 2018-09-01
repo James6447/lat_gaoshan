@@ -89,7 +89,7 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3">
-             <img class="card-img-top" src="<?php echo 'img/rim/'.$row['img_path'].'.jpeg' ?>" data-action="zoom" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo '/img/rim/'.$row['img_path'].'.jpeg' ?>" data-action="zoom" alt="Card image cap">
              <div class="card-body">
                <h5 class="card-title"><?php echo 'RM '.$row['price'] ?></h5>
                <p class="card-text"><?php echo $row['type'] ?></p>
@@ -126,7 +126,5 @@ if($car_model == ''){
     );
 }
 
-$tag_handle = new CombainKeywords();
-$tag = $tag_handle->pagination($parameters);
-echo $tag;
+echo CombainKeywords::pagination($parameters);
 ?>
