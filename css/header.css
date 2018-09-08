@@ -225,3 +225,40 @@
     transition: background 0.5s ease;
   }
 }
+/* tabs css */
+.tabcolor {
+  background-image: url(../img/pic1.jpg);
+}
+.tabss {
+  background-size: 0% 4px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to right top,
+    #010305,
+    #01080a,
+    #010d0c,
+    #06110a,
+    #0f1307
+  );
+  background-position: bottom;
+  color: #ffffff;
+  transition: all 0.2s linear;
+}
+.tabss:hover {
+  border-color: #333333 !important;
+}
+#myTabContent {
+  background: #e6e6e6;
+}
+.nav-link.active {
+  background: #e6e6e6 !important;
+  border-color: #e6e6e6 !important;
+  color: #333333 !important;
+}
+
+#myTab {
+  margin-top: 0px;
+  padding: unset;
+  transition: margin 0.8s linear;
+  background: #f9a11b;
+}

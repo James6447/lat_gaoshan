@@ -118,18 +118,20 @@ p {
 
 @media (min-width: 768px) {
   .maintain {
-    width: 80%;
+    width: 100%;
+    max-width: 180px;
   }
   .vihicle .submit button {
-    width: 30%;
+    width: 100%;
+    max-width: 150px;
   }
   .size .submit button {
-    width: 200%;
+    width: 100%;
     margin-top: 20px;
   }
 
   .size .maintain {
-    width: 200%;
+    width: 100%;
   }
 
   .size img {
@@ -143,7 +145,7 @@ p {
 }
 
 select {
-  background-color: #f5a131;
+  background-color: #ffffff;
   border-radius: 7px;
 }
 
@@ -152,7 +154,7 @@ select {
 }
 
 .submit button {
-  background-color: #f5a131;
+  background-color: #ffffff;
   border-radius: 7px;
 }
 

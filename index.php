@@ -165,9 +165,76 @@ $sort = $sort_handle->sortKeywords($arr, 2);
       <span class="sr-only">Next</span>
     </a>
   </div>
+<div class ="container-fluid col-12 pt-4 pb-4 tabcolor">
+<ul class="nav nav-tabs " id="myTab" role="tablist">
+  <li class="nav-item ">
+    <a class="nav-link tabss" id="vehicle-tab" data-toggle="tab" href="#vehicle" role="tab" aria-controls="vehicle" aria-selected="true">By Vehicle</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link tabss" id="rim-tab" data-toggle="tab" href="#rim" role="tab" aria-controls="rim" aria-selected="true">By Inch</a>
+  </li>
+</ul>
 
 
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
+  <form action="product.php" method="post">
+    <div class="container pt-4 pb-4 ">
+                             <div class="d-inline-block col-md-3">
+                                <p>CAR BRANDS</p>
+                                  <select id="typeCar" class="maintain" name="carType"  onchange="TypeFunc();">
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Ford</option>
+                                    <option value="4">Honda</option>
+                                  </select>
+                              </div>
+                              <div class="d-inline-block col-md-3">
+                                 <p>CAR MODEL</p>
+                                  <select id="modelCar" class="maintain" name="carModel">
 
+                                  </select>
+                              </div>
+            <div class="col-md-6 submit">
+                <button type="submit">Submit</button>
+            </div>
+      </div>
+    </form>
+
+  </div>
+  <div class="tab-pane fade " id="rim" role="tabpanel" aria-labelledby="rim-tab">
+  <form action="product.php" method="post">
+  <div class="container pt-4 pb-4 ">
+                             <div class="d-inline-block col-md-3">
+                                 <p>By Brand</p>
+                                  <select id="typeModel" class="maintain" name="rimType">
+                                      <option value="1">Audi</option>
+                                      <option value="2">BMW</option>
+                                      <option value="3">Ford</option>
+                                      <option value="4">Honda</option>
+                                  </select>
+                              </div>
+                              <div class="d-inline-block col-md-3">
+                                 <p>By Inch</p>
+                                  <select id="inch" class="maintain col-md-5 col-xs-12" name="size">
+                                      <!-- <option value="13">13</option>
+                                      <option value="14">14</option>
+                                      <option value="15">15</option>
+                                      <option value="16">16</option> -->
+                                      <option value="17">17</option>
+                                      <option value="18">18</option>
+                                      <option value="19">19</option>
+                                      <option value="20">20</option>
+                                  </select>
+                              </div>
+                              <div class="col-md-6 submit">
+                                 <button type="submit">Submit</button>
+                              </div>
+                              </div>
+                            </form>
+  </div>
+  </div>
+  </div>
 
 <!-- linked main.css-->
 <a id="fb" class="link-facebook animated infinite bounce" href="https://web.facebook.com/Lausincereautowagon/" target="_blank" onmousemove="stop()" onmouseout="start()"><img src="img/button fb.png"></a>
@@ -177,7 +244,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 <?php
 include('footer.html');
 ?>
-
+M
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery.min.js"></script>
   <script src="js/main.js"></script>
