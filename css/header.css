@@ -249,6 +249,7 @@
 }
 #myTabContent {
   background: #e6e6e6;
+  min-height: 320px;
 }
 .nav-link.active {
   background: #e6e6e6 !important;

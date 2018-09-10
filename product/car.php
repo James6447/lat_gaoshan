@@ -83,15 +83,22 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3">
-             <img class="card-img-top" src="<?php echo '/img/car/'.$row['img_path'].'.png' ?>" data-action="zoom" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/car/'.$row['img_path'].'.png' ?>" data-action="zoom" alt="Card image cap">
              <div class="card-body">
                  <?php
                     $plot = preg_split("/\//",$row['img_path']);
                     $row['img_path'] = $plot[1];
                  ?>
                <h5 class="card-title"><?php echo $row['img_path'] ?></h5>
-               <h7 class="card-text"><?php echo $row['size'] ?></h7>
-               <p class="card-text"><small class="text-muted"><?php echo 'RIM '.$row['inch'].' inch' ?></small></p>
+               <?php
+               $style = preg_split("/[\s,]+/",$row['size']);
+                for ($i=0; $i <count($style) ; $i++) {?>
+                     <h7 class="card-text"><?php echo $style[$i] ?></h7><br>
+                     <?php
+               }
+               ?>
+
+               <p class="card-text"><small class="text-muted"><?php echo $row['inch'].' inch' ?></small></p>
              </div>
             </div>
 <?php

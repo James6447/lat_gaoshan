@@ -89,11 +89,19 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3">
-             <img class="card-img-top" src="<?php echo '/img/rim/'.$row['img_path'].'.jpeg' ?>" data-action="zoom" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/rim/'.$row['img_path'].'.jpeg' ?>" data-action="zoom" alt="Card image cap">
              <div class="card-body">
                <h5 class="card-title"><?php echo 'RM '.$row['price'] ?></h5>
-               <p class="card-text"><?php echo $row['type'] ?></p>
-               <p class="card-text"><small class="text-muted"><?php echo $row['descrip'] ?></small></p>
+               <p class="card-text"><?php echo $row['rim_type'] ?></p>
+               <p class="card-text"><?php echo $row['rim_style'] ?></p>
+
+               <?php
+               $style = preg_split("/\,/",$row['descrip']);
+                for ($i=0; $i <count($style) ; $i++) {?>
+                     <p class="card-text"><small class="text-muted"><?php echo $style[$i] ?></small></p>
+                     <?php
+               }
+               ?>
              </div>
             </div>
 <?php
