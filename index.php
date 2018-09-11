@@ -145,14 +145,18 @@ $sort = $sort_handle->sortKeywords($arr, 2);
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="img/background-3.jpg" alt="First slide">
+        <img class="d-block w-100" src="img/6.jpg" alt="First slide">
         <div class="carousel-caption d-none d-md-block">
           <!-- <h1>Product</h1>
           <img src= -->
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="img/background-1.jpg" alt="Second slide">
+        <img class="d-block w-100" src="img/5.jpg" alt="Second slide">
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/4.jpg" alt="Second slide">
       </div>
 
     </div>
@@ -180,25 +184,18 @@ $sort = $sort_handle->sortKeywords($arr, 2);
   <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
   <form action="#" method="post">
     <div class="container pt-4 pb-4 ">
-                             <div class="d-inline-block col-md-3">
-                                <p>CAR BRANDS</p>
-                                  <select id="typeCar" class="maintain" name="carType"  onchange="TypeFunc();">
-                                    <option value="">Car</option>
-                                    <option value="1">Audi</option>
-                                    <option value="2">BMW</option>
-                                    <option value="3">Ford</option>
-                                    <option value="4">Honda</option>
-                                  </select>
-                              </div>
-                              <div class="d-inline-block col-md-3">
-                                 <p>CAR MODEL</p>
-                                  <select id="modelCar" class="maintain" name="carModel">
-
-                                  </select>
-                              </div>
-            <!-- <div class="col-md-6 submit">
-                <button type="submit">Submit</button>
-            </div> -->
+                                     <div class="d-inline-block col-md-3">
+                                        <p>CAR BRANDS</p>
+                                          <select id="typeCar" class="maintain" name="carType"  onchange="TypeFunc();">
+                                              <!-- 车款选项 -->
+                                          </select>
+                                      </div>
+                                      <div class="d-inline-block col-md-3">
+                                         <p>CAR MODEL</p>
+                                          <select id="modelCar" class="maintain" name="carModel">
+                                              <!-- 轮框选项 -->
+                                          </select>
+                                      </div>
       </div>
     </form>
 
@@ -215,30 +212,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
             </tr>
           </thead>
           <tbody id="dataChange">
-            <tr>
-              <td data-label="Model" onclick="carModel()">A4</td>
-              <td data-label="Tyre">04/01/2016</td>
-              <!-- <td data-label="Amount">$1,190</td>
-              <td data-label="Period">03/01/2016 - 03/31/2016</td> -->
-            </tr>
-            <tr>
-              <td scope="row" data-label="">&nbsp;</td>
-              <td data-label="Tyre">03/01/2016</td>
-              <!-- <td data-label="Amount">$2,443</td>
-              <td data-label="Period">02/01/2016 - 02/29/2016</td> -->
-            </tr>
-            <tr>
-              <td scope="row" data-label="">&nbsp;</td>
-              <td data-label="Tyre">03/01/2016</td>
-              <!-- <td data-label="Amount">$1,181</td>
-              <td data-label="Period">02/01/2016 - 02/29/2016</td> -->
-            </tr>
-            <tr>
-              <td scope="row" data-label="">&nbsp;</td>
-              <td data-label="Tyre">02/01/2016</td>
-              <!-- <td data-label="Amount">$842</td>
-              <td data-label="Period">01/01/2016 - 01/31/2016</td> -->
-            </tr>
+
           </tbody>
         </table>
 

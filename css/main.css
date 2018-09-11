@@ -214,8 +214,12 @@ caption {
 #imgTitle{
     position: absolute;
     top: 81.5%;
+    visibility: hidden;
 }
 
+#myTable{
+    visibility: hidden;
+}
 
 
 

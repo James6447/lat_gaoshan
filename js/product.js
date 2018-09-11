@@ -1,8 +1,33 @@
-
+//车款选项
+// --------------------- //
 $(document).ready(function() {
     //预设车款栏位
     $.ajax({
       url: "product/carselected.php",
+      type: "POST",
+      // data: {
+      //     carType:'1'
+      // },
+      dataType: "JSON",
+      success: function(res) {
+          for (var i = 0; i < res.length; i++) {
+              // document.getElementById("modelCar").innerHTML = "<option>"+res[i]['img_path']+"</option>";
+              var sel = document.getElementById("typeCar");
+              var opt = document.createElement("option");
+              opt.value = res[i]['value'];
+              // opt.value = res[i]['img_path']+'/'+res[i]['inch'];
+              opt.text = res[i]['type'];
+              sel.add(opt, sel.options[1]);
+          }
+      },
+      error: function() {
+        console.log("getdataErr");
+      }
+    });
+
+    //预设车形栏位
+    $.ajax({
+      url: "product/modelselected.php",
       type: "POST",
       data: {
           carType:'1'
@@ -29,7 +54,7 @@ $(document).ready(function() {
         let t = document.getElementById("modelCar");
         let modelCar = t.options[t.selectedIndex].value;
 
-        $("#myTable").fadeOut(500);
+        $("#myTable").fadeOut(300);
         $("#myTable tbody tr").remove();
         // setTimeout(function() { $("#myTable tbody tr").remove(); }, 600);
         let col;
@@ -42,6 +67,8 @@ $(document).ready(function() {
           dataType: "JSON",
           success: function(res) {
               //insert table view
+              document.getElementById("myTable").style.visibility="visible";
+              document.getElementById("imgTitle").style.visibility="visible";
               var table = document.getElementById("dataChange");
               for (var i = 0; i < res['size'].length; i++) {
                   let row = table.insertRow(i);
@@ -51,12 +78,12 @@ $(document).ready(function() {
                   (i==0)? col=res[0]['img_path']:col='';
                   cell1.innerHTML = col;
                   cell2.innerHTML = res['size'][i];
-
                   $('#myTable').hide();
                   $('#myTable').fadeIn(500);
               }
               document.getElementById("imgTitle").src = 'img/'+res[0]['logo_path'];
               document.getElementById("modelTitle").innerHTML = res[0]['img_path'];
+
               $('#imgTitle').hide();
               $('#imgTitle').fadeIn(1500);
 
@@ -83,7 +110,7 @@ function TypeFunc(){
     // let carModel = m.options[m.selectedIndex].value;
 
     $.ajax({
-      url: "product/carselected.php",
+      url: "product/modelselected.php",
       type: "POST",
       data: {
           carType:carType
@@ -108,6 +135,12 @@ function TypeFunc(){
     });
 }
 
+
+//輪框選項
+// --------------------- //
+
+
+
 //顯示產品
 function getProduct(pageName){
   var req=new XMLHttpRequest();
@@ -126,6 +159,8 @@ function getProduct(pageName){
   };
   req.send();
 }
+
+
 // function getProduct(pageName){
 //   var req=new XMLHttpRequest();
 //   req.open("get","http://www.lausincere.com/product/"+pageName);
