@@ -65,7 +65,7 @@ $pages=ceil($total/$count);
           {
             ?>
             <div class="card col-3 accossories">
-             <img class="card-img-top" src="<?php echo '/img/accossories/'.$row['category'].'/'.$row['img_path'].'.jpg' ?>"  data-action="zoom" alt="Card image cap">
+             <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/accossories/'.$row['category'].'/'.$row['img_path'].'.jpg' ?>"  data-action="zoom" alt="Card image cap">
              <div class="card-body">
                <h5 class="card-title"><?php echo $row['img_path']?></h5>
                <p class="card-text"><small class="text-muted"><?php echo'RM '.'PRICE'  ?></small></p>

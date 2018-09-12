@@ -39,39 +39,6 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 <?php include('header.html') ?>
 
 <!-- picture holder container main.js mian.css-->
-<<<<<<< HEAD
-<div id="search-bar" class="row search justify-content-center container-fluid ">
-  
-            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target=".vehicle">Find type at here &nbsp&nbsp<img src="img/icon-search.png"></button>
-              <div class="modal fade vehicle" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class ="container-fluid col-12 pt-4 pb-4 tabcolor">
-                      <ul class="nav nav-tabs " id="myTab" role="tablist">
-                        <li class="nav-item ">
-                          <a class="nav-link tabss" id="vehicle-tab" data-toggle="tab" href="#vehicle" role="tab" aria-controls="vehicle" aria-selected="true">By Vehicle</a>
-                          </li>
-                        <li class="nav-item ">
-                          <a class="nav-link tabss" id="rim-tab" data-toggle="tab" href="#rim" role="tab" aria-controls="rim" aria-selected="true">By Inch</a>
-                          </li>
-                        </ul>
-                      <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
-                          <form action="product.php" method="post">
-                            <div class="container pt-4 pb-4 ">
-                             <div class="d-inline-block col-md-3">
-                                <p>CAR BRANDS</p>
-                                  <select id="typeCar" class="maintain" name="carType"  onchange="TypeFunc();">
-                                    <option value="1">Audi</option>
-                                    <option value="2">BMW</option>
-                                    <option value="3">Ford</option>
-                                    <option value="4">Honda</option>
-                                  </select>
-                              </div>
-                              <div class="d-inline-block col-md-3">
-                                <p>CAR MODEL</p>
-                                <select id="modelCar" class="maintain" name="carModel">
-=======
 <div id="search-bar" class="row search justify-content-center">
   <div id="title">
     <h5>Find Your Type Here</h5>
@@ -115,20 +82,23 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                </form>
               </div>
             </div>
->>>>>>> 22e2762da7ddfba0c17cc84daf53a6a035c22b34
 
-                                </select>
-                              </div>
-                              <div class="col-md-6 submit">
-                                <button type="submit">Submit</button>
-                              </div>
-                            </div>
-                          </form>
-                          </div>
-                          <div class="tab-pane fade " id="rim" role="tabpanel" aria-labelledby="rim-tab">
-                          <form action="product.php" method="post">
-                            <div class="container pt-4 pb-4 ">
-                             <div class="d-inline-block col-md-3">
+        </div>
+      </div>
+      <div class="dash">
+        <h5>|</h5>
+      </div>
+      <div class="size">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            By Size
+          </button>
+          <div id="size-wrapper" class="dropdown-menu">
+              <div class="dropdown-item item-wrapper">
+                <div class="row col-md-12">
+                     <div class="col-md-6 col-12">
+                         <form action="product.php" method="post">
+                             <div class="col-md-6">
                                  <p>By Brand</p>
                                   <select id="typeModel" class="maintain" name="rimType">
                                       <option value="1">Audi</option>
@@ -137,9 +107,9 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                                       <option value="4">Honda</option>
                                   </select>
                               </div>
-                              <div class="d-inline-block col-md-3">
+                              <div class="col-md-6">
                                  <p>By Inch</p>
-                                  <select id="inch" class="maintain col-md-5 col-xs-12" name="size">
+                                  <select id="inch" class="maintain rol-md-5 rol-xs-12" name="size">
                                       <!-- <option value="13">13</option>
                                       <option value="14">14</option>
                                       <option value="15">15</option>
@@ -153,24 +123,18 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                               <div class="col-md-6 submit">
                                  <button type="submit">Submit</button>
                               </div>
-                          </div>
-                        </form>
+                            </form>
+                             </div>
+                            <div class="col-md-6 col-12" >
+                                  <img src="img/icon-tyre.png">
+                            </div>
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-      
-    
-  
-
-  
-  </div>
-
- 
-
-
+            </div>
+        </div>
+</div>
 
   <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
 
@@ -181,18 +145,14 @@ $sort = $sort_handle->sortKeywords($arr, 2);
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100" src="img/6.jpg" alt="First slide">
+        <img class="d-block w-100" src="img/background-3.jpg" alt="First slide">
         <div class="carousel-caption d-none d-md-block">
           <!-- <h1>Product</h1>
           <img src= -->
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="img/5.jpg" alt="Second slide">
-      </div>
-
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/4.jpg" alt="Second slide">
+        <img class="d-block w-100" src="img/background-1.jpg" alt="Second slide">
       </div>
 
     </div>
@@ -205,26 +165,40 @@ $sort = $sort_handle->sortKeywords($arr, 2);
       <span class="sr-only">Next</span>
     </a>
   </div>
+<div class ="container-fluid col-12 pt-4 pb-4 tabcolor">
+<ul class="nav nav-tabs " id="myTab" role="tablist">
+  <li class="nav-item ">
+    <a class="nav-link tabss" id="vehicle-tab" data-toggle="tab" href="#vehicle" role="tab" aria-controls="vehicle" aria-selected="true">By Vehicle</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link tabss" id="rim-tab" data-toggle="tab" href="#rim" role="tab" aria-controls="rim" aria-selected="true">By Inch</a>
+  </li>
+</ul>
 
 
-<<<<<<< HEAD
-=======
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
   <form action="#" method="post">
     <div class="container pt-4 pb-4 ">
-                                     <div class="d-inline-block col-md-3">
-                                        <p>CAR BRANDS</p>
-                                          <select id="typeCar" class="maintain" name="carType"  onchange="TypeFunc();">
-                                              <!-- 车款选项 -->
-                                          </select>
-                                      </div>
-                                      <div class="d-inline-block col-md-3">
-                                         <p>CAR MODEL</p>
-                                          <select id="modelCar" class="maintain" name="carModel">
-                                              <!-- 轮框选项 -->
-                                          </select>
-                                      </div>
+                             <div class="d-inline-block col-md-3">
+                                <p>CAR BRANDS</p>
+                                  <select id="typeCar" class="maintain" name="carType"  onchange="TypeFunc();">
+                                    <option value="">Car</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Ford</option>
+                                    <option value="4">Honda</option>
+                                  </select>
+                              </div>
+                              <div class="d-inline-block col-md-3">
+                                 <p>CAR MODEL</p>
+                                  <select id="modelCar" class="maintain" name="carModel">
+
+                                  </select>
+                              </div>
+            <!-- <div class="col-md-6 submit">
+                <button type="submit">Submit</button>
+            </div> -->
       </div>
     </form>
 
@@ -241,7 +215,30 @@ $sort = $sort_handle->sortKeywords($arr, 2);
             </tr>
           </thead>
           <tbody id="dataChange">
-
+            <tr>
+              <td data-label="Model" onclick="carModel()">A4</td>
+              <td data-label="Tyre">04/01/2016</td>
+              <!-- <td data-label="Amount">$1,190</td>
+              <td data-label="Period">03/01/2016 - 03/31/2016</td> -->
+            </tr>
+            <tr>
+              <td scope="row" data-label="">&nbsp;</td>
+              <td data-label="Tyre">03/01/2016</td>
+              <!-- <td data-label="Amount">$2,443</td>
+              <td data-label="Period">02/01/2016 - 02/29/2016</td> -->
+            </tr>
+            <tr>
+              <td scope="row" data-label="">&nbsp;</td>
+              <td data-label="Tyre">03/01/2016</td>
+              <!-- <td data-label="Amount">$1,181</td>
+              <td data-label="Period">02/01/2016 - 02/29/2016</td> -->
+            </tr>
+            <tr>
+              <td scope="row" data-label="">&nbsp;</td>
+              <td data-label="Tyre">02/01/2016</td>
+              <!-- <td data-label="Amount">$842</td>
+              <td data-label="Period">01/01/2016 - 01/31/2016</td> -->
+            </tr>
           </tbody>
         </table>
 
@@ -282,7 +279,6 @@ $sort = $sort_handle->sortKeywords($arr, 2);
   </div>
   </div>
 
->>>>>>> 22e2762da7ddfba0c17cc84daf53a6a035c22b34
 <!-- linked main.css-->
 <a id="fb" class="link-facebook animated infinite bounce" href="https://web.facebook.com/Lausincereautowagon/" target="_blank" onmousemove="stop()" onmouseout="start()"><img src="img/button fb.png"></a>
 <span class="link-menu" id="head" ><img src="img/button up.png"></span>
