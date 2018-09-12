@@ -46,6 +46,19 @@ p {
 .btn {
   pointer-events: none;
 }
+.btn-secondary {
+  pointer-events: initial;
+}
+.btn-secondary:hover {
+  color: black;
+  background-color: #c5bebe00;
+  border-color: #c5bebe00;
+}
+.btn-secondary:active {
+  color: black !important;
+  background-color: #c5bebe00 !important;
+  border-color: #c5bebe00 !important;
+}
 
 #title img {
   margin: 11px 8px;
@@ -336,4 +349,8 @@ span img:hover {
 
 .pad {
   padding-top: 10px;
+}
+/*----modelopen--*/
+.model-open {
+  padding-right: unset !important;
 }
