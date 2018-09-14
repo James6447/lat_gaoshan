@@ -10,6 +10,9 @@ $(document).ready(function() {
       // },
       dataType: "JSON",
       success: function(res) {
+          var sel = document.getElementById("modelCar");
+          sel.disabled = true;
+
           for (var i = 0; i < res.length; i++) {
               // document.getElementById("modelCar").innerHTML = "<option>"+res[i]['img_path']+"</option>";
               var sel = document.getElementById("typeCar");
@@ -25,28 +28,42 @@ $(document).ready(function() {
       }
     });
 
-    //预设车形栏位
-    $.ajax({
-      url: "product/modelselected.php",
-      type: "POST",
-      data: {
-          carType:'1'
-      },
-      dataType: "JSON",
-      success: function(res) {
-          for (var i = 0; i < res.length; i++) {
-              // document.getElementById("modelCar").innerHTML = "<option>"+res[i]['img_path']+"</option>";
-              var sel = document.getElementById("modelCar");
-              var opt = document.createElement("option");
-              opt.value = res[i]['img_path'];
-              // opt.value = res[i]['img_path']+'/'+res[i]['inch'];
-              opt.text = res[i]['img_path'];
-              sel.add(opt, sel.options[1]);
+    //依選擇車款顯示
+    document.getElementById("typeCar").addEventListener("change", function() {
+        //清掉之前的选择
+        $("#modelCar").empty();
+
+        let t = document.getElementById("typeCar");
+        let carType = t.options[t.selectedIndex].value;
+        // let m = document.getElementById("modelCar");
+        // let carModel = m.options[m.selectedIndex].value;
+
+        $.ajax({
+          url: "product/modelselected.php",
+          type: "POST",
+          data: {
+              carType:carType
+          },
+          dataType: "JSON",
+          success: function(res) {
+              this.size = res;
+
+              for (var i = 0; i < res.length; i++) {
+                  // document.getElementById("modelCar").innerHTML = "<option>"+res[i]['img_path']+"</option>";
+                  var sel = document.getElementById("modelCar");
+                  var opt = document.createElement("option");
+                  // opt.value = res[i]['img_path']+'/'+res[i]['size'];
+                  opt.value = res[i]['img_path'];
+                  opt.text = res[i]['img_path'];
+                  sel.add(opt, sel.options[1]);
+              }
+              sel.disabled = false;
+          },
+
+          error: function() {
+            console.log("getdataErr");
           }
-      },
-      error: function() {
-        console.log("getdataErr");
-      }
+        });
     });
 
     //依選擇車型號顯示
@@ -96,50 +113,67 @@ $(document).ready(function() {
 
     });
 
-
-});
-
-//依選擇車款顯示
-function TypeFunc(){
-    //清掉之前的选择
-    $("#modelCar").empty();
-
-    let t = document.getElementById("typeCar");
-    let carType = t.options[t.selectedIndex].value;
-    // let m = document.getElementById("modelCar");
-    // let carModel = m.options[m.selectedIndex].value;
-
+//輪框選項
+// --------------------- //
+    //预设Rim第一参数
     $.ajax({
-      url: "product/modelselected.php",
+      url: "product/rimselected.php",
       type: "POST",
-      data: {
-          carType:carType
-      },
+      // data: {
+      //     carType:'1'
+      // },
       dataType: "JSON",
       success: function(res) {
-          this.size = res;
+          //初始参数2栏位
+          var sel = document.getElementById("rimWitdh");
+          sel.disabled = true;
+
           for (var i = 0; i < res.length; i++) {
-              // document.getElementById("modelCar").innerHTML = "<option>"+res[i]['img_path']+"</option>";
-              var sel = document.getElementById("modelCar");
+              var sel = document.getElementById("typeModel");
               var opt = document.createElement("option");
-              // opt.value = res[i]['img_path']+'/'+res[i]['size'];
-              opt.value = res[i]['img_path'];
-              opt.text = res[i]['img_path'];
+              opt.value = res[i]['offset'];
+              opt.text = res[i]['offset'];
               sel.add(opt, sel.options[1]);
           }
       },
-
       error: function() {
         console.log("getdataErr");
       }
     });
-}
+
+    //依選擇轮胎Diameter顯示(参数2)
+    document.getElementById("typeModel").addEventListener("change", function() {
+        $("#rimWitdh").empty();
+        let t = document.getElementById("typeModel");
+        let typeModel = t.options[t.selectedIndex].value;
+
+        $.ajax({
+          url: "product/rimselected.php",
+          type: "POST",
+          data: {
+              typeModel:typeModel
+          },
+          dataType: "JSON",
+          success: function(res) {
+              for (var i = 0; i < res.length; i++) {
+                  var sel = document.getElementById("rimWitdh");
+                  var opt = document.createElement("option");
+                  opt.value = res[i]['rim_width'];
+                  opt.text = res[i]['rim_width'];
+                  sel.add(opt, sel.options[1]);
+              }
+            sel.disabled = false;
+          },
+
+          error: function() {
+            console.log("getdataErr");
+          }
+        });
+
+    });
 
 
-//輪框選項
-// --------------------- //
-
-
+});
 
 //顯示產品
 function getProduct(pageName){

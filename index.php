@@ -100,7 +100,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                          <form action="product.php" method="post">
                              <div class="col-md-6">
                                  <p>By Brand</p>
-                                  <select id="typeModel" class="maintain" name="rimType">
+                                  <select class="maintain" name="rimType">
                                       <option value="1">Audi</option>
                                       <option value="2">BMW</option>
                                       <option value="3">Ford</option>
@@ -193,7 +193,8 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                                       <div class="d-inline-block col-md-3">
                                          <p>CAR MODEL</p>
                                           <select id="modelCar" class="maintain" name="carModel">
-                                              <!-- 轮框选项 -->
+                                              <!-- 车形选项 -->
+                                              <option>Car Model</option>
                                           </select>
                                       </div>
       </div>
@@ -225,30 +226,48 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                              <div class="d-inline-block col-md-3">
                                  <p>By Brand</p>
                                   <select id="typeModel" class="maintain" name="rimType">
-                                      <option value="1">Audi</option>
-                                      <option value="2">BMW</option>
-                                      <option value="3">Ford</option>
-                                      <option value="4">Honda</option>
+                                       <!-- 轮框第一参数 -->
                                   </select>
                               </div>
                               <div class="d-inline-block col-md-3">
                                  <p>By Inch</p>
-                                  <select id="inch" class="maintain col-md-5 col-xs-12" name="size">
-                                      <!-- <option value="13">13</option>
-                                      <option value="14">14</option>
-                                      <option value="15">15</option>
-                                      <option value="16">16</option> -->
-                                      <option value="17">17</option>
-                                      <option value="18">18</option>
-                                      <option value="19">19</option>
-                                      <option value="20">20</option>
+                                  <select id="rimWitdh" class="maintain col-md-5 col-xs-12" name="size">
+                                       <!-- 轮框第二参数 -->
+                                       <option>Rim Width</option>
                                   </select>
                               </div>
-                              <div class="col-md-6 submit">
-                                 <button type="submit">Submit</button>
+                              <div class="d-inline-block col-md-3">
+                                 <p>By Inch</p>
+                                  <select id="rimWitdh" class="maintain col-md-5 col-xs-12" name="size">
+                                       <!-- 轮框第三参数 -->
+                                  </select>
                               </div>
+                              <div class="d-inline-block col-md-3">
+                                 <p>By Inch</p>
+                                  <select id="rimWitdh" class="maintain col-md-5 col-xs-12" name="size">
+                                       <!-- 轮框第四参数 -->
+                                  </select>
                               </div>
-                            </form>
+      </div>
+    </form>
+    <div>
+        <table id="rimTable">
+         <img id="imgTitle" src="img/logo/WW.png" style="height:50px; width:50px;">
+         <caption id="modelTitle">Audi</caption>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Tire</th>
+              <!-- <th scope="col">Rim</th>
+              <th scope="col">Bolt pattern</th> -->
+            </tr>
+          </thead>
+          <tbody id="dataChange">
+
+          </tbody>
+        </table>
+
+    </div>
   </div>
   </div>
   </div>
