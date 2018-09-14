@@ -1,13 +1,16 @@
 $(document).ready(function() {
-	// when a nav parent is clicked
-	let pattern = document.getElementById("pattern").value;
-	if(pattern == 1){
-		$(".alt-nav > ul > li").children("#startUp").slideDown();
-		$("#startUp #first").addClass("active-choose");
-	}
-	else {
-		$(".alt-nav > ul > li").children("#car").slideDown();
-	}
+  // when a nav parent is clicked
+  let pattern = document.getElementById("pattern").value;
+  if (pattern == 1) {
+    $(".alt-nav > ul > li")
+      .children("#startUp")
+      .slideDown();
+    $("#startUp #first").addClass("active-choose");
+  } else {
+    $(".alt-nav > ul > li")
+      .children("#car")
+      .slideDown();
+  }
 
   $(".alt-nav > ul > li").click(function() {
     // if section is already active and clicked again
@@ -61,54 +64,54 @@ $(document).ready(function() {
 
 /* ------------------------end-------------------------- */
 // index
-$("#search-bar").hover(function() {
-  $("#title").toggle("fast");
-  $("#type").toggle("fast");
-});
+// $("#search-bar").hover(function() {
+//   $("#title").toggle("fast");
+//   $("#type").toggle("fast");
+// });
 
-$("#translate").hover(function() {
-  $("#text").toggle("1s");
-  $("#pic").toggle("1s");
-});
+// $("#translate").hover(function() {
+//   $("#text").toggle("1s");
+//   $("#pic").toggle("1s");
+// });
 
-$(document).ready(function() {
-  var search_bar = $("#type").width();
-  var select_box = search_bar / 2;
-  $(".item-wrapper").css("width", select_box);
+// $(document).ready(function() {
+//   var search_bar = $("#type").width();
+//   var select_box = search_bar / 2;
+//   $(".item-wrapper").css("width", select_box);
 
-  var wrapper = $(".item-wrapper").width();
-  var windows = $(window).width();
+//   var wrapper = $(".item-wrapper").width();
+//   var windows = $(window).width();
 
-  if (windows == 320) {
-    $("#size-wrapper").css("transform", "translate3d(" + -16 + "px, 0px, 0px)");
-  }
-  if (windows == 375) {
-    $("#size-wrapper").css("transform", "translate3d(" + -36 + "px, 0px, 0px)");
-  }
-  if (windows == 425) {
-    $("#size-wrapper").css("transform", "translate3d(" + -53 + "px, 0px, 0px)");
-  }
-  if (windows == 768) {
-    $("#size-wrapper").css(
-      "transform",
-      "translate3d(" + -172.5 + "px, 0px, 0px)"
-    );
-  }
-  if (windows == 1024) {
-    $("#size-wrapper").css(
-      "transform",
-      "translate3d(" + -261 + "px, 0px, 0px)"
-    );
-  }
-  if (windows >= 1300) {
-    var space_width = windows - wrapper;
-    var size_wrapper = 0 - space_width / 2 - 23.5;
-    $("#size-wrapper").css(
-      "transform",
-      "translate3d(" + size_wrapper + "px, 0px, 0px)"
-    );
-  }
-});
+//   if (windows == 320) {
+//     $("#size-wrapper").css("transform", "translate3d(" + -16 + "px, 0px, 0px)");
+//   }
+//   if (windows == 375) {
+//     $("#size-wrapper").css("transform", "translate3d(" + -36 + "px, 0px, 0px)");
+//   }
+//   if (windows == 425) {
+//     $("#size-wrapper").css("transform", "translate3d(" + -53 + "px, 0px, 0px)");
+//   }
+//   if (windows == 768) {
+//     $("#size-wrapper").css(
+//       "transform",
+//       "translate3d(" + -172.5 + "px, 0px, 0px)"
+//     );
+//   }
+//   if (windows == 1024) {
+//     $("#size-wrapper").css(
+//       "transform",
+//       "translate3d(" + -261 + "px, 0px, 0px)"
+//     );
+//   }
+//   if (windows >= 1300) {
+//     var space_width = windows - wrapper;
+//     var size_wrapper = 0 - space_width / 2 - 23.5;
+//     $("#size-wrapper").css(
+//       "transform",
+//       "translate3d(" + size_wrapper + "px, 0px, 0px)"
+//     );
+//   }
+// });
 
 // $( window ).resize(function() {
 // 	var search_bar =$ ("#type").width();
@@ -126,19 +129,19 @@ $(document).ready(function() {
 
 /* ------------------------end-------------------------- */
 //Animate contact icon
-function toHead(){
-	$("html, body").animate(
-	  {
-		scrollTop: $("html").offset().top
-	  },
-	  250
-	);
+function toHead() {
+  $("html, body").animate(
+    {
+      scrollTop: $("html").offset().top
+    },
+    250
+  );
 }
 $("#head").click(function() {
-	toHead();
+  toHead();
 });
 $(".list-group li").click(function() {
-	toHead();
+  toHead();
 });
 
 function backTop() {
@@ -270,25 +273,25 @@ function initMap() {
   });
 
   $("#brand1").click(function() {
-	 if($(window).width() <= 768){
-		 	 toHead();
-	 }
+    if ($(window).width() <= 768) {
+      toHead();
+    }
     infowindow.open(map, marker);
     infowindow1.close(map, marker1);
     infowindow2.close(map, marker2);
   });
   $("#brand2").click(function() {
-	  if($(window).width() <= 768){
-			  toHead();
-	  }
+    if ($(window).width() <= 768) {
+      toHead();
+    }
     infowindow1.open(map, marker1);
     infowindow.close(map, marker);
     infowindow2.close(map, marker2);
   });
   $("#brand3").click(function() {
-	  if($(window).width() <= 768){
-			  toHead();
-	  }
+    if ($(window).width() <= 768) {
+      toHead();
+    }
     infowindow2.open(map, marker2);
     infowindow1.close(map, marker1);
     infowindow.close(map, marker);
@@ -296,46 +299,46 @@ function initMap() {
 }
 
 document.getElementById("brand1").addEventListener("mouseover", function() {
-	$(".main-background").css("background-image", "url('/img/brand-1.jpg')");
-    if($(window).width() <= 768) toggle('brand1');
+  $(".main-background").css("background-image", "url('/img/brand-1.jpg')");
+  if ($(window).width() <= 768) toggle("brand1");
 });
 document.getElementById("brand2").addEventListener("mouseover", function() {
-	$(".main-background").css("background-image", "url('/img/brand-2.jpg')");
-    if($(window).width() <= 768) toggle('brand2');
+  $(".main-background").css("background-image", "url('/img/brand-2.jpg')");
+  if ($(window).width() <= 768) toggle("brand2");
 });
 document.getElementById("brand3").addEventListener("mouseover", function() {
-	$(".main-background").css("background-image", "url('/img/brand-3.jpg')");
-    if($(window).width() <= 768) toggle('brand3');
+  $(".main-background").css("background-image", "url('/img/brand-3.jpg')");
+  if ($(window).width() <= 768) toggle("brand3");
 });
-if($(window).width() <= 768){
-	document.getElementById("brand1").addEventListener("mouseout", function() {
-	    toggle('brand1','1');
-	});
-	document.getElementById("brand2").addEventListener("mouseout", function() {
-	    toggle('brand2','1');
-	});
-	document.getElementById("brand3").addEventListener("mouseout", function() {
-	    toggle('brand3','1');
-	});
+if ($(window).width() <= 768) {
+  document.getElementById("brand1").addEventListener("mouseout", function() {
+    toggle("brand1", "1");
+  });
+  document.getElementById("brand2").addEventListener("mouseout", function() {
+    toggle("brand2", "1");
+  });
+  document.getElementById("brand3").addEventListener("mouseout", function() {
+    toggle("brand3", "1");
+  });
 }
 
-function toggle(id,change) {
-	if(change == 1){
-		document.getElementById(id).style.opacity = '0.6';
-	}else {
-		document.getElementById(id).style.opacity = '1';
-	}
-	// alert(id);
+function toggle(id, change) {
+  if (change == 1) {
+    document.getElementById(id).style.opacity = "0.6";
+  } else {
+    document.getElementById(id).style.opacity = "1";
+  }
+  // alert(id);
 }
 
 function moveToLocation(lat, lng, id, img) {
- let numberOfRects = 3;
+  let numberOfRects = 3;
   for (var i = 1; i <= numberOfRects; i++) {
-	  document.getElementById('brand'+i).style.opacity = '0.6';
+    document.getElementById("brand" + i).style.opacity = "0.6";
   }
 
-  document.getElementById(id).style.opacity = '1';
-  document.getElementById(id).style.transition = 'opacity 0.3s linear';
+  document.getElementById(id).style.opacity = "1";
+  document.getElementById(id).style.transition = "opacity 0.3s linear";
   // document.getElementById(id).style.transform = 'scale(1.04)';
 
   var center = new google.maps.LatLng(lat, lng);
@@ -343,5 +346,16 @@ function moveToLocation(lat, lng, id, img) {
   map.panTo(center);
 }
 
-
 /* ------------------------end-------------------------- */
+// $(function() {
+//   var modal1 = document.getElementById("myCMSModal");
+//   var btn1 = document.getElementById("vihicle");
+//   var span1 = document.getElementsByClassName("close")[0];
+//   btn1.onclick = function() {
+//     modal1.style.display = "block";
+//   };
+
+//   span1.onclick = function() {
+//     modal1.style.display = "none";
+//   };
+// });
