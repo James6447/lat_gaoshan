@@ -42,9 +42,9 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 <div id="search-bar" class="row search justify-content-center container-fluid ">
 
   <button type="button" class="btn btn-secondary" data-toggle="modal" data-target=".vehicle">Find type at here &nbsp&nbsp<img src="img/icon-search.png"></button>
-  <div class="modal fade vehicle" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal aaaa fade vehicle" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-      <div class="modal-content">
+      <div class="modal-content ">
         <div class ="container-fluid col-12 pt-4 pb-4 tabcolor">
               <ul class="nav nav-tabs " id="myTab" role="tablist">
                 <li class="nav-item ">
@@ -56,22 +56,22 @@ $sort = $sort_handle->sortKeywords($arr, 2);
               </ul>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
-                  <form action="#" method="post">
-                       <div class="container pt-4 pb-4 ">
-                          <div class="d-inline-block col-md-3">
-                              <p>CAR BRANDS</p>
-                              <select id="typeCar" class="maintain" name="carType"  onchange="TypeFunc();">
+                <form action="#" method="post">
+                  <div class="container pt-4 pb-4 ">
+                    <div class="d-inline-block col-md-3">
+                      <p>CAR BRANDS</p>
+                       <select id="typeCar" class="maintain" name="carType"  onchange="TypeFunc();">
                                               <!-- 车款选项 -->
-                              </select>
-                          </div>
-                          <div class="d-inline-block col-md-3">
-                              <p>CAR MODEL</p>
-                              <select id="modelCar" class="maintain" name="carModel">
+                       </select>
+                    </div>
+                    <div class="d-inline-block col-md-3">
+                      <p>CAR MODEL</p>
+                      <select id="modelCar" class="maintain" name="carModel">
                                 <!-- 车形选项 -->
-                              <option>Car Model</option>
-                              </select>
-                          </div>
-                        </div>
+                      <option>Car Model</option>
+                      </select>
+                    </div>
+                  </div>
                     </form>
         
               <table id="myTable">
