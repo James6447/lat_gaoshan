@@ -5,23 +5,11 @@ $(document).ready(function() {
     $.ajax({
       url: "product/carselected.php",
       type: "POST",
-      // data: {
-      //     carType:'1'
-      // },
       dataType: "JSON",
       success: function(res) {
-          var sel = document.getElementById("modelCar");
-          sel.disabled = true;
-
-          for (var i = 0; i < res.length; i++) {
-              // document.getElementById("modelCar").innerHTML = "<option>"+res[i]['img_path']+"</option>";
-              var sel = document.getElementById("typeCar");
-              var opt = document.createElement("option");
-              opt.value = res[i]['value'];
-              // opt.value = res[i]['img_path']+'/'+res[i]['inch'];
-              opt.text = res[i]['type'];
-              sel.add(opt, sel.options[1]);
-          }
+          let parameter = [res, 'typeCar', 'value' ,'type'];
+          AppendOption(parameter);
+          document.getElementById("modelCar").disabled = true;
       },
       error: function() {
         console.log("getdataErr");
@@ -35,8 +23,6 @@ $(document).ready(function() {
 
         let t = document.getElementById("typeCar");
         let carType = t.options[t.selectedIndex].value;
-        // let m = document.getElementById("modelCar");
-        // let carModel = m.options[m.selectedIndex].value;
 
         $.ajax({
           url: "product/modelselected.php",
@@ -46,18 +32,9 @@ $(document).ready(function() {
           },
           dataType: "JSON",
           success: function(res) {
-              this.size = res;
-
-              for (var i = 0; i < res.length; i++) {
-                  // document.getElementById("modelCar").innerHTML = "<option>"+res[i]['img_path']+"</option>";
-                  var sel = document.getElementById("modelCar");
-                  var opt = document.createElement("option");
-                  // opt.value = res[i]['img_path']+'/'+res[i]['size'];
-                  opt.value = res[i]['img_path'];
-                  opt.text = res[i]['img_path'];
-                  sel.add(opt, sel.options[1]);
-              }
-              sel.disabled = false;
+              let parameter = [res, 'modelCar', 'img_path','img_path'];
+              AppendOption(parameter);
+              document.getElementById("modelCar").disabled = false;
           },
 
           error: function() {
@@ -119,22 +96,15 @@ $(document).ready(function() {
     $.ajax({
       url: "product/rimselected.php",
       type: "POST",
-      // data: {
-      //     carType:'1'
-      // },
+      data: {
+          pattern:'1'
+      },
       dataType: "JSON",
       success: function(res) {
-          //初始参数2栏位
-          var sel = document.getElementById("rimWitdh");
-          sel.disabled = true;
-
-          for (var i = 0; i < res.length; i++) {
-              var sel = document.getElementById("typeModel");
-              var opt = document.createElement("option");
-              opt.value = res[i]['offset'];
-              opt.text = res[i]['offset'];
-              sel.add(opt, sel.options[1]);
-          }
+          //初始第一栏位
+          let parameter = [res, 'typeModel', 'inch','inch'];
+          clearPreviousData();
+          AppendOption(parameter);
       },
       error: function() {
         console.log("getdataErr");
@@ -147,22 +117,23 @@ $(document).ready(function() {
         let t = document.getElementById("typeModel");
         let typeModel = t.options[t.selectedIndex].value;
 
+        clearPreviousData();
+        document.getElementById("modelCar").disabled = false;
         $.ajax({
           url: "product/rimselected.php",
           type: "POST",
           data: {
-              typeModel:typeModel
+              typeModel:typeModel,
+              pattern  :'2'
           },
           dataType: "JSON",
           success: function(res) {
-              for (var i = 0; i < res.length; i++) {
-                  var sel = document.getElementById("rimWitdh");
-                  var opt = document.createElement("option");
-                  opt.value = res[i]['rim_width'];
-                  opt.text = res[i]['rim_width'];
-                  sel.add(opt, sel.options[1]);
-              }
-            sel.disabled = false;
+              let parameter = [res, 'rimWitdh', 'rim_width','rim_width'];
+              let sel = document.getElementById("rimWitdh");
+
+              AppendOption(parameter);
+              sel.disabled = false;
+              sel.options[0].disabled = true;
           },
 
           error: function() {
@@ -172,50 +143,162 @@ $(document).ready(function() {
 
     });
 
+    //依選擇轮胎Rim Witdh顯示(参数3)
+    document.getElementById("rimWitdh").addEventListener("change", function() {
+        $("#offset").empty();
+        let r = document.getElementById("rimWitdh");
+        let t = document.getElementById("typeModel");
+        let rimWitdh = r.options[r.selectedIndex].value;
+        let typeModel = t.options[t.selectedIndex].value;
 
+        $.ajax({
+          url: "product/rimselected.php",
+          type: "POST",
+          data: {
+              rimWitdh  :rimWitdh,
+              typeModel :typeModel,
+              pattern   :'3'
+          },
+          dataType: "JSON",
+          success: function(res) {
+              let parameter = [res, 'offset', 'offset','offset'];
+              let sel = document.getElementById("offset");
+              let opt = document.createElement("option");
+
+              opt.value = 'offset';
+              opt.text = 'offset';
+              sel.add(opt, sel.options[1]);
+
+              AppendOption(parameter);
+
+              sel.disabled = false;
+              sel.options[0].disabled = true;
+          },
+
+          error: function() {
+            console.log("getdataErr");
+          }
+        });
+
+    });
+
+    document.getElementById("offset").addEventListener("change", function() {
+        $("#CenterBore").empty();
+        let r = document.getElementById("rimWitdh");
+        let t = document.getElementById("typeModel");
+        let o = document.getElementById("offset");
+        let rimWitdh = r.options[r.selectedIndex].value;
+        let typeModel = t.options[t.selectedIndex].value;
+        let offset = o.options[o.selectedIndex].value;
+
+        $.ajax({
+          url: "product/rimselected.php",
+          type: "POST",
+          data: {
+              rimWitdh  : rimWitdh,
+              typeModel : typeModel,
+              offset    :offset,
+              pattern   :'4'
+          },
+          dataType: "JSON",
+          success: function(res) {
+              let parameter = [res, 'CenterBore', 'centre_bore','centre_bore'];
+              let sel = document.getElementById("CenterBore");
+              let opt = document.createElement("option");
+
+              opt.value = 'CenterBore';
+              opt.text = 'CenterBore';
+              sel.add(opt, sel.options[1]);
+
+              AppendOption(parameter);
+
+              sel.disabled = false;
+              sel.options[0].disabled = true;
+          },
+
+          error: function() {
+            console.log("getdataErr");
+          }
+        });
+    });
+
+    document.getElementById("CenterBore").addEventListener("change", function() {
+        $("#BoltPattern").empty();
+        let r = document.getElementById("rimWitdh");
+        let t = document.getElementById("typeModel");
+        let o = document.getElementById("offset");
+        let c = document.getElementById("CenterBore");
+        let rimWitdh = r.options[r.selectedIndex].value;
+        let typeModel = t.options[t.selectedIndex].value;
+        let offset = o.options[o.selectedIndex].value;
+        let CenterBore = c.options[c.selectedIndex].value;
+
+        $.ajax({
+          url: "product/rimselected.php",
+          type: "POST",
+          data: {
+              rimWitdh  : rimWitdh,
+              typeModel : typeModel,
+              offset    :offset,
+              CenterBore:CenterBore,
+              pattern   :'5'
+          },
+          dataType: "JSON",
+          success: function(res) {
+              let parameter = [res, 'BoltPattern', 'bolt_pattern','bolt_pattern'];
+              let sel = document.getElementById("BoltPattern");
+              let opt = document.createElement("option");
+
+              opt.value = 'BoltPattern';
+              opt.text = 'BoltPattern';
+              sel.add(opt, sel.options[1]);
+
+              AppendOption(parameter);
+
+              sel.disabled = false;
+              sel.options[0].disabled = true;
+          },
+
+          error: function() {
+            console.log("getdataErr");
+          }
+        });
+    });
 });
 
-//顯示產品
-function getProduct(pageName){
-  var req=new XMLHttpRequest();
-  req.open("get","http://localhost:5566/lat_gaoshan/product/"+pageName);
-  req.onload=function(){
-    let app = $(window).width();
-    let content=document.getElementById("change");
-    change.innerHTML=this.responseText;
-    //remove atribute zoom in photo
-    if(app <= 769){
-        let cls = document.getElementsByClassName('card-img-top');
-        for(var i = 0; i < cls.length; i++) {
-           cls[i].removeAttribute('data-action');
-        }
+
+
+// 新增option
+function AppendOption(parameter){
+    for (var i = 0; i < parameter[0].length; i++) {
+        var sel = document.getElementById(parameter[1]);
+        var opt = document.createElement("option");
+
+        opt.value = parameter[0][i][parameter[2]];
+        opt.text = parameter[0][i][parameter[3]];
+        sel.add(opt, sel.options[1]);
     }
-  };
-  req.send();
 }
 
+// 清楚從選後的DATA
+function clearPreviousData(){
+    var col_1 = document.getElementById("rimWitdh");
+    var col_2 = document.getElementById("offset");
+    var col_3 = document.getElementById("CenterBore");
+    col_1.disabled = true;
+    col_2.disabled = true;
+    col_3.disabled = true;
 
-// function getProduct(pageName){
-//   var req=new XMLHttpRequest();
-//   req.open("get","http://www.lausincere.com/product/"+pageName);
-//   req.onload=function(){
-//       let app = $(window).width();
-//       let content=document.getElementById("change");
-//       change.innerHTML=this.responseText;
-//       //remove atribute zoom in photo
-//       if(app <= 769){
-//           let cls = document.getElementsByClassName('card-img-top');
-//           for(var i = 0; i < cls.length; i++) {
-//              cls[i].removeAttribute('data-action');
-//           }
-//       }
-//   };
-//   req.send();
-// }
+    $("#offset").empty();
+    $("#centerBore").empty();
 
-//選擇殘品後往上滑
-function reset(){
-    $('html, body').animate({
-        scrollTop: $("html").offset().top
-    }, 250);
+    let selection = ['rimWitdh','offset','CenterBore'];
+    for (var i = 0; i < selection.length; i++) {
+        var sel = document.getElementById(selection[i]);
+        var opt = document.createElement("option");
+        opt.value = selection[i];
+        opt.text = selection[i];
+        sel.add(opt, sel.options[1]);
+    }
+
 }

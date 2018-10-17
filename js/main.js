@@ -157,6 +157,54 @@ function backTop() {
 }
 
 /* ------------------------end-------------------------- */
+// Product
+//顯示產品
+function getProduct(pageName){
+  var req=new XMLHttpRequest();
+  req.open("get","http://localhost:5566/lat_gaoshan/product/"+pageName);
+  req.onload=function(){
+    let app = $(window).width();
+    let content=document.getElementById("change");
+    change.innerHTML=this.responseText;
+    //remove atribute zoom in photo
+    if(app <= 769){
+        let cls = document.getElementsByClassName('card-img-top');
+        for(var i = 0; i < cls.length; i++) {
+           cls[i].removeAttribute('data-action');
+        }
+    }
+  };
+  req.send();
+}
+
+
+// function getProduct(pageName){
+//   var req=new XMLHttpRequest();
+//   req.open("get","http://www.lausincere.com/product/"+pageName);
+//   req.onload=function(){
+//       let app = $(window).width();
+//       let content=document.getElementById("change");
+//       change.innerHTML=this.responseText;
+//       //remove atribute zoom in photo
+//       if(app <= 769){
+//           let cls = document.getElementsByClassName('card-img-top');
+//           for(var i = 0; i < cls.length; i++) {
+//              cls[i].removeAttribute('data-action');
+//           }
+//       }
+//   };
+//   req.send();
+// }
+
+//選擇殘品後往上滑
+function reset(){
+    $('html, body').animate({
+        scrollTop: $("html").offset().top
+    }, 250);
+}
+
+
+/* ------------------------end-------------------------- */
 // BRANDS
 function showImg(img) {
   document.getElementById(img).style.border = "7px solid #f5a131";

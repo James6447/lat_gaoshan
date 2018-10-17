@@ -60,20 +60,20 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                   <div class="container pt-4 pb-4 ">
                     <div class="d-inline-block col-md-3">
                       <p>CAR BRANDS</p>
-                       <select id="typeCar" class="maintain" name="carType"  onchange="TypeFunc();">
-                                              <!-- 车款选项 -->
+                       <select id="typeCar" class="maintain" name="carType">
+                            <!-- 车款选项 -->
                        </select>
                     </div>
                     <div class="d-inline-block col-md-3">
                       <p>CAR MODEL</p>
                       <select id="modelCar" class="maintain" name="carModel">
-                                <!-- 车形选项 -->
+                            <!-- 车形选项 -->
                       <option>Car Model</option>
                       </select>
                     </div>
                   </div>
                     </form>
-        
+
               <table id="myTable">
                 <img id="imgTitle" src="img/logo/WW.png" style="height:50px; width:50px;">
                   <caption id="modelTitle">Audi</caption>
@@ -96,25 +96,32 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                       <p>By Brand</p>
                         <select id="typeModel" class="maintain" name="rimType">
                           <!-- 轮框第一参数 -->
+                              <option>Rim Diameter</option>
                         </select>
                     </div>
                     <div class="d-inline-block col-md-3">
                       <p>By Inch</p>
                       <select id="rimWitdh" class="maintain col-md-5 col-xs-12" name="size">
                          <!-- 轮框第二参数 -->
-                        <option>Rim Width</option>
+
                       </select>
                     </div>
                     <div class="d-inline-block col-md-3">
                       <p>By Inch</p>
-                      <select id="rimWitdh" class="maintain col-md-5 col-xs-12" name="size">
-                                       <!-- 轮框第三参数 -->
+                      <select id="offset" class="maintain col-md-5 col-xs-12" name="size">
+                          <!-- 轮框第三参数 -->
                       </select>
                     </div>
                     <div class="d-inline-block col-md-3">
                       <p>By Inch</p>
-                      <select id="rimWitdh" class="maintain col-md-5 col-xs-12" name="size">
-                                       <!-- 轮框第四参数 -->
+                      <select id="CenterBore" class="maintain col-md-5 col-xs-12" name="size">
+                          <!-- 轮框第四参数 -->
+                      </select>
+                    </div>
+                    <div class="d-inline-block col-md-3">
+                      <p>By Inch</p>
+                      <select id="BoltPattern" class="maintain col-md-5 col-xs-12" name="size">
+                          <!-- 轮框第五参数 -->
                       </select>
                     </div>
                   </div>
