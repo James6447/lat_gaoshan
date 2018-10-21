@@ -225,8 +225,8 @@ caption {
 }
 
 #imgTitle{
-    position: absolute;
-    top: 81.5%;
+    /*position: absolute;*/
+    /*top: 81.5%;*/
     visibility: hidden;
 }
 

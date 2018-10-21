@@ -55,12 +55,14 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                 </li>
               </ul>
           <div class="tab-content" id="myTabContent">
+        <!--      這段保留        -->
             <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
                 <form action="#" method="post">
                   <div class="container pt-4 pb-4 ">
                     <div class="d-inline-block col-md-3">
                       <p>CAR BRANDS</p>
                        <select id="typeCar" class="maintain" name="carType">
+                           <option value="0">CarType</option>
                             <!-- 车款选项 -->
                        </select>
                     </div>
@@ -89,6 +91,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                 </tbody>
              </table>
            </div>
+        <!--      這段保留        -->
             <div class="tab-pane fade " id="rim" role="tabpanel" aria-labelledby="rim-tab">
               <form action="product.php" method="post">
                   <div class="container pt-4 pb-4 ">
