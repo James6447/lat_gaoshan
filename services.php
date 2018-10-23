@@ -199,20 +199,20 @@ $sort = $sort_handle->sortKeywords($arr, 2);
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
+    <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
           src="img/point.jpg">
         <div class="card-body ">
           <h4 class ="card-title">Maintain Your Own Car</h4>
           <p class="card-text">Amidst all the benefits of owning an automobile, it is imperative to maintain your car if you wish to enjoy it for a long time. Frequent automobile care extends the lifespan of the vehicle and keeps it running smoothly without any safety concerns. By keeping your vehicle in its prime condition through regular maintenance, you can also retain the optimal value for when you wish to sell your car.
-          Therefore, we have compiled a list of comprehensive maintenance tips to keep the operational performance and aesthetic integrity of your car intact:</p>
+          Therefore, we have compiled a list of comprehensive maintenance tips to keep the operational performance and aesthetic integrity of your car intact:</p> -->
           <!-- Button trigger modal -->
-          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal3">
+          <!-- <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal3">
             <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
-          </button>
+          </button> -->
               <!-- Modal -->
-          <div id="myModal3" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <!-- <div id="myModal3" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -247,21 +247,21 @@ $sort = $sort_handle->sortKeywords($arr, 2);
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
+    <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
           src="img/checktyre.jpg">
         <div class="card-body ">
           <h4 class ="card-title">Check the tires</h4>
-          <p class="card-text">You should regularly check the tire pressure as it not only affects the comfort, safety, and handling of the car but also influences the fuel efficiency. Improper inflation of tires can hinder the ability of the wheels to stop correctly and increase the probability of a flat tire.You can check the tire pressure every week, but experts recommend doing it every time you fill up the gas. Frequent monitoring will allow you to catch any issues immediately, as tire pressure undergoes constant changes due to temperature fluctuation and mileage accumulation. Manufacturer’s manual specifies the recommended tire pressure.In addition, you should rotate the tires every 5,000 to 10,000 miles. Regularly rotation of the wheels ensures that all the tires have an equal wear pattern, extending the lifespan of the wheels.Finally, r﻿﻿eplace your﻿﻿ ﻿﻿﻿﻿tires when they become worn beyond the reasonable limits to avoid any accidents.</p>
+          <p class="card-text">You should regularly check the tire pressure as it not only affects the comfort, safety, and handling of the car but also influences the fuel efficiency. Improper inflation of tires can hinder the ability of the wheels to stop correctly and increase the probability of a flat tire.You can check the tire pressure every week, but experts recommend doing it every time you fill up the gas. Frequent monitoring will allow you to catch any issues immediately, as tire pressure undergoes constant changes due to temperature fluctuation and mileage accumulation. Manufacturer’s manual specifies the recommended tire pressure.In addition, you should rotate the tires every 5,000 to 10,000 miles. Regularly rotation of the wheels ensures that all the tires have an equal wear pattern, extending the lifespan of the wheels.Finally, r﻿﻿eplace your﻿﻿ ﻿﻿﻿﻿tires when they become worn beyond the reasonable limits to avoid any accidents.</p> -->
           <!-- Button trigger modal -->
-          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal4">
+          <!-- <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal4">
             <div class="txtbtn">Learn More</div> <i class="fa fa-arrow-right"></i>
-          </button>
+          </button> -->
               <!-- Modal -->
-          <div id="myModal4" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <!-- <div id="myModal4" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -286,9 +286,9 @@ $sort = $sort_handle->sortKeywords($arr, 2);
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
+    <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 card grid-item">
       <div class="card box-shadow">
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
           src="img/wind.jpg">
@@ -297,13 +297,13 @@ $sort = $sort_handle->sortKeywords($arr, 2);
           <p class="card-text">Clean and fix the windshield, mirrors, and lights,a dirty windshield is a safety hazard as it can obscure your view while driving, and it looks unpleasant as well. Therefore, wipe your windshields clean with a sponge and cleaning fluid regularly, depending on how many miles you log in the day, what is your daily route, and where did you park the car.
           The windshield wipers need replacement once a year, as they become worn out with use. Torn wipers are unable to perform adequately during the rainy season and can pose a safety threat, especially if you are driving in a downpour. You can replace only the wiper blades or the entire assembly depending on its condition.
           In addition, you need to keep your front, and rear view mirrors clean since they provide an essential all-encompassing view of the road necessary for safe driving. Fix any mirrors, broken in an accident, immediately and give them a regularly wipe for an unobscured sight.
-          Finally, the light fixtures on your car have important jobs and should not be overlooked during regular maintenance. To ensure that they are all in perfect working condition, ask a friend to go around the car while you switch on each light. Replace any broken or faulty bulbs immediately, especially the headlights. You can do it yourself in a few simple steps.</p>
+          Finally, the light fixtures on your car have important jobs and should not be overlooked during regular maintenance. To ensure that they are all in perfect working condition, ask a friend to go around the car while you switch on each light. Replace any broken or faulty bulbs immediately, especially the headlights. You can do it yourself in a few simple steps.</p> -->
           <!-- Button trigger modal -->
-          <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal5">
+          <!-- <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal5">
             <div class="txtbtn">  Learn More</div> <i class="fa fa-arrow-right"></i>
-          </button>
+          </button> -->
               <!-- Modal -->
-          <div id="myModal5" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <!-- <div id="myModal5" class="modal fade" data-easein="bounceIn"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
               <div class="modal-header">
@@ -329,7 +329,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
   </div>
 </div>

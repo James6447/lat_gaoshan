@@ -159,24 +159,23 @@ function backTop() {
 /* ------------------------end-------------------------- */
 // Product
 //顯示產品
-function getProduct(pageName){
-  var req=new XMLHttpRequest();
-  req.open("get","http://localhost:5566/lat_gaoshan/product/"+pageName);
-  req.onload=function(){
+function getProduct(pageName) {
+  var req = new XMLHttpRequest();
+  req.open("get", "http://localhost:5566/lat_gaoshan/product/" + pageName);
+  req.onload = function() {
     let app = $(window).width();
-    let content=document.getElementById("change");
-    change.innerHTML=this.responseText;
+    let content = document.getElementById("change");
+    change.innerHTML = this.responseText;
     //remove atribute zoom in photo
-    if(app <= 769){
-        let cls = document.getElementsByClassName('card-img-top');
-        for(var i = 0; i < cls.length; i++) {
-           cls[i].removeAttribute('data-action');
-        }
+    if (app <= 769) {
+      let cls = document.getElementsByClassName("card-img-top");
+      for (var i = 0; i < cls.length; i++) {
+        cls[i].removeAttribute("data-action");
+      }
     }
   };
   req.send();
 }
-
 
 // function getProduct(pageName){
 //   var req=new XMLHttpRequest();
@@ -197,12 +196,14 @@ function getProduct(pageName){
 // }
 
 //選擇殘品後往上滑
-function reset(){
-    $('html, body').animate({
-        scrollTop: $("html").offset().top
-    }, 250);
+function reset() {
+  $("html, body").animate(
+    {
+      scrollTop: $("html").offset().top
+    },
+    250
+  );
 }
-
 
 /* ------------------------end-------------------------- */
 // BRANDS
@@ -347,15 +348,15 @@ function initMap() {
 }
 
 document.getElementById("brand1").addEventListener("mouseover", function() {
-  $(".main-background").css("background-image", "url('/img/brand-1.jpg')");
+  $(".main-background").css("background-image", "url('../img/brand-1.jpg')");
   if ($(window).width() <= 768) toggle("brand1");
 });
 document.getElementById("brand2").addEventListener("mouseover", function() {
-  $(".main-background").css("background-image", "url('/img/brand-2.jpg')");
+  $(".main-background").css("background-image", "url('../img/brand-2.jpg')");
   if ($(window).width() <= 768) toggle("brand2");
 });
 document.getElementById("brand3").addEventListener("mouseover", function() {
-  $(".main-background").css("background-image", "url('/img/brand-3.jpg')");
+  $(".main-background").css("background-image", "url('../img/brand-3.jpg')");
   if ($(window).width() <= 768) toggle("brand3");
 });
 if ($(window).width() <= 768) {

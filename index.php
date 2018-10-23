@@ -42,21 +42,33 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 <div id="search-bar" class="row search justify-content-center container-fluid ">
 
   <button type="button" class="btn btn-secondary" data-toggle="modal" data-target=".vehicle">Find type at here &nbsp&nbsp<img src="img/icon-search.png"></button>
-  <div class="modal aaaa fade vehicle" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content ">
-        <div class ="container-fluid col-12 pt-4 pb-4 tabcolor">
-              <ul class="nav nav-tabs " id="myTab" role="tablist">
-                <li class="nav-item ">
+  
+</div>
+
+  <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="modal aaaa fade vehicle" tabindex="-1" role="dialog" data-backdrop="false" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered ">
+            <div class="modal-content ">
+              <div class ="container-fluid col-12 pt-4 pb-4 tabcolor">
+                <ul class="nav nav-tabs " id="myTab" role="tablist">
+                <!-- <li class="nav-item ">
                     <a class="nav-link tabss" id="vehicle-tab" data-toggle="tab" href="#vehicle" role="tab" aria-controls="vehicle" aria-selected="true">By Vehicle</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link tabss" id="rim-tab" data-toggle="tab" href="#rim" role="tab" aria-controls="rim" aria-selected="true">By Inch</a>
-                </li>
-              </ul>
+                </li> -->
+                  <li class="nav-item ">
+                      <a class="nav-link tabss" id="rim-tab" data-toggle="tab" href="#rim" role="tab" aria-controls="rim" aria-selected="true">By Inch</a>
+                  </li>
+                </ul>
           <div class="tab-content" id="myTabContent">
         <!--      這段保留        -->
-            <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
+            <div class="tab-pane fade show " id="vehicle" role="tabpanel" aria-labelledby="vehicle">
                 <form action="#" method="post">
                   <div class="container pt-4 pb-4 ">
                     <div class="d-inline-block col-md-3">
@@ -92,7 +104,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
              </table>
            </div>
         <!--      這段保留        -->
-            <div class="tab-pane fade " id="rim" role="tabpanel" aria-labelledby="rim-tab">
+            <div class="tab-pane fade show active" id="rim" role="tabpanel" aria-labelledby="rim-tab">
               <form action="product.php" method="post">
                   <div class="container pt-4 pb-4 ">
                     <div class="d-inline-block col-md-3">
@@ -141,38 +153,29 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                 </tr>
                </thead>
                   <tbody id="dataChange">
-
                 </tbody>
               </table>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary wtf" data-dismiss="modal">Close</button>
+            </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-  <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="img/6.jpg" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
+      <img class="d-block w-100 " src="img/6.jpg"  alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
           <!-- <h1>Product</h1>
           <img src= -->
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100" src="img/5.jpg" alt="Second slide">
+        <img class="d-block w-100 " src="img/5.jpg"  alt="Second slide">
       </div>
 
       <div class="carousel-item">
-        <img class="d-block w-100" src="img/4.jpg" alt="Second slide">
+        <img class="d-block w-100" src="img/4.jpg" alt="third slide">
       </div>
 
     </div>

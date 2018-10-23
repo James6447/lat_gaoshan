@@ -63,7 +63,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
           </li>
           <li id="brand2" class="row brand parent brand-2" onmouseover="showImg('img-2')" onmouseout="hideImg('img-2')" onclick="moveToLocation(1.609434,103.6610035,'brand2')">
             <div class="col-md-5 col-12 img">
-              <img  src='img/img2.jpg' class='profile'   id="img-2"/>
+              <img  src='img/img2.jpg' class='profile'  id="img-2"/>
             </div>
               <div class="col-lg-6 col-md-6 col-12 pad">
                 <h4>LAU BROTHERS Auto Tyres&Battery Services</h4>

@@ -1,7 +1,12 @@
 /* body{
     font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 } */
-
+.tab-content{
+  max-height: 400px;
+}
+#imgTitle{
+  min-height:0px;
+}
 h1 {
   font-family: Myriad Pro semibold;
   font-size: 30px;
@@ -36,6 +41,9 @@ p {
   z-index: 2000;
   box-shadow: 0px 1px 0px 0px #c5bebeb5;
   text-align: center;
+}
+.btnmargin{
+  margin-right:-15px;
 }
 
 .search h5 {
@@ -232,6 +240,11 @@ caption {
 
 #myTable{
     visibility: hidden;
+}
+
+.wtf{
+  background: #fca503;
+  padding: 0.35rem 1.75rem;
 }
 
 
