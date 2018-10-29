@@ -45,6 +45,7 @@
   padding-left: unset;
   padding-right: unset;
 }
+
 .nav-item:nth-child(3) .nav-link {
   margin-left: 37px;
 }
@@ -250,13 +251,22 @@
 #myTabContent {
   background: #e6e6e6;
   min-height: 320px;
+  border-top-right-radius: 5%;
+  border-bottom-left-radius:5%;
 }
 .nav-link.active {
   background: #e6e6e6 !important;
   border-color: #e6e6e6 !important;
   color: #333333 !important;
 }
-
+.focustab{
+  background:#e6e6e6;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+.focustab .tabss{
+ color:#333333;
+}
 #myTab {
   margin-top: 0px;
   padding: unset;

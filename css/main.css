@@ -1,9 +1,13 @@
 /* body{
     font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 } */
-.tab-content{
-  max-height: 400px;
+.vehicle .card{
+  margin-left:0;
+  margin-right:0;
+  padding:0;
+  margin-top:40px
 }
+
 #imgTitle{
   min-height:0px;
 }
@@ -420,3 +424,4 @@ span img:hover {
 .model-open {
   padding-right: unset !important;
 }
+

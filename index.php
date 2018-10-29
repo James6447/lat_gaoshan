@@ -47,12 +47,12 @@ $sort = $sort_handle->sortKeywords($arr, 2);
     <div class="card card-body">
     <div class ="container-fluid col-12 pt-4 pb-4 tabcolor">
               <ul class="nav nav-tabs " id="myTab" role="tablist">
-                 <li class="nav-item ">
-                    <a class="nav-link tabss" id="vehicle-tab" data-toggle="tab" href="#vehicle" role="tab" aria-controls="vehicle" aria-selected="true">By Vehicle</a>
+                 <li class="nav-item focustab">
+                    <a class="nav-link tabss " id="vehicle-tab" data-toggle="tab" href="#vehicle" role="tab" aria-controls="vehicle" aria-selected="true">By Vehicle</a>
                 </li> 
-                <li class="nav-item ">
+                <!-- <li class="nav-item ">
                     <a class="nav-link tabss" id="rim-tab" data-toggle="tab" href="#rim" role="tab" aria-controls="rim" aria-selected="true">By Inch</a>
-                </li>
+                </li> -->
               </ul>
           <div class="tab-content" id="myTabContent">
         <!--      這段保留        -->
@@ -185,6 +185,8 @@ $sort = $sort_handle->sortKeywords($arr, 2);
       <span class="sr-only">Next</span>
     </a>
   </div>
+
+  
 <!-- linked main.css-->
 <a id="fb" class="link-facebook animated infinite bounce" href="https://web.facebook.com/Lausincereautowagon/" target="_blank" onmousemove="stop()" onmouseout="start()"><img src="img/button fb.png"></a>
 <span class="link-menu" id="head" ><img src="img/button up.png"></span>
