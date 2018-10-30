@@ -249,7 +249,7 @@
   border-color: #333333 !important;
 }
 #myTabContent {
-  border:1px dotted #333333;
+  border:1px solid #333333;
   min-height: 320px;
   border-radius: 50px;
   background: rgb(249,161,27);
