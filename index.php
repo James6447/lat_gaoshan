@@ -46,10 +46,10 @@ $sort = $sort_handle->sortKeywords($arr, 2);
   <div class="collapse vehicle " id="collapseOne"  aria-labelledby="search-bar">
     <div class="card card-body">
     <div class ="container-fluid col-12 pt-4 pb-4 tabcolor">
-              <ul class="nav nav-tabs " id="myTab" role="tablist">
+              <!-- <ul class="nav nav-tabs " id="myTab" role="tablist">
                  <li class="nav-item focustab">
                     <a class="nav-link tabss " id="vehicle-tab" data-toggle="tab" href="#vehicle" role="tab" aria-controls="vehicle" aria-selected="true">By Vehicle</a>
-                </li> 
+                </li>  -->
                 <!-- <li class="nav-item ">
                     <a class="nav-link tabss" id="rim-tab" data-toggle="tab" href="#rim" role="tab" aria-controls="rim" aria-selected="true">By Inch</a>
                 </li> -->

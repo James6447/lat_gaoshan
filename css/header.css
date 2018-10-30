@@ -249,10 +249,11 @@
   border-color: #333333 !important;
 }
 #myTabContent {
-  background: #e6e6e6;
+  border:1px dotted #333333;
   min-height: 320px;
-  border-top-right-radius: 5%;
-  border-bottom-left-radius:5%;
+  border-radius: 50px;
+  background: rgb(249,161,27);
+background: linear-gradient(0deg, rgba(249,161,27,1) 0%, rgba(245,161,49,1) 10%, rgba(230,230,230,1) 100%);
 }
 .nav-link.active {
   background: #e6e6e6 !important;
