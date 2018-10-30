@@ -40,7 +40,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 
 <!-- picture holder container main.js mian.css-->
 <div id="search-bar" class="row search justify-content-center container-fluid ">
-    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target=".vehicle" aria-control="collapseOne" aria-expanded="true">
+    <button type="button" class="btn btn-secondary sss" data-toggle="collapse" data-target=".vehicle" aria-control="collapseOne" aria-expanded="true">
       Find type at here &nbsp&nbsp<img src="img/icon-search.png"></button>
 </div>
   <div class="collapse vehicle " id="collapseOne"  aria-labelledby="search-bar">
