@@ -26,7 +26,7 @@
 <?php include('header.html') ?>
 
 <!-- picture holder container main.js mian.css-->
-<div id="search-bar" class="row search justify-content-center">
+<!-- <div id="search-bar" class="row search justify-content-center">
   <div id="title">
     <h5>寻找您的商品</h5>
     <img src="../img/icon-search.png">
@@ -40,12 +40,12 @@
               用车款寻找
             </button>
              <div id="vihicle-wrapper" class="dropdown-menu dropdown-menu-right">
-              <div class="dropdown-item item-wrapper">
+              <div class="dropdown-item item-wrapper"> -->
                 <!-- <div class="row col-md-12">
                     <p class="col-md-6">By Car</p>
                     <p class="col-md-6">By Year</p>
                 </div> -->
-                <div class="row col-md-12">
+                <!-- <div class="row col-md-12">
                  <form action="product.php" method="post">
                      <div class="col-md-6 col-xs-12 ">
                          <p class="col-md-6">车款</p>
@@ -96,12 +96,12 @@
                               </div>
                               <div class="col-md-6">
                                  <p>英尺</p>
-                                  <select id="inch" class="maintain rol-md-5 rol-xs-12" name="size">
+                                  <select id="inch" class="maintain rol-md-5 rol-xs-12" name="size"> -->
                                       <!-- <option value="13">13</option>
                                       <option value="14">14</option>
                                       <option value="15">15</option>
                                       <option value="16">16</option> -->
-                                      <option value="17">17</option>
+                                      <!-- <option value="17">17</option>
                                       <option value="18">18</option>
                                       <option value="19">19</option>
                                       <option value="20">20</option>
@@ -133,10 +133,10 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="../img/background-3.jpg" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-md-block"> -->
           <!-- <h1>Product</h1>
           <img src= -->
-        </div>
+        <!-- </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="../img/background-1.jpg" alt="Second slide">
@@ -151,9 +151,154 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+  </div> -->
+
+<div id="search-bar" class="row search justify-content-center container-fluid ">
+    <button type="button" class="btn btn-secondary" data-toggle="collapse" data-target=".vehicle" aria-control="collapseOne" aria-expanded="true">
+      寻找你要的尺寸 &nbsp&nbsp<img src="img/icon-search.png"></button>
+</div>
+  <div class="collapse vehicle " id="collapseOne"  aria-labelledby="search-bar">
+    <div class="card card-body">
+    <div class ="container-fluid col-12 pt-4 pb-4 tabcolor">
+              <ul class="nav nav-tabs " id="myTab" role="tablist">
+                 <li class="nav-item focustab">
+                    <a class="nav-link tabss " id="vehicle-tab" data-toggle="tab" href="#vehicle" role="tab" aria-controls="vehicle" aria-selected="true">By Vehicle</a>
+                </li> 
+                <!-- <li class="nav-item ">
+                    <a class="nav-link tabss" id="rim-tab" data-toggle="tab" href="#rim" role="tab" aria-controls="rim" aria-selected="true">By Inch</a>
+                </li> -->
+              </ul>
+          <div class="tab-content" id="myTabContent">
+        <!--      這段保留        -->
+            <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
+                <form action="#" method="post">
+                  <div class="container pt-4 pb-4 ">
+                    <div class="d-inline-block col-md-3">
+                      <p>CAR BRANDS</p>
+                       <select id="typeCar" class="maintain" name="carType">
+                           <option value="0">CarType</option>
+                            <!-- 车款选项 -->
+                       </select>
+                    </div>
+                    <div class="d-inline-block col-md-3">
+                      <p>CAR MODEL</p>
+                      <select id="modelCar" class="maintain" name="carModel">
+                            <!-- 车形选项 -->
+                      <option>Car Model</option>
+                      </select>
+                    </div>
+                  </div>
+                    </form>
+
+              <table id="myTable">
+                <img id="imgTitle" src="img/logo/WW.png" style="height:50px; width:50px;">
+                  <caption id="modelTitle">Audi</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Tire</th>
+                      <!-- <th scope="col">Rim</th>
+                      <th scope="col">Bolt pattern</th> -->
+                    </tr>
+                </thead>
+                <tbody id="dataChange">
+                </tbody>
+             </table>
+           </div>
+        <!--      這段保留        -->
+            <div class="tab-pane fade " id="rim" role="tabpanel" aria-labelledby="rim-tab">
+              <form action="product.php" method="post">
+                  <div class="container pt-4 pb-4 ">
+                    <div class="d-inline-block col-md-3">
+                      <p>By Brand</p>
+                        <select id="typeModel" class="maintain" name="rimType">
+                          <!-- 轮框第一参数 -->
+                              <option>Rim Diameter</option>
+                        </select>
+                    </div>
+                    <div class="d-inline-block col-md-3">
+                      <p>By Inch</p>
+                      <select id="rimWitdh" class="maintain col-md-5 col-xs-12" name="size">
+                         <!-- 轮框第二参数 -->
+
+                      </select>
+                    </div>
+                    <div class="d-inline-block col-md-3">
+                      <p>By Inch</p>
+                      <select id="offset" class="maintain col-md-5 col-xs-12" name="size">
+                          <!-- 轮框第三参数 -->
+                      </select>
+                    </div>
+                    <div class="d-inline-block col-md-3">
+                      <p>By Inch</p>
+                      <select id="CenterBore" class="maintain col-md-5 col-xs-12" name="size">
+                          <!-- 轮框第四参数 -->
+                      </select>
+                    </div>
+                    <div class="d-inline-block col-md-3">
+                      <p>By Inch</p>
+                      <select id="BoltPattern" class="maintain col-md-5 col-xs-12" name="size">
+                          <!-- 轮框第五参数 -->
+                      </select>
+                    </div>
+                  </div>
+              </form>
+              <table id="rimTable">
+                <img id="imgTitle" src="img/logo/WW.png" style="height:50px; width:50px;">
+                <caption id="modelTitle">Audi</caption>
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Tire</th>
+                    <!-- <th scope="col">Rim</th>
+                    <th scope="col">Bolt pattern</th> -->
+                </tr>
+               </thead>
+                  <tbody id="dataChange">
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      
+    
   </div>
+</div>
 
+  <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
 
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100 " src="img/6.jpg" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <!-- <h1>Product</h1>
+          <img src= -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100 " src="img/5.jpg"  alt="Second slide">
+      </div>
+
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/4.jpg" alt="Second slide">
+      </div>
+
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">前一页</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">后一页</span>
+    </a>
+  </div>
 
 
 <!-- linked main.css-->
