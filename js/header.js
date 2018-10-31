@@ -2,13 +2,15 @@ $(document).ready(function() {
   navtogglechange();
   nowstatenav();
 });
-
 function nowstatenav() {
   /*$('.nav-link').each(function(){
       if($($(this))[0].href==String(window.location))
           $(this).parent().addClass('navactive');
   });
 */
+function ShowAnswer(){
+  document.getElementById("AnswerBox").innerHTML='2';
+}
   $(".nav-link").each(function() {
     if (
       this.href == document.location.href ||

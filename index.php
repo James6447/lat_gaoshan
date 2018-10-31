@@ -40,8 +40,8 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 
 <!-- picture holder container main.js mian.css-->
 <div id="search-bar" class="row search justify-content-center container-fluid ">
-    <button type="button" class="btn btn-secondary sss" data-toggle="collapse" data-target=".vehicle" aria-control="collapseOne" aria-expanded="true">
-      Find type at here &nbsp&nbsp<img src="img/icon-search.png"></button>
+    <button type="button" class="btn btn-secondary sss"  data-toggle="collapse" data-target=".vehicle" aria-control="collapseOne" aria-expanded="true" >
+    Find type at here &nbsp&nbsp<img src="img/icon-search.png"></button>
 </div>
   <div class="collapse vehicle " id="collapseOne"  aria-labelledby="search-bar">
     <div class="card card-body">
@@ -53,46 +53,46 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                 <!-- <li class="nav-item ">
                     <a class="nav-link tabss" id="rim-tab" data-toggle="tab" href="#rim" role="tab" aria-controls="rim" aria-selected="true">By Inch</a>
                 </li> -->
-              </ul>
+              <!-- </ul> -->
           <div class="tab-content" id="myTabContent">
         <!--      這段保留        -->
-            <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
+            <!-- <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
                 <form action="#" method="post">
                   <div class="container pt-4 pb-4 ">
                     <div class="d-inline-block col-md-3">
                       <p>CAR BRANDS</p>
                        <select id="typeCar" class="maintain" name="carType">
-                           <option value="0">CarType</option>
+                           <option value="0">CarType</option> -->
                             <!-- 车款选项 -->
-                       </select>
+                       <!-- </select>
                     </div>
                     <div class="d-inline-block col-md-3">
                       <p>CAR MODEL</p>
-                      <select id="modelCar" class="maintain" name="carModel">
+                      <select id="modelCar" class="maintain" name="carModel"> -->
                             <!-- 车形选项 -->
-                      <option>Car Model</option>
+                      <!-- <option>Car Model</option>
                       </select>
                     </div>
                   </div>
-                    </form>
+                    </form> -->
 
-              <table id="myTable">
+              <!-- <table id="myTable">
                 <img id="imgTitle" src="img/logo/WW.png" style="height:50px; width:50px;">
                   <caption id="modelTitle">Audi</caption>
                   <thead>
                     <tr>
                       <th scope="col"></th>
-                      <th scope="col">Tire</th>
+                      <th scope="col">Tire</th> -->
                       <!-- <th scope="col">Rim</th>
                       <th scope="col">Bolt pattern</th> -->
-                    </tr>
+                    <!-- </tr>
                 </thead>
                 <tbody id="dataChange">
                 </tbody>
              </table>
-           </div>
+           </div> -->
         <!--      這段保留        -->
-            <div class="tab-pane fade " id="rim" role="tabpanel" aria-labelledby="rim-tab">
+            <div class="tab-pane fade show active" id="rim" role="tabpanel" aria-labelledby="rim-tab">
               <form action="product.php" method="post">
                   <div class="container pt-4 pb-4 ">
                     <div class="d-inline-block col-md-3">
