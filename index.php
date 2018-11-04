@@ -58,7 +58,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
         <!--      這段保留        -->
             <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
                 <form action="#" method="post">
-                  <div class="container pt-4 pb-4 ">
+                  <div class="container pt-4 pb-4" >
                     <div class="d-inline-block col-md-3">
                       <p>CAR BRANDS</p>
                        <select id="typeCar" class="maintain" name="carType">
@@ -73,11 +73,12 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                        <option>Car Model</option>
                       </select>
                     </div>
+                    <img id="imgTitle" src="img/logo/WW.png" style="height:75px;">
                   </div>
                     </form>
 
                <table id="myTable">
-                <img id="imgTitle" src="img/logo/WW.png" style="height:50px; width:50px;">
+                <!-- <img id="imgTitle" src="img/logo/WW.png" style="height:50px; width:50px;"> -->
                   <caption id="modelTitle">Audi</caption>
                   <thead>
                     <tr>
