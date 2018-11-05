@@ -241,10 +241,10 @@
                           <!-- 轮框第五参数 -->
                       </select>
                     </div>
+                    <img id="imgTitle" src="../img/logo/WW.png" style="height:75px;">
                   </div>
               </form>
               <table id="rimTable">
-                <img id="imgTitle" src="img/logo/WW.png" style="height:50px; width:50px;">
                 <caption id="modelTitle">Audi</caption>
                 <thead>
                   <tr>

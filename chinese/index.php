@@ -28,7 +28,7 @@
 <!-- picture holder container main.js mian.css-->
 <div id="search-bar" class="row search justify-content-center container-fluid ">
     <button type="button" class="btn btn-secondary sss"  data-toggle="collapse" data-target=".vehicle" aria-control="collapseOne" aria-expanded="true" >
-    Find type at here &nbsp&nbsp<img src="../img/icon-search.png"></button>
+    尋找你要的類型 &nbsp&nbsp<img src="../img/icon-search.png"></button>
 </div>
   <div class="collapse vehicle " id="collapseOne"  aria-labelledby="search-bar">
     <div class="card card-body">
@@ -60,11 +60,11 @@
                        <option>車款</option>
                       </select>
                     </div>
+                    <img id="imgTitle" src="../img/logo/WW.png" style="height:75px;">
                   </div>
                     </form>
 
                <table id="myTable">
-                <img id="imgTitle" src="../img/logo/WW.png" style="height:50px; width:50px;">
                   <caption id="modelTitle">Audi</caption>
                   <thead>
                     <tr>
