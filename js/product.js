@@ -256,7 +256,7 @@ function getCarType(carType){
     $("#modelCar").empty();
 
     $.ajax({
-        url: "product/modelselected.php",
+        url: "/lat_gaoshan/product/modelselected.php",
         type: "POST",
         data: {
             carType:carType
@@ -282,7 +282,7 @@ function getModelData(modelCar){
     // setTimeout(function() { $("#myTable tbody tr").remove(); }, 600);
     let col;
     $.ajax({
-        url: "product/tyre_list.php",
+        url: "/lat_gaoshan/product/tyre_list.php",
         type: "POST",
         data: {
             modelCar:modelCar
