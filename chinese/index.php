@@ -28,7 +28,7 @@
 <!-- picture holder container main.js mian.css-->
 <div id="search-bar" class="row search justify-content-center container-fluid ">
     <button type="button" class="btn btn-secondary sss"  data-toggle="collapse" data-target=".vehicle" aria-control="collapseOne" aria-expanded="true" >
-    Find type at here &nbsp&nbsp<img src="img/icon-search.png"></button>
+    Find type at here &nbsp&nbsp<img src="../img/icon-search.png"></button>
 </div>
   <div class="collapse vehicle " id="collapseOne"  aria-labelledby="search-bar">
     <div class="card card-body">
@@ -64,7 +64,7 @@
                     </form>
 
                <table id="myTable">
-                <img id="imgTitle" src="img/logo/WW.png" style="height:50px; width:50px;">
+                <img id="imgTitle" src="../img/logo/WW.png" style="height:50px; width:50px;">
                   <caption id="modelTitle">Audi</caption>
                   <thead>
                     <tr>
@@ -95,18 +95,18 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img class="d-block w-100 " src="img/6.jpg" alt="First slide">
+        <img class="d-block w-100 " src="../img/6.jpg" alt="First slide">
         <div class="carousel-caption d-none d-md-block">
           <!-- <h1>Product</h1>
           <img src= -->
         </div>
       </div>
       <div class="carousel-item">
-        <img class="d-block w-100 " src="img/5.jpg"  alt="Second slide">
+        <img class="d-block w-100 " src="../img/5.jpg"  alt="Second slide">
       </div>
 
       <div class="carousel-item">
-        <img class="d-block w-100" src="img/4.jpg" alt="Second slide">
+        <img class="d-block w-100" src="../img/4.jpg" alt="Second slide">
       </div>
 
     </div>

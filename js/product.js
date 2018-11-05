@@ -3,7 +3,7 @@
 $(document).ready(function() {
     //预设车款栏位
     $.ajax({
-      url: "product/carselected.php",
+      url: "/lat_gaoshan/product/carselected.php",
       type: "POST",
       dataType: "JSON",
       success: function(res) {
@@ -42,7 +42,7 @@ $(document).ready(function() {
 // --------------------- //
     //预设Rim第一参数
     $.ajax({
-      url: "product/rimselected.php",
+      url: "/lat_gaoshan/product/rimselected.php",
       type: "POST",
       data: {
           pattern:'1'
