@@ -31,11 +31,8 @@
   <link href="../css/header.css" rel="stylesheet">
   <link href="../css/footer.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/zoom.css">
-  <script src="../js/win.js"></script>
   <script src="../js/jquery.js"></script>
   <script src="../js/header.js"></script>
-
-
 </head>
 
 <body  onscroll="backTop()" id="ins" onload="getProduct('<?php echo $condition?>');" >
@@ -156,7 +153,6 @@ include('footer.html');
  <script src="http://libs.baidu.com/jquery/1.8.1/jquery.min.js"></script>
   <script src="../js/main.js"></script>
   <script src="../js/zoom.js"></script>
-  <script src="../js/product.js"></script>
   <script src="../js/transitions.js"></script>
   <script src="../js/header.js"></script>
 </body>

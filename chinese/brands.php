@@ -13,7 +13,7 @@
   <link href="../css/header.css" rel="stylesheet">
   <link href="../css/footer.css" rel="stylesheet">
   <script src="../js/jquery.js"></script>
-  <script src="../js/win.js"></script>
+  <script src="../js/header.js"></script>
 </head>
 
 <body onscroll="backTop()">
@@ -88,5 +88,5 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp7VgdQjbiuZkPXUfhYr9axIj
 </script>
 <script src="../js/bootstrap.bundle.min.js"></script>
 <script src="../js/jquery.min.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/header.js"></script>
+<script src="../js/brands.js"></script>
+
