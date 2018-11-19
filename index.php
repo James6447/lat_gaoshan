@@ -73,7 +73,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                        <option>Car Model</option>
                       </select>
                     </div>
-                    <img id="imgTitle" src="img/logo/WW.png" style="height:75px;">
+                    <img id="imgTitle" src="img/logo/WW.png" style="height:75px; padding:10px;">
                   </div>
                     </form>
 
@@ -146,5 +146,5 @@ include('footer.html');
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery.min.js"></script>
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>

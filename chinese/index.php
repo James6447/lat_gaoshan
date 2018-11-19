@@ -60,7 +60,7 @@
                        <option>車款</option>
                       </select>
                     </div>
-                    <img id="imgTitle" src="../img/logo/WW.png" style="height:75px;">
+                    <img id="imgTitle" src="../img/logo/WW.png" style="height:75px; padding:10px;">
                   </div>
                     </form>
 
