@@ -20,7 +20,7 @@ $start = ($item_row*$item_column)*($p-1);
 $count=$item_row*$item_column;
 switch ($category) {
     case '1':
-        $title = 'CASTROL';
+        $title = 'ENGINE OIL';
         break;
     case '2':
         $title = 'ENEOS';
@@ -43,12 +43,13 @@ $con = new mysqli($servername, $username, $password, $dbname);
     //show comment column
     $query1 ="SELECT * FROM t_oil
               WHERE category = $category
+              AND is_show = 1
               ORDER By type ASC
               limit $start,$item_column
               ";
 
     //判斷幾頁
-    $query3 ="SELECT * FROM t_oil  WHERE category = $category";
+    $query3 ="SELECT * FROM t_oil  WHERE category = $category AND is_show = 1 ";
 
 $result1 = $con->query($query1);
 $result3 = $con->query($query3);
@@ -64,7 +65,7 @@ $pages=ceil($total/$count);
           while( $row = $result1->fetch_assoc())
           {
             ?>
-            <div class="card col-3 accossories">
+            <div class="card col-3">
              <img class="card-img-top" src="<?php echo '/lat_gaoshan/img/accossories/'.$row['category'].'/'.$row['img_path'].'.jpg' ?>"  data-action="zoom" alt="Card image cap">
              <div class="card-body">
                <h5 class="card-title"><?php echo $row['img_path']?></h5>

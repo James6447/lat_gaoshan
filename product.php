@@ -103,8 +103,8 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 						<li><a href="">ACCESSORIES<span>+</span></a>
               <ul id="access" class="list-group list-group-flush">
                  <li class="list-group-item space">&nbsp;</li>
-                 <li class="list-group-item" onclick="getProduct('accossories.php?category=1')">ENGINE OIL CASTROL</li>
-                 <li class="list-group-item" onclick="getProduct('accossories.php?category=2')">ENGINE OIL ENEOS</li>
+                 <li class="list-group-item" onclick="getProduct('accossories.php?category=1')">ENGINE OIL</li>
+<!--                 <li class="list-group-item" onclick="getProduct('accossories.php?category=2')">ENGINE OIL ENEOS</li>-->
                  <li class="list-group-item" onclick="getProduct('accossories.php?category=3')">BATTERY</li>
                  <li class="list-group-item"></li>
               </ul>
@@ -116,7 +116,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 
           <nav class="hot">
             <ul>
-              <li><a >BEST SELLER</a>
+              <li><a>BEST SELLER</a>
                 <ul class="list-group list-group-flush" >
                   <li class="list-group-item space">&nbsp;</li>
                    <li class="list-group-item"><img src="img/rim.jpg">

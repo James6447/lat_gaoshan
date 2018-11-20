@@ -44,11 +44,9 @@ $sort = $sort_handle->sortKeywords($arr, 2);
   ?>
 <h1 class="breadcrumb-title"><span class="brand-title"><img src='img/Service.png'></span>&nbsp;&nbsp;&nbsp;Services</h1>
 <div id="containersevices">
-    <div class="videoyou">
-      <iframe class="youtubeclass" width="100%" height="100%"
-        src="https://youtube.com/embed/uTqkQutK_nc">
-      </iframe>
-    </div>
+        <video width="100%" height="100%" autoplay muted loop>
+            <source src="img/video/introduce.mp4" type="video/mp4">
+        </video>
 </div>
 
 
@@ -77,14 +75,13 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="videoyou">
-              <iframe class="youtubeclass" width="100%" height="100%"src="https://youtube.com/embed/uTqkQutK_nc">
-              </iframe>
-              </div>
+                  <video width="100%" height="100%" controls autoplay>
+                      <source src="img/video/Tyre%20Age%20Best%20Used.mp4" type="video/mp4">
+                  </video>
               <div class="modal-body"><br>
-              Tire maintenance for motor vehicles is based on several factors.
-              The chief reason for tire replacement is friction from moving contact with road surfaces,causing the tread on the outer perimeter of tires to eventually wear away. When the tread depth becomes too shallow (less than 0.125in./3.2mm), the tire is worn out and should be replaced.
-              The same wheels can usually be used throughout the lifetime of the car.<br><br>
+<!--              Tire maintenance for motor vehicles is based on several factors.-->
+<!--              The chief reason for tire replacement is friction from moving contact with road surfaces,causing the tread on the outer perimeter of tires to eventually wear away. When the tread depth becomes too shallow (less than 0.125in./3.2mm), the tire is worn out and should be replaced.-->
+<!--              The same wheels can usually be used throughout the lifetime of the car.<br><br>-->
               <span class="message-notice">* If these few following step bothering you, please contact us for more professional services.<br></span>
               <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -119,19 +116,21 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/Battery Service.jpg">
+                <video width="100%" height="100%" controls autoplay>
+                    <source src="img/video/Runflat.mp4" type="video/mp4">
+                </video>
               <div class="modal-body"><br>
-              Assuming your car’s charging system is in working order, avoiding a dead battery in the dawn before cars and coffee or at sunset after a long and winding drive is simple.
-              Maintain and clean the battery terminals and posts.<br>
-              Here is the few step to easily change your battery:<br><br>
-              Step 1: Clean the cables<br>
-              Step 2: Check the level of the electrolyte<br>
-              Step 3: Check the condition and charge of the battery<br>
-              Step 4: To drop in the new battery first remove the cables<br>
-              Step 5: Replace the battery<br>
-              Step 6: Reinstall the clamp and cables<br><br>
-              <span class="message-notice">* If these few following step bothering you, please contact us for more professional services.<br></span></div>
+<!--              Assuming your car’s charging system is in working order, avoiding a dead battery in the dawn before cars and coffee or at sunset after a long and winding drive is simple.-->
+<!--              Maintain and clean the battery terminals and posts.<br>-->
+<!--              Here is the few step to easily change your battery:<br><br>-->
+<!--              Step 1: Clean the cables<br>-->
+<!--              Step 2: Check the level of the electrolyte<br>-->
+<!--              Step 3: Check the condition and charge of the battery<br>-->
+<!--              Step 4: To drop in the new battery first remove the cables<br>-->
+<!--              Step 5: Replace the battery<br>-->
+<!--              Step 6: Reinstall the clamp and cables<br><br>-->
+              <span class="message-notice">* If these few following step bothering you, please contact us for more professional services.<br></span>
+              </div>
               <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
@@ -163,8 +162,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="img/Service.jpg">
+              <img class="modal-img-top" style="height: 100%; width: 100%; display: block;" src="img/Service.jpg">
               <div class="modal-body"><br>
               A motor vehicle service or tune-up is a series of maintenance procedures carried out at a set time interval or after the vehicle has travelled a certain distance.
               The service intervals are specified by the vehicle manufacturer in a service schedule and some modern cars display the due date for the next service electronically on the instrument panel.</br>
