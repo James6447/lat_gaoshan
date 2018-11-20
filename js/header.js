@@ -2,24 +2,32 @@ $(document).ready(function() {
   navtogglechange();
   nowstatenav();
 });
+
+function backTop() {
+  var top = window.pageYOffset;
+
+  if (top <= 100) {
+    document.getElementById("head").style.visibility = "hidden";
+    document.getElementById("head").style.opacity = "0";
+  } else {
+    document.getElementById("head").style.visibility = "visible";
+    document.getElementById("head").style.opacity = "1";
+  }
+}
+
 function nowstatenav() {
-  /*$('.nav-link').each(function(){
-      if($($(this))[0].href==String(window.location))
-          $(this).parent().addClass('navactive');
-  });
-*/
-function ShowAnswer(){
-  document.getElementById("AnswerBox").innerHTML='2';
-}
-  $(".nav-link").each(function() {
-    if (
-      this.href == document.location.href ||
-      document.location.href.search(this.href) >= 0
-    ) {
-      $(this).addClass("navactive"); // this.className = 'active';
-    }
-  });
-}
+  function ShowAnswer(){
+    document.getElementById("AnswerBox").innerHTML='2';
+  }
+    $(".nav-link").each(function() {
+      if (
+       this.href == document.location.href ||
+        document.location.href.search(this.href) >= 0
+      ) {
+        $(this).addClass("navactive"); // this.className = 'active';
+      }
+    });
+  }
 
 function navtogglechange() {
   $(".navbar-toggler").click(function() {
@@ -69,3 +77,30 @@ $("#myTab a").on("click", function(e) {
   e.preventDefault();
   $(this).tab("show");
 });
+
+
+//Animate contact icon
+function toHead() {
+  $("html, body").animate(
+    {
+      scrollTop: $("html").offset().top
+    },
+    250
+  );
+}
+$("#head").click(function() {
+  toHead();
+});
+$(".list-group li").click(function() {
+  toHead();
+});
+
+function stop() {
+  var element = document.getElementById("fb");
+  element.classList.remove("bounce");
+}
+
+function start() {
+  var element = document.getElementById("fb");
+  element.classList.add("bounce");
+}

@@ -43,11 +43,8 @@ $sort = $sort_handle->sortKeywords($arr, 2);
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/zoom.css">
-  <script src="js/win.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/header.js"></script>
-
-
 </head>
 
 <body  onscroll="backTop()" id="ins" onload="getProduct('<?php echo $condition?>');" >
@@ -88,18 +85,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                  <li class="list-group-item" onclick="getProduct('car.php?type=14&name=TOYOTA')">TOYOTA</li>
               </ul>
 						</li>
-						<!-- <li><a href="">TYRES<span>+</span></a>
-              <ul class="list-group list-group-flush">
-                 <li class="list-group-item space">&nbsp;</li>
-                 <li class="list-group-item" onclick="getProduct('rim.php')">RIM</li>
-                 <li class="list-group-item">Dapibus ac facilisis in</li>
-                 <li class="list-group-item">RIM</li>
-                 <li class="list-group-item">Morbi leo risus</li>
-                 <li class="list-group-item">Porta ac consectetur ac</li>
-                 <li class="list-group-item">Vestibulum at eros</li>
-                 <li class="list-group-item"></li>
-              </ul>
-						</li> -->
+						
 						<li><a href="">ACCESSORIES<span>+</span></a>
               <ul id="access" class="list-group list-group-flush">
                  <li class="list-group-item space">&nbsp;</li>
@@ -168,7 +154,6 @@ include('footer.html');
  <script src="http://libs.baidu.com/jquery/1.8.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/zoom.js"></script>
-  <!-- <script src="js/product.js"></script> -->
   <script src="js/transitions.js"></script>
   <script src="js/header.js"></script>
 </body>

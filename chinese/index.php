@@ -17,9 +17,8 @@
   <link href="../css/header.css" rel="stylesheet">
   <link href="../css/footer.css" rel="stylesheet">
   <script src="../js/jquery.js"></script>
-  <script src="../js/product.js"></script>
+  <script src="../js/indexchinese.js"></script>
   <script src="../js/header.js"></script>
-  <script src="../js/win.js"></script>
 </head>
 <body onscroll="backTop()">
 
@@ -27,7 +26,7 @@
 
 <!-- picture holder container main.js mian.css-->
 <div id="search-bar" class="row search justify-content-center container-fluid ">
-    <button type="button" class="btn btn-secondary sss"  data-toggle="collapse" data-target=".vehicle" aria-control="collapseOne" aria-expanded="true" >
+    <button type="button" class="btn btn-secondary sss notext"  id="btn1" data-toggle="collapse" data-target=".vehicle" aria-control="collapseOne" aria-expanded="true" >
     尋找你要的類型 &nbsp&nbsp<img src="../img/icon-search.png"></button>
 </div>
   <div class="collapse vehicle " id="collapseOne"  aria-labelledby="search-bar">
@@ -134,5 +133,4 @@ include('footer.html');
 
 <script src="../js/bootstrap.bundle.min.js"></script>
 <script src="../js/jquery.min.js"></script>
-  <script src="../js/main.js"></script>
 </body>

@@ -4,13 +4,13 @@ $arr = array('tyres maintenance','LauSincere','LauSincere Autowagon Services', '
 $sort_handle = new CombainKeywords();
 $sort = $sort_handle->sortKeywords($arr, 2);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>LauSincere Autowagon Services-BRANDS,高山輪胎有限公司,Johor Bahru</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <META NAME="Author" CONTENT="LauSincere Autowagon Services - 高山輪胎有限公司">
   <!-- <META HTTP-EQUIV="Keywords" CONTENT="tyres maintenance,LauSincere,LauSincere Autowagon Services, Services, engine oil maintenance,Trading Of Tyres And Batteries Of Motor Vehicles,johor bahru,高山輪胎有限公司"> -->
   <?php
@@ -19,9 +19,9 @@ $sort = $sort_handle->sortKeywords($arr, 2);
         echo $value.',';
     }
     echo '">';
-   ?>
-  <META HTTP-EQUIV="Description" CONTENT="http://www.lausincere.com, Automotive Repair Shop, tyres, engine oil, vihicle services,Johor Bahru.">
+  ?>
 
+  <META HTTP-EQUIV="Description" CONTENT="http://www.lausincere.com, Automotive Repair Shop, tyres, engine oil, vihicle services,Johor Bahru.">
   <noscript><iframe src=*.html></iframe></noscript>
   <link rel="icon" type="image/png" href="img/logo-1.png" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
@@ -31,7 +31,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
   <link href="css/header.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
   <script src="js/jquery.js"></script>
-  <script src="js/win.js"></script>
+  <script src="js/header.js"></script>
 </head>
 
 <body onscroll="backTop()">
@@ -106,5 +106,5 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAp7VgdQjbiuZkPXUfhYr9axIj
 </script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/header.js"></script>
+<script src="js/brands.js"></script>
+
