@@ -131,6 +131,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
       <span class="sr-only">Next</span>
     </a>
   </div>
+</div>  
 
   
 <!-- linked main.css-->
