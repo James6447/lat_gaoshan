@@ -76,7 +76,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-                  <video width="100%" height="100%" controls autoplay>
+                  <video width="100%" height="100%" controls>
                       <source src="img/video/Tyre%20Age%20Best%20Used.mp4" type="video/mp4">
                   </video>
               <div class="modal-body"><br>
@@ -117,7 +117,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-                <video width="100%" height="100%" controls autoplay>
+                <video width="100%" height="100%" controls>
                     <source src="img/video/Runflat.mp4" type="video/mp4">
                 </video>
               <div class="modal-body"><br>

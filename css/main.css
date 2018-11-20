@@ -4,6 +4,7 @@
 .collapse .show{
   transition: all 0.6s linear;
   width:100%;
+  text-align: -webkit-center;
 }
 .collapse .card .tabcolor {
   padding-top:60px !important;
@@ -223,7 +224,7 @@ table {
   border-collapse: collapse;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 90%;
   table-layout: fixed;
 }
 
