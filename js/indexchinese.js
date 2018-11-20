@@ -122,6 +122,13 @@ $(document).ready(function() {
         });
     }
     changehtml();
+
+    //依選擇車型號顯示
+    document.getElementById("modelCar").addEventListener("change", function() {
+        let t = document.getElementById("modelCar");
+        let modelCar = t.options[t.selectedIndex].value;
+        getModelData(modelCar);
+    });
 });
 
 function changehtml(){

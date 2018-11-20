@@ -118,15 +118,15 @@ function initMap() {
 }
 
 document.getElementById("brand1").addEventListener("mouseover", function() {
-  $(".main-background").css("background-image", "url('img/brand-1.jpg')");
+  $(".main-background").css("background-image", "url('/img/brand-1.jpg')");
   if ($(window).width() <= 768) toggle("brand1");
 });
 document.getElementById("brand2").addEventListener("mouseover", function() {
-  $(".main-background").css("background-image", "url('img/brand-2.jpg')");
+  $(".main-background").css("background-image", "url('/img/brand-2.jpg')");
   if ($(window).width() <= 768) toggle("brand2");
 });
 document.getElementById("brand3").addEventListener("mouseover", function() {
-  $(".main-background").css("background-image", "url('img/brand-3.jpg')");
+  $(".main-background").css("background-image", "url('/img/brand-3.jpg')");
   if ($(window).width() <= 768) toggle("brand3");
 });
 if ($(window).width() <= 768) {

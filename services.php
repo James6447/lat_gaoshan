@@ -214,6 +214,7 @@ include('footer.html');
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/masonry-layout@4.2.1/dist/masonry.pkgd.min.js"></script>
 <script src="js/services.js"></script>
+<script src="js/header.js"></script>
 </body>
 
 
