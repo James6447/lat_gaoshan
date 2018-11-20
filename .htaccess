@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule index.html$ index.php
+RewriteRule product.html$ product.php
+RewriteRule services.html$ services.php
+RewriteRule brands.html$ brands.php
+</IfModule>
+
