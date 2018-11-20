@@ -131,8 +131,8 @@ iframe {
 
 .list-group-item img {
   padding: 5px;
-  width: 100px;
-  height: 100px;
+  width: 115px;
+  height: 108px;
   float: left;
 }
 
@@ -175,6 +175,7 @@ iframe {
   border: none;
   margin-left: 34px;
   background-color: #f9f9f900;
+  width: 100%;
 }
 
 .card-deck .card img {
@@ -202,7 +203,10 @@ iframe {
 }
 
 .card-body {
-    padding: 1.25rem 0rem;
+  padding: 1.25rem 1rem;
+  background-color: #ffffff94;
+  width: 130%;
+  max-width: 300px;
 }
 
 .numeric {
@@ -225,6 +229,10 @@ iframe {
   background-color: white;
   color: #ff9933;
   border: 1px solid #ff9933;
+}
+
+.custom {
+  margin: 2% 0px 2% -3%;
 }
 
 .page-link {

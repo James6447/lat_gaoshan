@@ -24,11 +24,9 @@
   ?>
 <h1 class="breadcrumb-title"><span class="brand-title"><img src='../img/Service.png'></span>&nbsp;&nbsp;&nbsp;服务</h1>
 <div id="containersevices">
-    <div class="videoyou">
-      <iframe class="youtubeclass" width="100%" height="100%"
-        src="https://youtube.com/embed/uTqkQutK_nc">
-      </iframe>
-    </div>
+    <video width="100%" height="100%" autoplay muted loop>
+        <source src="../img/video/introduce.mp4" type="video/mp4">
+    </video>
 </div>
 
 
@@ -57,12 +55,11 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="videoyou">
-              <iframe class="youtubeclass" width="100%" height="100%"src="https://youtube.com/embed/uTqkQutK_nc">
-              </iframe>
-              </div>
+                <video width="100%" height="100%" controls>
+                    <source src="../img/video/Tyre%20Age%20Best%20Used.mp4" type="video/mp4">
+                </video>
               <div class="modal-body"><br>
-              汽车的轮胎维护基于几个因素。轮胎更换的主要原因是与路面移动接触引起的摩擦，导致轮胎外周上的胎面最终磨损。当胎面深度变得太浅（小于0.125英寸/3.2毫米）时，轮胎磨损并应更换。通常可以在汽车的整个使用寿命期间使用相同的类型的轮胎。<br><br>
+<!--              汽车的轮胎维护基于几个因素。轮胎更换的主要原因是与路面移动接触引起的摩擦，导致轮胎外周上的胎面最终磨损。当胎面深度变得太浅（小于0.125英寸/3.2毫米）时，轮胎磨损并应更换。通常可以在汽车的整个使用寿命期间使用相同的类型的轮胎。<br><br>-->
               <span class="message-notice">* 如果以下几个步骤困扰您，请联系我们以获得更专业的服务。<br></span>
               <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
@@ -81,8 +78,8 @@
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
           src="../img/Battery Service.jpg">
         <div class="card-body ">
-          <h4 class ="card-title">蓄电池服务</h4>
-          <p class="card-text"> 汽车在平时状态下电池并不会出现太大问题，当经过长时间的行驶电池的状态电量可能会因此耗光，所以定期维护电池是每个驾驶所需要知道的。</p>
+          <h4 class ="card-title"> 輪胎的摩擦力</h4>
+          <p class="card-text"> 牽引力是車輪或輪胎與地面之間的摩擦力，允許車輛向前移動。當扭矩施加到車輪軸上時，它是對旋轉的阻力。當表面潮濕時，一層水可以充當潤滑劑，大大降低了車輛的牽引力和穩定性。</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal1">
             <div class="txtbtn">了解更多</div> <i class="fa fa-arrow-right"></i>
@@ -97,17 +94,18 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <img class="modal-img-top" style="height: 100%; width: 100%; display: block;"
-              src="../img/Battery Service.jpg">
+                <video width="100%" height="100%" controls>
+                    <source src="../img/video/Runflat.mp4" type="video/mp4">
+                </video>
               <div class="modal-body"><br>
-              汽车在平时状态下电池并不会出现太大问题，当经过长时间的行驶电池的状态电量可能会因此耗光，所以定期维护电池是每个驾驶所需要知道的。<br>
-              以下是轻松更换电池的几个步骤：<br><br>
-              步骤1: 清洁电缆<br>
-              步骤2: 检查电解液的水平<br>
-              步骤3: 检查电池的状况和电量<br>
-              步骤4: 要先放入新电池，请先取下电缆<br>
-              步骤5: 更换电池<br>
-              步骤6: 重新安装夹具和电缆<br><br>
+<!--              汽车在平时状态下电池并不会出现太大问题，当经过长时间的行驶电池的状态电量可能会因此耗光，所以定期维护电池是每个驾驶所需要知道的。<br>-->
+<!--              以下是轻松更换电池的几个步骤：<br><br>-->
+<!--              步骤1: 清洁电缆<br>-->
+<!--              步骤2: 检查电解液的水平<br>-->
+<!--              步骤3: 检查电池的状况和电量<br>-->
+<!--              步骤4: 要先放入新电池，请先取下电缆<br>-->
+<!--              步骤5: 更换电池<br>-->
+<!--              步骤6: 重新安装夹具和电缆<br><br>-->
               <span class="message-notice">* 如果以下几个步骤困扰您，请联系我们以获得更专业的服务。<br></span></div>
               <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>

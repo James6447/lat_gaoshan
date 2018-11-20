@@ -1,0 +1,17 @@
+mysql: 
+  image: mysql:5.7
+  container_name: mysql
+  ports:
+    - "3306:3306"
+  volumes:
+    - ./data:/var/lib/mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: 12345
+
+dishrank:
+  image: webdevops/php-apache-dev
+  container_name: random
+  volumes:
+    - ./:/app
+  ports:
+    - "5566:80"

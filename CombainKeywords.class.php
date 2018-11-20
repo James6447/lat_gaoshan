@@ -48,7 +48,7 @@ class CombainKeywords
         $url_back  = isset($parameters['url_back']) ? $parameters['url_back'] : '';
 
         $tag  = '<nav aria-label="Page navigation example">';
-        $tag .= '<ul class="pagination justify-content-center">';
+        $tag .= '<ul class="custom pagination justify-content-center">';
         // $tag .= '<li class="page-item arrow">';
         // $tag .= '<a class="page-link" aria-label="Previous">';
         // $tag .= '<span aria-hidden="true">&laquo;</span>';

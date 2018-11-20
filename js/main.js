@@ -67,7 +67,7 @@ $(document).ready(function() {
 //顯示產品
 function getProduct(pageName) {
   var req = new XMLHttpRequest();
-  req.open("get", "http://localhost:5566/lat_gaoshan/product/" + pageName);
+  req.open("get", "http://localhost:5566/product/" + pageName);
   req.onload = function() {
     let app = $(window).width();
     let content = document.getElementById("change");

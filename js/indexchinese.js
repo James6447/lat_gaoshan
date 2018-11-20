@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: "/lat_gaoshan/product/carselected.php",
+        url: "/product/carselected.php",
         type: "POST",
         dataType: "JSON",
         success: function(res) {
@@ -39,7 +39,7 @@ $(document).ready(function() {
             $("#modelCar").empty();
         
             $.ajax({
-                url: "/lat_gaoshan/product/modelselected.php",
+                url: "/product/modelselected.php",
                 type: "POST",
                 data: {
                     carType:carType
@@ -86,7 +86,7 @@ $(document).ready(function() {
         // setTimeout(function() { $("#myTable tbody tr").remove(); }, 600);
         let col;
         $.ajax({
-            url: "/lat_gaoshan/product/tyre_list.php",
+            url: "/product/tyre_list.php",
             type: "POST",
             data: {
                 modelCar:modelCar

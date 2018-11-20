@@ -101,8 +101,8 @@ $sort = $sort_handle->sortKeywords($arr, 2);
         <img class="card-img-top" style="height: 100%; width: 100%; display: block;"
           src="img/Battery Service.jpg">
         <div class="card-body ">
-          <h4 class ="card-title">Battery Service</h4>
-          <p class="card-text">Assuming your car’s charging system is in working order, avoiding a dead battery in the dawn before cars and coffee or at sunset after a long and winding drive is simple. Maintain and clean the battery terminals and posts. </p>
+          <h4 class ="card-title">Traction Friction Of Tire</h4>
+          <p class="card-text">Traction is the friction between wheels or tires and the ground that allows a vehicle to move forward. It is the resistance to spinning when a torque is applied to axle the wheel. When a surface is wet, a layer of water can act as a lubricant, greatly reducing the traction and stability of the vehicle. </p>
           <!-- Button trigger modal -->
           <button type="button" class="btn align-self-end effect " data-toggle="modal" data-target="#myModal1">
             <div class="txtbtn">Learn More</div> <i class="fa fa-arrow-right"></i>

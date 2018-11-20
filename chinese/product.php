@@ -99,36 +99,36 @@
 			</aside>
 
 
-          <nav class="hot">
-            <ul>
-              <li><a>热销</a>
-                <ul class="list-group list-group-flush" >
-                  <li class="list-group-item space">&nbsp;</li>
-                   <li class="list-group-item"><img src="../img/rim.jpg">
-                     <ul>
-                       <li>ABC Classic</li>
-                       <li>YZ001</li>
-                       <li>RM1080.00</li>
-                     </ul>
-                   </li>
-                   <li class="list-group-item"><img src="../img/rim.jpg">
-                     <ul>
-                       <li>ABC Classic</li>
-                       <li>YZ001</li>
-                       <li>RM1080.00</li>
-                     </ul>
-                   </li>
-                   <li class="list-group-item"><img src="../img/rim.jpg">
-                     <ul>
-                       <li>ABC Classic</li>
-                       <li>YZ001</li>
-                       <li>RM1080.00</li>
-                     </ul>
-                   </li>
-                   <li class="list-group-item"></li>
-                </ul>
-            </ul>
-          </nav>
+      <nav class="hot">
+          <ul>
+              <li><a>BEST SELLER</a>
+                  <ul class="list-group list-group-flush" >
+                      <li class="list-group-item space">&nbsp;</li>
+                      <li class="list-group-item"><img src="img/rim/18'/R-18-1.jpeg">
+                          <ul>
+                              <li>ABC Classic</li>
+                              <li>YZ001</li>
+                              <li>RM1080.00</li>
+                          </ul>
+                      </li>
+                      <li class="list-group-item"><img src="img/rim/15'/R-15-6.jpeg">
+                          <ul>
+                              <li>ABC Classic</li>
+                              <li>YZ001</li>
+                              <li>RM1080.00</li>
+                          </ul>
+                      </li>
+                      <li class="list-group-item"><img src="img/rim/17'/R-17-3.jpeg">
+                          <ul>
+                              <li>ABC Classic</li>
+                              <li>YZ001</li>
+                              <li>RM1080.00</li>
+                          </ul>
+                      </li>
+                      <li class="list-group-item"></li>
+                  </ul>
+          </ul>
+      </nav>
   </div>
 
 
