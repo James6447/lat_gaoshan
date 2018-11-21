@@ -78,11 +78,17 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                  <li class="list-group-item" onclick="getProduct('car.php?type=3&name=FORD')">FORD</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=4&name=HONDA')">HONDA</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=5&name=HYUNDAI')">HYUNDAI</li>
-                 <li class="list-group-item" onclick="getProduct('car.php?type=6&name=LEXUX')">LEXUX</li>
+                 <li class="list-group-item" onclick="getProduct('car.php?type=6&name=LEXUX')">LEXUS</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=7&name=MAZDA')">MAZDA</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=8&name=MEX')">MEX</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=9&name=MISTUBISHI')">MISTUBISHI</li>
                  <li class="list-group-item" onclick="getProduct('car.php?type=14&name=TOYOTA')">TOYOTA</li>
+                 <li class="list-group-item" onclick="getProduct('car.php?type=11&name=NISSAN')">NISSAN</li>
+                 <li class="list-group-item" onclick="getProduct('car.php?type=12&name=PEUGEOT')">PEUGEOT</li>
+                 <li class="list-group-item" onclick="getProduct('car.php?type=13&name=PORSCHE')">PORSCHE</li>
+                 <li class="list-group-item" onclick="getProduct('car.php?type=15&name=VOLKSWAGEN')">VOLKSWAGEN</li>
+                 <li class="list-group-item" onclick="getProduct('car.php?type=16&name=MINI')">MINI</li>
+                 <li class="list-group-item" onclick="getProduct('car.php?type=17&name=VOLVO')">VOLVO</li>
               </ul>
 						</li>
 						
