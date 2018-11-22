@@ -213,6 +213,10 @@ $(document).ready(function() {
     },slideshowDuration);
 
     slideshow.data('timeout',timeout);
+
+    $("#v-btn1").click(()=>{
+        document.getElementById('btn1').click();
+    })
 });
 
 if($('.main-content .slideshow').length > 1) {

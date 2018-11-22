@@ -108,43 +108,27 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                 <div class="slide is-active ">
                     <div class="slide-content">
                         <div class="caption">
-                            <div class="title">Slide title 1</div>
+                            <div class="title">To Find Up Your Tire</div>
                             <div class="text">
-                                <p>Slide description 1</p>
+                                <p>Check the suitable tire for your car</p>
                             </div>
-                            <a href="#" class="button">
+                            <a id="v-btn1" href="#" class="button">
                                 <span class="btn-inner">Learn More</span>
                             </a>
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="img/1.jpg" alt="" class="image" />
+                        <img src="img/5.jpg" alt="" class="image" />
                     </div>
                 </div>
                 <div class="slide">
                     <div class="slide-content">
                         <div class="caption">
-                            <div class="title">Slide title 2</div>
+                            <div class="title">Design Your Rim</div>
                             <div class="text">
-                                <p>Slide description 2</p>
+                                <p>Customized and Embellish your tire rim</p>
                             </div>
-                            <a href="#" class="button">
-                                <span class="btn-inner">Learn More</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="image-container">
-                        <img src="img/2.jpg" alt="" class="image" />
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-content">
-                        <div class="caption">
-                            <div class="title">Slide title 3</div>
-                            <div class="text">
-                                <p>Slide description 3</p>
-                            </div>
-                            <a href="#" class="button">
+                            <a href="product.html" class="button">
                                 <span class="btn-inner">Learn More</span>
                             </a>
                         </div>
@@ -156,17 +140,33 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                 <div class="slide">
                     <div class="slide-content">
                         <div class="caption">
-                            <div class="title">Slide title 4</div>
+                            <div class="title">About The Tire</div>
                             <div class="text">
-                                <p>Slide description 4</p>
+                                <p>Understanding the basically knowledge of tire</p>
                             </div>
-                            <a href="#" class="button">
+                            <a href="services.html" class="button">
                                 <span class="btn-inner">Learn More</span>
                             </a>
                         </div>
                     </div>
                     <div class="image-container">
                         <img src="img/4.jpg" alt="" class="image" />
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">Service&Maintenance</div>
+                            <div class="text">
+                                <p>Welcome to visit our store and apply our service</p>
+                            </div>
+                            <a href="brands.html" class="button">
+                                <span class="btn-inner">Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="img/background-1.jpg" alt="" class="image" />
                     </div>
                 </div>
             </div>
