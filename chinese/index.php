@@ -16,9 +16,11 @@
   <link href="../css/main.css" rel="stylesheet">
   <link href="../css/header.css" rel="stylesheet">
   <link href="../css/footer.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="../js/jquery.js"></script>
   <script src="../js/indexchinese.js"></script>
   <script src="../js/header.js"></script>
+  <script src="../js/slider.js"></script>
 </head>
 <body onscroll="backTop()">
 
@@ -85,40 +87,106 @@
   </div>
 </div>
 
-  <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100 " src="../img/6.jpg" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
-          <!-- <h1>Product</h1>
-          <img src= -->
+<main class="main-content">
+    <section class="slideshow">
+        <div class="slideshow-inner">
+            <div class="slides">
+                <div class="slide is-active ">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">尋找您的輪胎</div>
+                            <div class="text">
+                                <p>查詢與您的車子合適的輪胎尺寸</p>
+                            </div>
+                            <a id="v-btn1" href="#" class="button">
+                                <span class="btn-inner">更多</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="../img/5.jpg" alt="" class="image" />
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">設計您的輪框</div>
+                            <div class="text">
+                                <p>挑選多樣化與美化輪框來搭配您的車子</p>
+                            </div>
+                            <a href="product.html" class="button">
+                                <span class="btn-inner">更多</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="../img/3.jpg" alt="" class="image" />
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">輪胎的知識</div>
+                            <div class="text">
+                                <p>更加了解如何挑選輪胎與輪胎使用的基本知識</p>
+                            </div>
+                            <a href="services.html" class="button">
+                                <span class="btn-inner">更多</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="../img/4.jpg" alt="" class="image" />
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-content">
+                        <div class="caption">
+                            <div class="title">服務與維修</div>
+                            <div class="text">
+                                <p>歡迎到實體店面參觀與使用更多的服務</p>
+                            </div>
+                            <a href="brands.html" class="button">
+                                <span class="btn-inner">更多</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="../img/background-1.jpg" alt="" class="image" />
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <div class="item is-active">
+                    <span class="icon">1</span>
+                </div>
+                <div class="item">
+                    <span class="icon">2</span>
+                </div>
+                <div class="item">
+                    <span class="icon">3</span>
+                </div>
+                <div class="item">
+                    <span class="icon">4</span>
+                </div>
+            </div>
+            <div class="arrows">
+                <div class="arrow prev">
+          <span class="svg svg-arrow-left">
+            <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+            <span class="alt sr-only"></span>
+          </span>
+                </div>
+                <div class="arrow next">
+          <span class="svg svg-arrow-right">
+            <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+            <span class="alt sr-only"></span>
+          </span>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100 " src="../img/5.jpg"  alt="Second slide">
-      </div>
-
-      <div class="carousel-item">
-        <img class="d-block w-100" src="../img/4.jpg" alt="Second slide">
-      </div>
-
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">前一頁</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">後一頁</span>
-    </a>
-  </div>
-</div> 
+    </section>
+</main>
 
 
 
