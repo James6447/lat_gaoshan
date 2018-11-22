@@ -156,7 +156,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
                 <div class="slide">
                     <div class="slide-content">
                         <div class="caption">
-                            <div class="title">Service&Maintenance</div>
+                            <div class="title">Service & Maintain</div>
                             <div class="text">
                                 <p>Welcome to visit our store and apply our service</p>
                             </div>
