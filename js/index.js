@@ -131,6 +131,46 @@ $(document).ready(function() {
         let modelCar = t.options[t.selectedIndex].value;
         getModelData(modelCar);
     });
+
+    var owl = $('.owl-carousel');
+
+    owl.owlCarousel({
+        loop:true,
+        margin:10,
+        // nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            },
+            1440:{
+                items:5
+            }
+        }
+
+    })
+
+    owl.on('mousewheel', '.owl-stage', function (e) {
+        if (e.deltaY>0) {
+            owl.trigger('next.owl');
+        } else {
+            owl.trigger('prev.owl');
+        }
+        e.preventDefault();
+    });
+
+    $(".card").hover(function() {
+        if ($(`#${$(this).attr('id')} > .card-body > p`).hasClass("content-text")) {
+            $(`#${$(this).attr('id')} > .card-body > p`).removeClass("content-text");
+        } else {
+            $(`#${$(this).attr('id')} > .card-body > p`).addClass("content-text");
+        }
+    })
    
 });
 

@@ -53,11 +53,12 @@ body {
   transition: border 0.1s linear 0s;
 }
 
+/*---------------------------------------------first slide show---------------------------------------------*/
 .slideshow {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 40vh;
   z-index: 1;
   max-height: 800px;
 }
@@ -285,7 +286,48 @@ p {
   font-size: 650%;
 }
 
-/* seach area */
+/*---------------------------------------------second slide show---------------------------------------------*/
+.carousel-control-prev {
+  left: -6%;
+}
+
+.product-slide{
+  background: linear-gradient(to bottom,#000 0,#000 20%,#363636 40%,#000 80%,#000 100%);
+}
+
+.product-slide .slideshow{
+  width: 85%;
+  margin: 0px 8%;
+  height:500px !important;
+}
+
+/*.product-slide-content{*/
+  /*margin: 30px 0px;*/
+/*}*/
+
+.item .card{
+  background-color: transparent;
+  color: aliceblue;
+}
+
+.item .card:hover{
+  transform: scale(1.1);
+  background-color: #363636;
+}
+
+.card-body p{
+  visibility: hidden;
+}
+
+.content-text{
+  visibility: visible !important;
+}
+
+.owl-carousel .owl-item img{
+  max-height: 198px !important;
+}
+
+/*---------------------------------------------seach area---------------------------------------------*/
 .search {
   width: 100%;
   height: 40px;
