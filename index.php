@@ -49,64 +49,6 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 
 <!-- hide slide content -->
 
-<!-- tyres type match content -->
-  <div class="collapse vehicle " id="collapseOne"  aria-labelledby="search-bar">
-    <div class="card card-body">
-    <div class ="container-fluid col-12 pt-4 pb-4 tabcolor">
-              <!-- <ul class="nav nav-tabs " id="myTab" role="tablist">
-                 <li class="nav-item focustab">
-                    <a class="nav-link tabss " id="vehicle-tab" data-toggle="tab" href="#vehicle" role="tab" aria-controls="vehicle" aria-selected="true">By Vehicle</a>
-                </li>  -->
-                <!-- <li class="nav-item ">
-                    <a class="nav-link tabss" id="rim-tab" data-toggle="tab" href="#rim" role="tab" aria-controls="rim" aria-selected="true">By Inch</a>
-                </li> -->
-              <!-- </ul> -->
-
-          <div class="tab-content myTabContent">
-        <!--      這段保留        -->
-            <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
-                <form action="#" method="post">
-                  <div class="container pt-4 pb-4" >
-                    <div class="d-inline-block col-md-3">
-                      <p>CAR BRANDS</p>
-                       <select id="typeCar" class="maintain" name="carType">
-                           <option value="0">CarType</option>
-                            <!--车款选项 -->
-                        </select>
-                    </div>
-                    <div class="d-inline-block col-md-3">
-                      <p>CAR MODEL</p>
-                      <select id="modelCar" class="maintain" name="carModel">
-                            <!-- 车形选项 -->
-                       <option>Car Model</option>
-                      </select>
-                    </div>
-                    <img id="imgTitle" src="img/logo/WW.png" style="height:75px; padding:10px;">
-                  </div>
-                    </form>
-
-               <table id="myTable">
-                <!-- <img id="imgTitle" src="img/logo/WW.png" style="height:50px; width:50px;"> -->
-                  <caption id="modelTitle">Audi</caption>
-                  <thead>
-                    <tr>
-                      <th scope="col"></th>
-                      <th scope="col">Tire</th>
-<!--                       <th scope="col">Rim</th>-->
-<!--                      <th scope="col">Bolt pattern</th>-->
-                     </tr>
-                </thead>
-                <tbody id="dataChange">
-                </tbody>
-             </table>
-           </div>
-        <!--      這段保留        -->
-          </div>
-        </div>
-      
-    
-  </div>
-</div>
 <!-- end tyres type match content -->
 
 <main class="main-content">
@@ -321,6 +263,61 @@ $sort = $sort_handle->sortKeywords($arr, 2);
         </section>
     </div>
     <!-- end second main slide show -->
+
+    <!-- tyres type match content -->
+    <div class="" id="collapseOne"  aria-labelledby="search-bar">
+            <div class ="tabcolor">
+                <!-- <ul class="nav nav-tabs " id="myTab" role="tablist">
+                   <li class="nav-item focustab">
+                      <a class="nav-link tabss " id="vehicle-tab" data-toggle="tab" href="#vehicle" role="tab" aria-controls="vehicle" aria-selected="true">By Vehicle</a>
+                  </li>  -->
+                <!-- <li class="nav-item ">
+                    <a class="nav-link tabss" id="rim-tab" data-toggle="tab" href="#rim" role="tab" aria-controls="rim" aria-selected="true">By Inch</a>
+                </li> -->
+                <!-- </ul> -->
+
+                <div class="tab-content myTabContent">
+                    <!--      這段保留        -->
+                    <div class="tab-pane fade show active" id="vehicle" role="tabpanel" aria-labelledby="vehicle">
+                        <form action="#" method="post">
+                            <div class="container pt-4 pb-4" >
+                                <div class="d-inline-block col-md-3">
+                                    <p>CAR BRANDS</p>
+                                    <select id="typeCar" class="maintain" name="carType">
+                                        <option value="0">CarType</option>
+                                        <!--车款选项 -->
+                                    </select>
+                                </div>
+                                <div class="d-inline-block col-md-3">
+                                    <p>CAR MODEL</p>
+                                    <select id="modelCar" class="maintain" name="carModel">
+                                        <!-- 车形选项 -->
+                                        <option>Car Model</option>
+                                    </select>
+                                </div>
+                                <img id="imgTitle" src="img/logo/WW.png" style="height:75px; padding:10px;">
+                            </div>
+                        </form>
+
+                        <table id="myTable">
+                            <!-- <img id="imgTitle" src="img/logo/WW.png" style="height:50px; width:50px;"> -->
+                            <caption id="modelTitle">Audi</caption>
+                            <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Tire</th>
+                                <!--                       <th scope="col">Rim</th>-->
+                                <!--                      <th scope="col">Bolt pattern</th>-->
+                            </tr>
+                            </thead>
+                            <tbody id="dataChange">
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--      這段保留        -->
+            </div>
+        </div>
+    </div>
 </main>
 
   
