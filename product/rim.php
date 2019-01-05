@@ -91,10 +91,12 @@ $pages=ceil($total/$count);
             <div class="card col-3">
              <img class="card-img-top" src="<?php echo '/img/rim/'.$row['img_path'].'.jpeg' ?>" data-action="zoom" alt="Card image cap">
              <div class="card-body">
+                <span class="tag">Price:</span>
                <h5 class="card-title"><?php echo 'RM '.$row['price'] ?></h5>
-               <p class="card-text"><?php echo $row['rim_type'] ?></p>
-               <p class="card-text"><?php echo $row['rim_style'] ?></p>
+                 <span class="tag">Type:</span>
+                 <p class="card-text"><small class="text-muted"><?php echo $row['rim_type'].' &nbsp;'.$row['rim_style'] ?></small></p>
 
+                 <span class="tag">Size:</span>
                <?php
                $style = preg_split("/\,/",$row['descrip']);
                 for ($i=0; $i <count($style) ; $i++) {?>
