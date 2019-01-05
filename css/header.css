@@ -248,13 +248,14 @@
 .tabss:hover {
   border-color: #333333 !important;
 }
-#myTabContent {
+.myTabContent {
   text-align: center;
-  border:1px solid #333333;
+  /*border:1px solid #333333;*/
   min-height: 320px;
-  border-radius: 50px;
-  background: rgb(249,161,27);
-  background: linear-gradient(0deg, rgba(249,161,27,1) 0%, rgba(245,161,49,1) 10%, rgba(230,230,230,1) 100%);
+  /*border-radius: 50px;*/
+  /*background: rgb(249,161,27);*/
+  /*background: linear-gradient(0deg, rgba(249,161,27,1) 0%, rgba(245,161,49,1) 10%, rgba(230,230,230,1) 100%);*/
+  background: #e6e6e6;
 }
 .nav-link.active {
   background: #e6e6e6 !important;
@@ -274,4 +275,13 @@
   padding: unset;
   transition: margin 0.8s linear;
   background: #f9a11b;
+}
+.window{
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+}
+
+#myTable{
+  margin: 0 13%;
 }
