@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    getModelData('308');
     changehtml();
     $.ajax({
         url: "/product/carselected.php",
@@ -38,7 +39,7 @@ $(document).ready(function() {
 
         function getCarType(carType){
             $("#modelCar").empty();
-        
+
             $.ajax({
                 url: "/product/modelselected.php",
                 type: "POST",

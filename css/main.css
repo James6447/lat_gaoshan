@@ -505,7 +505,9 @@ select {
   min-height: 300px;
 }
 
-
+#myTable{
+  background-color: white;
+}
 
 table {
   border: 1px solid #ccc;
@@ -514,7 +516,6 @@ table {
   padding: 0;
   width: 70%;
   table-layout: fixed;
-  background-color: white;
 }
 
 table caption {
