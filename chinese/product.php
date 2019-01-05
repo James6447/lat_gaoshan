@@ -104,25 +104,25 @@
               <li><a>BEST SELLER</a>
                   <ul class="list-group list-group-flush" >
                       <li class="list-group-item space">&nbsp;</li>
-                      <li class="list-group-item"><img src="img/rim/18'/R-18-1.jpeg">
+                      <li class="list-group-item"><img src="../img/rim/18'/R-18-1.jpeg">
                           <ul>
-                              <li>ABC Classic</li>
-                              <li>YZ001</li>
-                              <li>RM1080.00</li>
+                              <li>R 172</li>
+                              <li>FPBLK1</li>
+                              <li>RM2600.00</li>
                           </ul>
                       </li>
-                      <li class="list-group-item"><img src="img/rim/15'/R-15-6.jpeg">
+                      <li class="list-group-item"><img src="../img/rim/15'/R-15-6.jpeg">
                           <ul>
-                              <li>ABC Classic</li>
-                              <li>YZ001</li>
-                              <li>RM1080.00</li>
+                              <li>R MEX 10</li>
+                              <li>FPBLK</li>
+                              <li>RM1250.00</li>
                           </ul>
                       </li>
-                      <li class="list-group-item"><img src="img/rim/17'/R-17-3.jpeg">
+                      <li class="list-group-item"><img src="../img/rim/17'/R-17-3.jpeg">
                           <ul>
-                              <li>ABC Classic</li>
-                              <li>YZ001</li>
-                              <li>RM1080.00</li>
+                              <li>R 174</li>
+                              <li>BLKSP</li>
+                              <li>RM2100.00</li>
                           </ul>
                       </li>
                       <li class="list-group-item"></li>

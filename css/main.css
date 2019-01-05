@@ -1024,6 +1024,7 @@ span img:hover {
   height: 25px;
   background: #364045;
   padding-right: 11px;
+  z-index: 9999;
 }
 
 .close-button button{
