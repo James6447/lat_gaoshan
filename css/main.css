@@ -795,8 +795,8 @@ span img:hover {
 }
 
 * {
-  transition: all 500ms ease-out;
-  -webkit-transition: all 500ms ease-out;
+  /*transition: all 500ms ease-out;*/
+  /*-webkit-transition: all 500ms ease-out;*/
 }
 
 .content-body,
@@ -1008,7 +1008,7 @@ span img:hover {
 
 .slide-top-item{
    margin-left: 10%;
-   margin-top: 8%;
+   margin-top: 2%;
  }
 
 .slide-bottom-item{
