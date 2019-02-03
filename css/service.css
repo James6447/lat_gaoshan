@@ -17,7 +17,7 @@ p {
   background-size: cover;
 }
 #containersevices {
-  padding: 0px 9% 0 9%;
+  /*padding: 0px 9% 0 9%;*/
 }
 
 .album {
@@ -38,7 +38,7 @@ p {
   height: 100%;
 }
 .cardtitle {
-  font-size: ;
+  /*font-size: ;*/
 }
 .card {
   margin-right: unset;
@@ -184,4 +184,31 @@ span img:hover {
   }
   /*  #containersevices{padding: 55px 20px 0 20px;}
   .containeralbum{padding: 0 20px;}*/
+}
+
+.top-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.top-container{
+  display: flex;
+  padding: 0 4%;
+  justify-content: center;
+}
+
+.fb-content{
+  /*float: left;*/
+}
+
+.video-content{
+  /*float: right;*/
+  width: 70%;
+}
+
+.clear{
+  /*clear:both;*/
+  /*height: 0;*/
+  /*line-height: 0;*/
+  /*font-size: 0*/
 }

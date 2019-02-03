@@ -44,10 +44,19 @@ $sort = $sort_handle->sortKeywords($arr, 2);
   include('header.html');
   ?>
 <h1 class="breadcrumb-title"><span class="brand-title"><img src='img/Service.png'></span>&nbsp;&nbsp;&nbsp;Services</h1>
-<div id="containersevices">
-        <video width="100%" height="100%" autoplay muted loop>
-            <source src="img/video/introduce.mp4" type="video/mp4">
-        </video>
+<div class="top-wrapper container col-md-10 col-11">
+    <div class="row">
+      <div class="fb-content col-md-4 col-12 ">
+          <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FLausincereautowagon%2F&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId=1592287097542393"
+                  width="100%" height="600"
+                  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div class="video-content col-md-8 col-12" id="containersevices">
+          <video width="100%" height="100%" autoplay muted loop>
+              <source src="img/video/introduce.mp4" type="video/mp4">
+          </video>
+      </div>
+    </div>
 </div>
 
 

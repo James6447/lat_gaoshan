@@ -1,13 +1,19 @@
 <?php
 $servername = "172.17.0.1";
-$username = "root";
-$password = "12345";
-$dbname = "gaoshan";
+$username = "lausincere";
+$password = "okpl8899";
+$dbname = "lausincere";
 
 // $servername = "10.140.0.2";
-// $username = "mysia";
-// $password = "M59udygFw";
-// $dbname = "zadmin_lat";
+// $username = "lausincere";
+// $password = "okpl8899";
+// $dbname = "web_lausincere";
 
 $con = new mysqli($servername, $username, $password, $dbname);
+
+if ($con -> connect_errno)
+{
+    printf("Verbindung fehlgeschlagen: %s\n", $mysqli->connect_error);
+    exit();
+}
 ?>

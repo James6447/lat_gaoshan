@@ -38,3 +38,5 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
     && curl -sS https://getcomposer.org/installer | php \
     && mv composer.phar /usr/local/bin/composer.phar \
     && ln -s /usr/local/bin/composer.phar /usr/local/bin/composer
+
+RUN docker-php-ext-install mysqli

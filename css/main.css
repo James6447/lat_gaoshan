@@ -794,9 +794,9 @@ span img:hover {
   padding: 0px;
 }
 
-* {
-  /*transition: all 500ms ease-out;*/
-  /*-webkit-transition: all 500ms ease-out;*/
+.bd-example-modal-lg {
+  transition: all 500ms ease-out;
+  -webkit-transition: all 500ms ease-out;
 }
 
 .content-body,
