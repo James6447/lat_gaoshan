@@ -53,104 +53,149 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 
 <main class="main-content">
     <!-- main slide show -->
-    <section class="slideshow">
-        <div class="slideshow-inner">
-            <div class="slides">
-                <div class="slide is-active ">
-                    <div class="slide-content">
-                        <div class="caption">
-                            <div class="title">To Find Up Your Tire</div>
-                            <div class="text">
-                                <p>Check the suitable tire for your car</p>
+    <div class="row">
+        <section class="slideshow col-12 col-md-8">
+            <div class="slideshow-inner">
+                <div class="slides">
+                    <div class="slide is-active ">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">To Find Up Your Tire</div>
+                                <div class="text">
+                                    <p>Check the suitable tire for your car</p>
+                                </div>
+                                <a id="v-btn1" href="#" class="button">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
                             </div>
-                            <a id="v-btn1" href="#" class="button">
-                                <span class="btn-inner">Learn More</span>
-                            </a>
+                        </div>
+                        <div class="image-container">
+                            <img src="img/5.jpg" alt="" class="image" />
                         </div>
                     </div>
-                    <div class="image-container">
-                        <img src="img/5.jpg" alt="" class="image" />
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Design Your Rim</div>
+                                <div class="text">
+                                    <p>Customized and Embellish your tire rim</p>
+                                </div>
+                                <a href="product.html" class="button">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="img/3.jpg" alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">About The Tire</div>
+                                <div class="text">
+                                    <p>Understanding the basically knowledge of tire</p>
+                                </div>
+                                <a href="services.html" class="button">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="img/4.jpg" alt="" class="image" />
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-content">
+                            <div class="caption">
+                                <div class="title">Service & Maintain</div>
+                                <div class="text">
+                                    <p>Welcome to visit our store and apply our service</p>
+                                </div>
+                                <a href="brands.html" class="button">
+                                    <span class="btn-inner">Learn More</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-container">
+                            <img src="img/background-1.jpg" alt="" class="image" />
+                        </div>
                     </div>
                 </div>
-                <div class="slide">
-                    <div class="slide-content">
-                        <div class="caption">
-                            <div class="title">Design Your Rim</div>
-                            <div class="text">
-                                <p>Customized and Embellish your tire rim</p>
-                            </div>
-                            <a href="product.html" class="button">
-                                <span class="btn-inner">Learn More</span>
-                            </a>
-                        </div>
+                <div class="pagination">
+                    <div class="item is-active">
+                        <span class="icon">1</span>
                     </div>
-                    <div class="image-container">
-                        <img src="img/3.jpg" alt="" class="image" />
+                    <div class="item">
+                        <span class="icon">2</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">3</span>
+                    </div>
+                    <div class="item">
+                        <span class="icon">4</span>
                     </div>
                 </div>
-                <div class="slide">
-                    <div class="slide-content">
-                        <div class="caption">
-                            <div class="title">About The Tire</div>
-                            <div class="text">
-                                <p>Understanding the basically knowledge of tire</p>
-                            </div>
-                            <a href="services.html" class="button">
-                                <span class="btn-inner">Learn More</span>
-                            </a>
-                        </div>
+                <div class="arrows">
+                    <div class="arrow prev">
+              <span class="svg svg-arrow-left">
+                <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+                <span class="alt sr-only"></span>
+              </span>
                     </div>
-                    <div class="image-container">
-                        <img src="img/4.jpg" alt="" class="image" />
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="slide-content">
-                        <div class="caption">
-                            <div class="title">Service & Maintain</div>
-                            <div class="text">
-                                <p>Welcome to visit our store and apply our service</p>
-                            </div>
-                            <a href="brands.html" class="button">
-                                <span class="btn-inner">Learn More</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="image-container">
-                        <img src="img/background-1.jpg" alt="" class="image" />
+                    <div class="arrow next">
+              <span class="svg svg-arrow-right">
+                <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+                <span class="alt sr-only"></span>
+              </span>
                     </div>
                 </div>
             </div>
-            <div class="pagination">
-                <div class="item is-active">
-                    <span class="icon">1</span>
-                </div>
-                <div class="item">
-                    <span class="icon">2</span>
-                </div>
-                <div class="item">
-                    <span class="icon">3</span>
-                </div>
-                <div class="item">
-                    <span class="icon">4</span>
-                </div>
+        </section>
+
+        <div class="search-area col-12 col-md-4">
+            <div class="img-wrapper">
+                <img src="img/find_tyre_size.png">
             </div>
-            <div class="arrows">
-                <div class="arrow prev">
-          <span class="svg svg-arrow-left">
-            <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
-            <span class="alt sr-only"></span>
-          </span>
+            <p> Enter your tyre size </p>
+
+            <form action="product_new.php" method="get">
+                <div class="search-filter">
+                    <div class="block space-filter">
+                        <span>Width(mm)</span>
+                        <select class="" name="width">
+                            <option value="">Width(mm)</option>
+                        </select>
+                    </div>
+
+                    <div class="block">
+                        <span class="symbol"> / </span>
+                    </div>
+
+                    <div class="block space-filter">
+                        <span>Height(mm)</span>
+                        <select class="is-active" name="height">
+                            <option value="">Height(mm)</option>
+                        </select>
+                    </div>
+
+                    <div class="block">
+                        <span class="symbol"> R </span>
+                    </div>
+
+                    <div class="block space-filter">
+                        <span>Diameter(")</span>
+                        <select class="is-active" name="diameter">
+                            <option value="">Diameter(")</option>
+                        </select>
+                    </div>
+                 </div>
+                <div class="search-btn">
+                    <button type="submit" >Continue</button>
                 </div>
-                <div class="arrow next">
-          <span class="svg svg-arrow-right">
-            <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
-            <span class="alt sr-only"></span>
-          </span>
-                </div>
-            </div>
+            </form>
         </div>
-    </section>
+    </div>
     <!-- end main slide show -->
 
     <!-- second main slide show -->

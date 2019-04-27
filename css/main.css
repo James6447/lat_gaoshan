@@ -58,7 +58,7 @@ body {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 40vh;
+  height: 45vh;
   z-index: 1;
   max-height: 800px;
 }
@@ -288,6 +288,69 @@ p {
 .carousel-inner h1 {
   font-size: 650%;
 }
+
+.main-content .row{
+  margin: 0;
+}
+
+.img-wrapper {
+  margin: 5% 12%;
+}
+
+.img-wrapper img {
+  width: 100%;
+}
+
+.search-area {
+  height: 45vh;
+  background-color: #e0dfdf;
+}
+
+.search-area p{
+  font-size: 19px;
+
+}
+
+.search-area .block{
+  display: inline-grid;
+}
+
+.search-area .is-active {
+    pointer-events: none;
+    background-color: #d4d5d5;
+}
+/*.search-area select {*/
+  /*width: 8vw;*/
+/*}*/
+
+.search-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+.search-btn button {
+  width: 200px;
+  background-color: #ef8914;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.symbol {
+  margin-top: 18px;
+  font-size: 19px;
+  margin-bottom: -10px;
+  font-weight: bold;
+}
+
+
 
 /*---------------------------------------------second slide show---------------------------------------------*/
 .carousel-control-prev {
