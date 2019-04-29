@@ -54,7 +54,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 <main class="main-content">
     <!-- main slide show -->
     <div class="row">
-        <section class="slideshow col-12 col-md-8">
+        <section class="slideshow col-12 col-lg-8">
             <div class="slideshow-inner">
                 <div class="slides">
                     <div class="slide is-active ">
@@ -153,7 +153,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
             </div>
         </section>
 
-        <div class="search-area col-12 col-md-4">
+        <div class="search-area col-12 col-lg-4">
             <div class="img-wrapper">
                 <img src="img/find_tyre_size.png">
             </div>

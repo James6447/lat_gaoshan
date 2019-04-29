@@ -1,5 +1,8 @@
 $.getScript('/js/filter.js', function()
 {
+    //預設多少樣產批選項
+    getBrand();
+
     //點選進入的條件搜尋
     var param = descUrl();
     getData(param.width, param.height, param.diameter, param.brand, param.page);
@@ -17,7 +20,43 @@ $.getScript('/js/filter.js', function()
 });
 
 /**
- * 新增option
+ * 取得brand的種類
+ */
+function getBrand(){
+    $.ajax({
+        url: "/api/tyre_filter.php",
+        type: "POST",
+        data: {
+            search_details: 0,
+            current_get: 'brand',
+        },
+        dataType: "JSON",
+        success: function(res) {
+            var template_arr = [];
+            var render_template = '';
+
+            if(res) {
+                for (let index of Object.keys(res)) {
+                    var item = res[index];
+                    var template = '<a class="dropdown-item" href="/product_new.php?brand='+item+'">'+item+'</a>';
+                    template_arr.push(template);
+                }
+
+                for (let i = 0; i < template_arr.length; i++) {
+                    render_template = render_template + template_arr[i];
+                }
+                render(render_template, document.querySelector('#brand'));
+            }
+
+        },
+        error: function() {
+            console.log("get filter data error");
+        }
+    });
+}
+
+/**
+ * 取得peoduct相關資料
  * @param width 搜尋條件【1】
  * @param height 搜尋條件【2】
  * @param diameter 搜尋條件【3】
@@ -25,10 +64,6 @@ $.getScript('/js/filter.js', function()
  * @param page 搜尋條件【5】
  */
 function getData(width, height, diameter, brand, page){
-    var render = function (template, node) {
-        node.innerHTML = template;
-    };
-
     $.ajax({
         url: "/api/tyre_filter.php",
         type: "POST",
@@ -122,6 +157,11 @@ function getData(width, height, diameter, brand, page){
         }
     });
 }
+
+var render = (template, node) => {
+    node.innerHTML = template;
+};
+
 
 /**
  * 新增分頁選項

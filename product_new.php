@@ -57,10 +57,10 @@ $sort = $sort_handle->sortKeywords($arr, 2);
             </div>
         </a>
 
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-menu" id="brand" aria-labelledby="dropdownMenuLink">
+<!--            <a class="dropdown-item" href="#">CONTINENTER</a>-->
+<!--            <a class="dropdown-item" href="#">GOOD YEAR</a>-->
+<!--            <a class="dropdown-item" href="#">DUNLOP</a>-->
         </div>
 
         <a href="">
@@ -86,7 +86,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
         Filter for Available Tyres
     </span>
 
-    <div class="container col-11">
+    <div class="container col-10">
         <div class="product-search-filter row">
             <div class="space-filter d-flex justify-content-around col-md-5 col-12">
                 <select name="width">
@@ -116,7 +116,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
         </div>
 
         <div class="product-item">
-            <div id="productTab" class="row d-flex justify-content-around">
+            <div id="productTab" class="row d-flex justify-content-md-between justify-content-center">
 
 
             </div>

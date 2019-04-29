@@ -16,7 +16,7 @@ iframe {
 }
 
 .categories a {
-  width: 30vw;
+  width: 27vw;
 }
 
 .category-item {
@@ -34,8 +34,8 @@ iframe {
 }
 
 .category-item img {
-  width: 22%;
-  height: 6vw;
+  width: 30%;
+  height: 8vw;
 }
 
 .category-item p {
@@ -80,14 +80,14 @@ iframe {
 .mark-title {
   font-size: 41px;
   font-weight: bold;
-  margin: 4vw 5vw 2vw;
+  margin: 4vw 9vw 2vw;
 }
 
 .mark-sub-title {
   font-size: 21px;
   font-weight: bold;
   color: #474645;
-  margin: 5vw;
+  margin: 9vw;
 }
 
 .product-search-filter {
@@ -110,7 +110,7 @@ iframe {
 
 .product-search-filter button {
   width: 100%;
-  height: 24px;
+  height: 36px;
   border-radius: 5px;
   background-color: #ef8914;
   font-weight: bold;
@@ -124,7 +124,7 @@ iframe {
 .product-item .card{
   margin: 1%;
   padding: 0;
-  max-height: 171px;
+  /*max-height: 171px;*/
 }
 
 .product-item .card-img-top {
@@ -146,10 +146,10 @@ iframe {
   margin-top: 23px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
   .category-item p, .mark-sub-title, .product-search-filter select, .product-search-filter button {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .mark-title {
@@ -161,11 +161,11 @@ iframe {
   }
 
   .card-text h3 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .card-text p, .card-text button {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .details-block {
