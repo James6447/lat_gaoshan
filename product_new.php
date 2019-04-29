@@ -22,6 +22,8 @@ $sort = $sort_handle->sortKeywords($arr, 2);
     <link rel="icon" type="image/png" href="img/logo-1.png" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.min.css">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/product.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
@@ -30,6 +32,8 @@ $sort = $sort_handle->sortKeywords($arr, 2);
     <link rel="stylesheet" type="text/css" href="css/zoom.css">
     <script src="js/jquery.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </head>
 <!--<div class="loading">-->
 <!--    <div class="loading-dot"></div>-->
@@ -155,8 +159,10 @@ include('footer.html');
 </html>
 
 <script src="js/bootstrap.bundle.min.js"></script>
-<!-- <script src="js/jquery.min.js"></script> -->
-<script src="http://libs.baidu.com/jquery/1.8.1/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
+<!-- include in product_new.js===> function getData -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>-->
 <script src="js/product_new.js"></script>
 <script src="js/zoom.js"></script>
 <script src="js/transitions.js"></script>

@@ -59,6 +59,19 @@ iframe {
 
 }
 
+.details-block {
+  width: 450px;
+  padding: 21px;
+}
+
+.details-block h3 {
+  color: #f5a131;
+}
+
+.details-block h4 {
+  color: #ffffff;
+}
+
 .is-active {
   pointer-events: none;
   background-color: #d4d5d5;
@@ -153,6 +166,11 @@ iframe {
 
   .card-text p, .card-text button {
     font-size: 10px;
+  }
+
+  .details-block {
+    width: 308px;
+    padding: 10px;
   }
 }
 

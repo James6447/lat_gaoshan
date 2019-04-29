@@ -65,7 +65,17 @@ function getData(width, height, diameter, brand, page){
                         '                                    <p>Brand:' + item.brand + '</p>\n' +
                         '                                    <p>Tyre Size: '+ item.width +'/'+ item.height +'/'+ item.diameter +'</p>\n' +
                         '\n' +
-                        '                                    <button>More Details</button>\n' +
+                        '                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">' +
+                        '                                       More Details' +
+                        '                                    </button>\n' +
+                        '                                    <div class="dropdown-menu details-block" aria-labelledby="dropdownMenuButton">\n' +
+                        '                                       <h3>'+item.title+'	</h3>\n' +
+                        '                                       <div class="owl-carousel owl-theme">\n' +
+                        '                                           <div class="item" data-merge="5"><h4>'+item.content_1+'</h4></div>\n' +
+                        '                                           <div class="item" data-merge="5"><h4>'+item.content_2+'</h4></div>\n' +
+                        '                                           <div class="item" data-merge="5"><h4>'+item.content_3+'</h4></div>\n' +
+                        '                                       </div>\n' +
+                        '                                    </div>\n' +
                         '                                </div>\n' +
                         '                            </div>\n' +
                         '                        </div>\n' +
@@ -78,8 +88,30 @@ function getData(width, height, diameter, brand, page){
                     render_template = render_template + template_arr[i];
                 }
                 render(render_template, document.querySelector('#productTab'));
-
                 pagationMigrate(total_page);
+
+                //setting up slide show
+                $('html').append('<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>');
+
+                $('.owl-carousel').owlCarousel({
+                    items:3,
+                    loop:true,
+                    margin:10,
+                    merge:true,
+                    responsive:{
+                        678:{
+                            mergeFit:true
+                        },
+                        1000:{
+                            mergeFit:false
+                        }
+                    }
+                });
+
+                //close the bootstrap origin click button list event
+                $('.details-block').on('click', function () {
+                    return false;
+                });
             }else{
                 // 沒有產品的頁面
             }
