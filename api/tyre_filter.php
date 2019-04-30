@@ -23,7 +23,7 @@ $count_page = '';
 
 
 if( $brand ){
-    $conditon .= " AND brand = {$brand}";
+    $conditon .= " AND brand = '{$brand}'";
 }
 
 if( $width ){

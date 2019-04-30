@@ -94,7 +94,7 @@ function getData(width, height, diameter, brand, page){
                         ' <div class="card col-md-5 col-10">\n' +
                         '                        <div class="card-body">\n' +
                         '                            <div class="row d-flex justify-content-around">\n' +
-                        '                                <img class="card-img-top col-xl-5 col-md-4 col-12" src="/img/product_tyres.png" alt="Card image cap">\n' +
+                        '                                <img class="card-img-top col-xl-5 col-md-4 col-12" src="/img/tyre/'+item.img_url+'" data-action="zoom" alt="Card image cap">\n' +
                         '                                <div class="card-text col-xl-7 col-md-8 col-12">\n' +
                         '                                    <h3>' + item.name + '</h3>\n' +
                         '                                    <p>Brand:' + item.brand + '</p>\n' +
@@ -106,9 +106,9 @@ function getData(width, height, diameter, brand, page){
                         '                                    <div class="dropdown-menu details-block" aria-labelledby="dropdownMenuButton">\n' +
                         '                                       <h3>'+item.title+'	</h3>\n' +
                         '                                       <div class="owl-carousel owl-theme">\n' +
-                        '                                           <div class="item" data-merge="5"><h4>'+item.content_1+'</h4></div>\n' +
-                        '                                           <div class="item" data-merge="5"><h4>'+item.content_2+'</h4></div>\n' +
-                        '                                           <div class="item" data-merge="5"><h4>'+item.content_3+'</h4></div>\n' +
+                        '                                           <div class="item" data-merge="3"><h4>'+item.content_1+'</h4></div>\n' +
+                        '                                           <div class="item" data-merge="3"><h4>'+item.content_2+'</h4></div>\n' +
+                        '                                           <div class="item" data-merge="3"><h4>'+item.content_3+'</h4></div>\n' +
                         '                                       </div>\n' +
                         '                                    </div>\n' +
                         '                                </div>\n' +
@@ -242,7 +242,7 @@ let descUrl = () => {
     var url_page = '';
 
     $.each(from_filter.split('&'), function (index, value) {
-        var search_condittion = ['width', 'height', 'diameter', 'page'];
+        var search_condittion = ['width', 'height', 'diameter', 'page', 'brand'];
 
         for (var i=0; i<search_condittion.length; i++){
             var re = new RegExp(search_condittion[i]);

@@ -43,7 +43,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
 <!--</div>-->
 <?php include('header.html') ?>
 
-<body>
+<body onscroll="backTop()">
     <div class="product-cover carousel slide">
         <img src="img/product_banner.png">
     </div>
