@@ -35,14 +35,11 @@ $sort = $sort_handle->sortKeywords($arr, 2);
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </head>
-<!--<div class="loading">-->
-<!--    <div class="loading-dot"></div>-->
-<!--    <div class="loading-dot"></div>-->
-<!--    <div class="loading-dot"></div>-->
-<!--    <div class="loading-dot"></div>-->
-<!--</div>-->
-<?php include('header.html') ?>
 
+<?php include('header.html') ?>
+<div id="loading">
+    <img src="img/loading.gif" class="img-responsive">
+</div>
 <body onscroll="backTop()">
     <div class="product-cover carousel slide">
         <img src="img/product_banner.png">

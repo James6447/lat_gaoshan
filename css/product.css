@@ -11,6 +11,14 @@ iframe {
   border: 0;
 }
 
+#loading
+{
+  position:fixed;
+  top:40%;
+  left:45%;
+  z-index:9999;
+}
+
 .product-cover img {
   width: 100%;
 }

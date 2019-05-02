@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    $(window).load(function(){
+        //适当延迟隐藏，提高loading效果
+        $('#loading').hide(0);
+        // $('#loading').hide(0);
+    });
+
     //初始第一栏位
     $.ajax({
         url: "/api/tyre_filter.php",
@@ -19,6 +25,7 @@ $(document).ready(function() {
 
     //監聽select事件
     $('.space-filter > select').change(function() {
+        $('#loading').show(0);
         var selected_section = $(this).attr('name');
         var width = $('.space-filter > select[name="width"] option:selected').val();
         var height = $('.space-filter > select[name="height"] option:selected').val();
@@ -41,7 +48,7 @@ $(document).ready(function() {
                 next_action = false;
                 break;
         }
-
+        $('#loading').hide(0);
         if(!next_action){
 
         }else {
