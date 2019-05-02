@@ -44,6 +44,7 @@ iframe {
 .category-item img {
   width: 30%;
   height: 8vw;
+  padding: 3%;
 }
 
 .category-item p {
