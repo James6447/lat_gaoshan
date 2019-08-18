@@ -123,7 +123,7 @@ function getData(width, height, diameter, brand, page){
                     render_template = render_template + template_arr[i];
                 }
                 render(render_template, document.querySelector('#productTab'));
-                pagationMigrate(total_page);
+                // pagationMigrate(total_page);
 
                 //setting up slide show
                 $('html').append('<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/owl.carousel.min.js"></script>');
@@ -163,115 +163,115 @@ var render = (template, node) => {
 };
 
 
-/**
- * 新增分頁選項
- * @param page_total 總共頁數
- */
-function pagationMigrate(page_total){
+// /**
+//  * 新增分頁選項
+//  * @param page_total 總共頁數
+//  */
+// function pagationMigrate(page_total){
 
-    if(page_total > 1) {
-        var ul = $('.pagination');
-        var param = descUrl();
-        var url = '';
-        var page = param.page;
-        if(!page) {
-            page = 1;
-        }
+//     if(page_total > 1) {
+//         var ul = $('.pagination');
+//         var param = descUrl();
+//         var url = '';
+//         var page = param.page;
+//         if(!page) {
+//             page = 1;
+//         }
 
-        for (let index of Object.keys(param)) {
-            var item = param[index];
+//         for (let index of Object.keys(param)) {
+//             var item = param[index];
 
-            //如果有url=加條件這裡需要加
-            switch (index) {
-                case 'width':
-                    url = url + 'width=' + param[index];
-                    break;
-                case 'height':
-                    url = url + '&height=' + param[index];
-                    break;
-                case 'diameter':
-                    url = url + '&diameter=' + param[index];
-                    break;
-                case 'brand':
-                    url = url + '&brand=' + param[index];
-                    break;
-            }
-        }
+//             //如果有url=加條件這裡需要加
+//             switch (index) {
+//                 case 'width':
+//                     url = url + 'width=' + param[index];
+//                     break;
+//                 case 'height':
+//                     url = url + '&height=' + param[index];
+//                     break;
+//                 case 'diameter':
+//                     url = url + '&diameter=' + param[index];
+//                     break;
+//                 case 'brand':
+//                     url = url + '&brand=' + param[index];
+//                     break;
+//             }
+//         }
 
-        for (var i = 0; i <= page_total + 1; i++) {
-            var disable = '';
-            var content = i;
-            var current = '';
-            var url_page = i;
+//         for (var i = 0; i <= page_total + 1; i++) {
+//             var disable = '';
+//             var content = i;
+//             var current = '';
+//             var url_page = i;
 
-            if(i === 0){
-                content = '<';
-                url_page = parseInt(page)-1;
-                if( ( parseInt(page)-1 ) === 0 ){
-                    disable = 'disabled';
-                }
-            }else if( (i+1) > (page_total + 1) ){
-                content = '>';
-                url_page = parseInt(page)+1;
-                if( ( parseInt(page)+1 ) > page_total ){
-                    disable = 'disabled';
-                }
-            }
+//             if(i === 0){
+//                 content = '<';
+//                 url_page = parseInt(page)-1;
+//                 if( ( parseInt(page)-1 ) === 0 ){
+//                     disable = 'disabled';
+//                 }
+//             }else if( (i+1) > (page_total + 1) ){
+//                 content = '>';
+//                 url_page = parseInt(page)+1;
+//                 if( ( parseInt(page)+1 ) > page_total ){
+//                     disable = 'disabled';
+//                 }
+//             }
 
-            if( i == page ){
-                current = 'current';
-            }
-            ul.append(
-                $('<li>').attr('class', 'page-item ' + disable + '').append(
-                    $('<a>').attr('href', '/product_new.php?'+url+'&page='+url_page+'').attr('class', 'page-link content '+current+'').append(content)
-                ))
-        }
-    }
-}
+//             if( i == page ){
+//                 current = 'current';
+//             }
+//             ul.append(
+//                 $('<li>').attr('class', 'page-item ' + disable + '').append(
+//                     $('<a>').attr('href', '/product_new.php?'+url+'&page='+url_page+'').attr('class', 'page-link content '+current+'').append(content)
+//                 ))
+//         }
+//     }
+// }
 
 /**
  * 解析URL 網址
  */
-let descUrl = () => {
-    var from_filter = window.location.search;
-    var obj = {};
-    var width = '';
-    var height = '';
-    var diameter = '';
-    var brand = '';
-    var url_page = '';
+// let descUrl = () => {
+//     var from_filter = window.location.search;
+//     var obj = {};
+//     var width = '';
+//     var height = '';
+//     var diameter = '';
+//     var brand = '';
+//     var url_page = '';
 
-    $.each(from_filter.split('&'), function (index, value) {
-        var search_condittion = ['width', 'height', 'diameter', 'page', 'brand'];
+//     $.each(from_filter.split('&'), function (index, value) {
+//         var search_condittion = ['width', 'height', 'diameter', 'page', 'brand'];
 
-        for (var i=0; i<search_condittion.length; i++){
-            var re = new RegExp(search_condittion[i]);
+//         for (var i=0; i<search_condittion.length; i++){
+//             var re = new RegExp(search_condittion[i]);
 
-            if(re.exec(value)) {
-                switch (search_condittion[i]) {
-                    case 'width':
-                        width = value.split('=')[1];
-                        obj["width"] = typeof width !== 'undefined' ?  width : '';
-                        break;
-                    case 'height':
-                        height = value.split('=')[1];
-                        obj["height"] = typeof height !== 'undefined' ?  height : '';
-                        break;
-                    case 'diameter':
-                        diameter = value.split('=')[1];
-                        obj["diameter"] = typeof diameter !== 'undefined' ?  diameter : '';
-                        break;
-                    case 'brand':
-                        brand = value.split('=')[1];
-                        obj["brand"] = typeof brand !== 'undefined' ?  brand : '';
-                        break;
-                    case 'page':
-                        url_page = value.split('=')[1];
-                        obj["page"] = typeof brand !== 'undefined' ?  url_page : '';
-                        break;
-                }
-            }
-        }
-    });
-    return obj;
-};
+//             if(re.exec(value)) {
+//                 switch (search_condittion[i]) {
+//                     case 'width':
+//                         width = value.split('=')[1];
+//                         obj["width"] = typeof width !== 'undefined' ?  width : '';
+//                         break;
+//                     case 'height':
+//                         height = value.split('=')[1];
+//                         obj["height"] = typeof height !== 'undefined' ?  height : '';
+//                         break;
+//                     case 'diameter':
+//                         diameter = value.split('=')[1];
+//                         obj["diameter"] = typeof diameter !== 'undefined' ?  diameter : '';
+//                         break;
+//                     case 'brand':
+//                         brand = value.split('=')[1];
+//                         obj["brand"] = typeof brand !== 'undefined' ?  brand : '';
+//                         break;
+//                     case 'page':
+//                         url_page = value.split('=')[1];
+//                         obj["page"] = typeof brand !== 'undefined' ?  url_page : '';
+//                         break;
+//                 }
+//             }
+//         }
+//     });
+//     return obj;
+// };

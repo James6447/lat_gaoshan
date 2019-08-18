@@ -55,7 +55,7 @@ $sort = $sort_handle->sortKeywords($arr, 2);
   <div class="col-lg-3 col-sm-3 col-3" >
     <aside class="sidebar">
 				<nav class="alt-nav">
-                    <input id="pattern" type="hidden" value="<?php echo $pattern?>"></input>
+            <input id="pattern" type="hidden" value="<?php echo $pattern?>"></input>
 					<ul>
 						<li><a href="">RIM<span>+</span></a>
               <ul id="startUp" class="list-group list-group-flush">
@@ -158,7 +158,6 @@ include('footer.html');
 <script src="js/bootstrap.bundle.min.js"></script>
 <!-- <script src="js/jquery.min.js"></script> -->
  <script src="http://libs.baidu.com/jquery/1.8.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
   <script src="js/zoom.js"></script>
   <script src="js/transitions.js"></script>
   <script src="js/header.js"></script>

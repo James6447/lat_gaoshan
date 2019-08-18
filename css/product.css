@@ -4,6 +4,10 @@ body {
   /*background-image: url("../img/service-background.jpg");*/
   background-size: cover;
 }
+.listul a{
+  color:#333333;
+  font-size:18px;
+}
 
 iframe {
   width: 100%;
@@ -11,46 +15,396 @@ iframe {
   border: 0;
 }
 
-#loading
-{
-  position:fixed;
-  top:40%;
-  left:45%;
-  z-index:9999;
-}
-
 .product-cover img {
   width: 100%;
 }
 
 .categories a {
-  width: 27vw;
+  width:100%;
 }
 
 .category-item {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   background-color: #dddcdc;
-  margin-top: 10%;
-  width: 100%;
   text-decoration: none;
   color: black;
 }
 
 .category-item:hover {
   text-decoration: underline;
+  background:#000000 !important;
+  color:#fff;
+  transition:all 0.3s linear;
+}
+
+.product .nav-link{
+  color:#000
+}
+#Tyre select{
+  height: 40px;
+  width:100%;
+  margin-right:5px;
+  font-size: 18px;
+}
+.btn-tyre{
+  border:1px solid #000;
+  border-radius: 7px;
+  background:#f9a11b;
+  margin-bottom: 5px;
+  color:#fff;
+  width:50%;
+}
+#Rim select{
+  height: 40px;
+  width:100%;
+  margin-right:5px;
+  font-size: 18px;
+}
+.btn-rim{
+  border:1px solid #000;
+  border-radius: 7px;
+  background:#f9a11b;
+  margin-bottom: 5px;
+  color:#fff;
+  width:50%;
+}
+.d-f{
+  display:flex;
+}
+#RimMain{
+  display: block;
+  text-align: center;
+  margin:10px 0px 20px 0px;
+}
+#tyreMain{
+  display: block;
+  text-align: center;
+  margin:10px 0px 20px 0px;
+}
+.tyreClass{
+  display:inline-block;
+  width:49%;
+  margin-top:5px;
+  text-align:left;
+  border-radius: 10px;
+}
+.imgtyrecontainer{
+  width:30%;
+  padding:10px 20px;
+}
+.contenttyrecontainer{
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding:0px 10px 0px 0px;
+}
+.imgrim{
+  max-width: 300px;
+  cursor:zoom-in;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.imgtyre{
+  max-width: 140px;
+  cursor:zoom-in;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#tyrepagination .page-item.active .page-link{
+  background:#f9a11b;
+  border:1px solid #f9a11b;
+}
+#tyrepagination :focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #f9a11b ;
+}
+#tyrepagination .page-item :hover{
+  background:#f9a11b;
+  color:#fff;
+}
+
+.tyreClass .title{
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 120%;
+    padding: 10px 0;
+}
+.tyrebutton{
+  display: flex;
+  justify-content: flex-end;
+}
+.tyreCheck{
+  margin:8px 0px;
+  background:#f9a11b;
+  border-radius:10px;
+  border: 1px solid #000;
+  padding: 4px 10px;
+  color:#fff;
+  width: 120px;
+  cursor: pointer;
+}
+.popover-body ul{ 
+   margin:0;
+   padding: 0 0 0 15px;
+  list-style-type: decimal;
+}
+.popover-body{
+  background:#808080;
+  color:#fff;
+}
+.RimClass{
+  display:inline-block;
+  width:49%;
+  margin-top:5px;
+  text-align:left;
+  border-radius: 10px;
+}
+.imgrimcontainer{
+  width:100%;
+  margin-right:10px;
+}
+.contentrimcontainer{
+  width:100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding:0px 10px 0px 0px;
+}
+.contentAccessoriescontainer{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0px 10px 0px 0px;
+}
+.RimCheck{
+  margin:8px 0px;
+  background:#f9a11b;
+  border-radius:10px;
+  border: 1px solid #000;
+  padding: 4px 10px;
+  color:#fff;
+  width: 80px;
+  cursor: pointer;
+}
+.RimCheck:focus{
+  outline:3px auto #f9a11b;
+}
+.Rimbutton{
+  display: flex;
+  justify-content: flex-end;
+}
+.popover-header{
+  background:#f9a11b;
+  color:#fff;
+  padding: .5rem .75rem;
+  border-bottom:0px;
+}
+.bs-popover-right .arrow::after{
+  border-right-color:#808080;
+}
+.bs-popover-left .arrow::after{
+  border-left-color:#808080;
+}
+#Rimpagination .page-item.active .page-link{
+  background:#f9a11b;
+  border:1px solid #f9a11b;
+}
+#Rimpagination :focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #f9a11b ;
+}
+#Rimpagination .page-item :hover{
+  background:#f9a11b;
+  color:#fff;
+}
+.RimClass .title{
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 100%;
+  padding: 10px 0;
+}
+
+.RimClass .content{
+  line-height: 120%;
+  padding: 8px 0;
+}
+
+.hidden{
+  display:none;
+}
+#Accessories select{
+  height: 40px;
+  width:50%;
+  margin-right:5px;
+  font-size: 18px;
+}
+.Accessoriescontainer{
+  width:50%;
+  margin-right:10px;
+}
+#AccessoriesMain .title{
+  font-size:18px;
+  font-weight:500;
+  line-height: 120%;
+    padding: 10px 0;
+}
+#AccessoriesMain{
+  display: block;
+  text-align: center;
+  margin:10px 0px 20px 0px;
+}
+.AccessoriesClass{
+  display:inline-block;
+ width: 49%;
+  margin-right:5px;
+  margin-top:5px;
+  text-align:left;
+  border-radius: 10px;
+}
+.Accessoriesrim{
+  padding: 10px;
+}
+.btn-Accessories{
+  border:1px solid #000;
+  border-radius: 7px;
+  background:#f9a11b;
+  margin-bottom: 5px;
+  color:#fff;
+}
+#Accessoriespagination .page-item.active .page-link{
+  background:#f9a11b;
+  border:1px solid #f9a11b;
+}
+#Accessoriespagination :focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #f9a11b ;
+}
+#Accessoriespagination .page-item :hover{
+  background:#f9a11b;
+  color:#fff;
+}
+@media screen and (max-width:998.98px){
+  .imgtyrecontainer{
+    width:49%;
+  }
+
+}
+@media screen and (max-width:768.98px){
+  .RimClass{
+    display:inline-block;
+    width:49%;
+    max-width:100%
+  }
+  .paddingdisable{
+    padding:0 !important;
+  }
+}
+@media screen and (max-width:568.98px){
+  .RimClass{
+    display:block;
+    width:100%;
+    max-width:100%;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:15px;
+  }
+  .tyreClass{
+    display:block;
+    width:100%;
+    max-width:100%;
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:15px;
+  }
+  .AccessoriesClass{
+    width: 100%;
+  }
+  .imgtyrecontainer{
+    text-align: center;
+    width:100%;
+    background:linear-gradient(to bottom,#000 0,#000 20%,#363636 40%,#000 80%,#000 100%);
+  }
+  .contenttyrecontainer{
+    padding: 5px 10px 0px 10px;
+  }
+  .btn-rim{
+    width:100%;
+    height:28px;
+    font-size:8px !important;
+  }
+  .btn-tyre{
+    width:100%;
+    height:28px;
+    font-size:8px !important;
+  }
+
+  .d-f{
+    display:block;
+  }
+  
+  #Tyre select{
+    margin-bottom:8px;
+    height:28px;
+  }
+
+  #Rim select{
+    margin-bottom:8px;
+    height:28px;
+  }
+
+  #Accessories select{
+    margin-bottom:8px;
+    height:28px;
+    width:100%;
+  }
+
+  .imgrim{
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .contentrimcontainer{
+    justify-content: flex-start;
+    padding:8px
+  }
+  .contentAccessoriescontainer{
+    justify-content: flex-start;
+    padding:8px
+  }
+  .btn-Accessories{
+    width:100%;
+    height:28px;
+    font-size:8px !important;
+  }
+  #AccessoriesMain .title{
+    font-size:16px;
+  }
+}
+
+@media screen and (max-width:650px){
+  .category-item img{
+    width:9vw;
+    max-height:60px !important;
+  }
+  .category-item p {
+    font-size:3vw !important
+  }
+  .category-item{
+    height:100%
+  }
 }
 
 .category-item img {
-  width: 30%;
-  height: 8vw;
-  padding: 3%;
+  max-height: 70px;  
 }
 
 .category-item p {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
-  line-height: 3;
 }
 
 
@@ -99,10 +453,6 @@ iframe {
   margin: 9vw;
 }
 
-.product-search-filter {
-
-}
-
 .product-search-filter select {
   width: 100%;
   height: 24px;
@@ -111,10 +461,6 @@ iframe {
   font-weight: bold;
   color: #828081;
   font-size: 19px;
-}
-
-.product-search-filter select option {
-
 }
 
 .product-search-filter button {
@@ -156,10 +502,14 @@ iframe {
   color: white;
   margin-top: 23px;
 }
+@media screen and (max-width: 991.78px){
+  /* .category-item p{
+    font-size:20px;
+  } */
+}
+@media screen and (max-width: 767.98px) {
 
-@media screen and (max-width: 767px) {
-
-  .category-item p, .mark-sub-title, .product-search-filter select, .product-search-filter button {
+ .mark-sub-title, .product-search-filter select, .product-search-filter button {
     font-size: 3vw;
   }
 
