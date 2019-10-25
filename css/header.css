@@ -7,7 +7,10 @@
   background-repeat: no-repeat;
   background-position: top center;
 }
-
+#pic{
+  background: #f9a11b;
+    border-radius: 4px;
+}
 #navbar {
   margin-top: 0px;
   padding: unset;
@@ -15,7 +18,7 @@
   background: #f9a11b;
 }
 #containerheader {
-  padding: 0 9% 0 9%;
+ padding: 0 10px;
 }
 .logodiv {
   position: relative;
@@ -26,16 +29,11 @@
 .nav-link {
   padding-bottom: 1rem !important;
 }
-.navbar-brand {
-  margin-left: -9% !important;
-}
 .rowcss {
   width: 100%;
 }
 .nav-link {
-  font-family: Myriad Pro;
-  font-size: 16px;
-  font-weight: bold;
+  font: 15px/1.2 "Oswald", sans-serif;
 }
 .ulclassheader {
   width: 100%;
@@ -44,14 +42,6 @@
 .colreset {
   padding-left: unset;
   padding-right: unset;
-}
-
-.nav-item:nth-child(3) .nav-link {
-  margin-left: 37px;
-}
-.nav-item:nth-child(4) .nav-link {
-  margin-right: -150px !important;
-  margin-left: 47px;
 }
 .nav-link {
   background-size: 0% 4px;
@@ -126,11 +116,11 @@
 .closss2 {
   opacity: 0;
 }
+
 #translate {
   padding: 7px 22px 10px 22px;
   text-align: center;
 }
-
 #translate a:hover {
   text-decoration: unset;
 }
@@ -156,11 +146,13 @@
     border: 1px solid #ffffff;
   }
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.87px) {
   .navactive {
     background: #000000;
     color: #e6e6e6 !important;
+  }
+  .alalal{
+    margin-bottom: 10px;
   }
   .headerpic {
     height: 27.5px;
@@ -171,13 +163,13 @@
     transition: margin 0.8s linear;
   }
   #containerheader {
-    padding: 0px 0px;
     max-width: 100%;
+    padding:0px ;
   }
   .logodiv {
     position: unset;
     width: unset;
-    margin-left: 0px !important ;
+    margin-left: 10px !important ;
   }
   .navbar-brand {
     position: unset;
@@ -187,26 +179,15 @@
     margin-left: 0px;
     margin-right: 0px;
   }
-  .nav-item:nth-child(1) .nav-link {
-    margin-left: auto !important;
-  }
-  .nav-item:nth-child(2) .nav-link {
-    margin-left: auto;
-  }
-  .nav-item:nth-child(3) .nav-link {
-    margin-left: auto;
-  }
-  .nav-item:nth-child(4) .nav-link {
-    margin-right: auto !important;
-    margin-left: auto;
-  }
+  
   .nav-item {
     padding-left: unset;
     padding-right: unset;
     text-align: center;
+    width: 100%;
   }
   .navbar-toggler {
-    margin-right: 20px;
+    margin-right: 10px;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
@@ -219,6 +200,9 @@
   }
   .nav-link {
     padding: 10px 0 !important;
+  }
+  #Tyre-tab,#Rim-tab,#Accessories-tab{
+    padding:10px !important;
   }
   .nav-link:hover {
     background: #000000;
@@ -250,12 +234,13 @@
 }
 .myTabContent {
   text-align: center;
-  /*border:1px solid #333333;*/
-  min-height: 320px;
-  /*border-radius: 50px;*/
-  /*background: rgb(249,161,27);*/
-  /*background: linear-gradient(0deg, rgba(249,161,27,1) 0%, rgba(245,161,49,1) 10%, rgba(230,230,230,1) 100%);*/
-  background: #e6e6e6;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-height: 400px;
+  background-image: url("../img/service-background.jpg");
+  background-size: cover;
+  /* background: #ffffff; */
 }
 .nav-link.active {
   background: #e6e6e6 !important;
@@ -280,8 +265,4 @@
   position: absolute;
   z-index: 1000;
   width: 100%;
-}
-
-#myTable{
-  margin: 0 13%;
 }

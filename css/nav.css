@@ -2,7 +2,7 @@
   background-image:url("../img/pic1.jpg") ;background-size: contain;
     background-repeat: no-repeat;}
 .container-fluid{max-height:55px;padding:0 140px 0 55px;background: #ff9933;}
-.nav-link{font-size:16px;font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT";font-weight: bold;
-color:#333;}
+.nav-link{font: 15px/1.2 "Oswald", sans-serif;
+color:#000;}
 .row{margin-left:unset;margin-right:unset;}
 .navbar-brand{padding-top:unset;padding-bottom:unset;}

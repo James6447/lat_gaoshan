@@ -16,9 +16,6 @@ function backTop() {
 }
 
 function nowstatenav() {
-  function ShowAnswer(){
-    document.getElementById("AnswerBox").innerHTML='2';
-  }
     $(".nav-link").each(function() {
       if (
        this.href == document.location.href ||

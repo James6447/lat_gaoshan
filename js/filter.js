@@ -1,10 +1,9 @@
-$(document).ready(function() {
-    $(window).load(function(){
-        //适当延迟隐藏，提高loading效果
-        $('#loading').hide(0);
-        // $('#loading').hide(0);
-    });
-
+$(document).ready(function () {
+    // $(window).load(function(){
+    //适当延迟隐藏，提高loading效果
+    // $('#loading').hide(0);
+    // $('#loading').hide(0);
+    // });
     //初始第一栏位
     $.ajax({
         url: "/api/tyre_filter.php",
@@ -14,18 +13,18 @@ $(document).ready(function() {
             current_get: 'width'
         },
         dataType: "JSON",
-        success: function(res) {
+        success: function (res) {
             AppendOption(res, 'width');
         },
-        error: function() {
+        error: function () {
             console.log("get init data error");
         }
     });
 
 
     //監聽select事件
-    $('.space-filter > select').change(function() {
-        $('#loading').show(0);
+    $('.space-filter > select').change(function () {
+        // $('#loading').show(0);
         var selected_section = $(this).attr('name');
         var width = $('.space-filter > select[name="width"] option:selected').val();
         var height = $('.space-filter > select[name="height"] option:selected').val();
@@ -48,10 +47,10 @@ $(document).ready(function() {
                 next_action = false;
                 break;
         }
-        $('#loading').hide(0);
-        if(!next_action){
+        // $('#loading').hide(0);
+        if (!next_action) {
 
-        }else {
+        } else {
             $.ajax({
                 url: "/api/tyre_filter.php",
                 type: "POST",
@@ -64,19 +63,18 @@ $(document).ready(function() {
                     brand: brand
                 },
                 dataType: "JSON",
-                success: function(res) {
+                success: function (res) {
                     //初始第一栏位
                     AppendOption(res, next_action);
                 },
-                error: function() {
+                error: function () {
                     console.log("get filter data error");
                 }
             });
-            $('.space-filter > select[name="'+next_action+'"]').removeClass('is-active ');
+            $('.space-filter > select[name="' + next_action + '"]').removeClass('is-active ');
         }
     });
 });
-
 
 
 /**
@@ -84,10 +82,10 @@ $(document).ready(function() {
  * @param parameter 需要出現在option的參數
  * @param next_action 需要呈現在哪個filter
  */
-function AppendOption(parameter, next_action){
+function AppendOption(parameter, next_action) {
     for (var i = 0; i < parameter.length; i++) {
         var o = new Option(parameter[i], parameter[i]);
-        $(".space-filter > select[name='"+next_action+"']").append(o);
+        $(".space-filter > select[name='" + next_action + "']").append(o);
     }
 }
 
@@ -95,35 +93,39 @@ function AppendOption(parameter, next_action){
 /**
  * 重新在第一選項選擇後清除其他select的選項
  */
-function clearPreviousData(){
+function clearPreviousData() {
     var i = 0;
     var select_tag = '';
 
-    $('.space-filter > select').each(function(){
+    $('.space-filter > select').each(function () {
 
-        if( i === 0 ) {
-            i = i+1;
+        if (i === 0) {
+            i = i + 1;
             return;
         }
-
+        var item
+        if (localStorage.getItem('languagebool') != null) {
+            item = localStorage.getItem('languagebool')
+        } else {
+            item = "en"
+        }
         switch (i) {
-            case 1 :
-                select_tag = 'Height(mm)';
+            case 1:
+                item === 'en' ? select_tag = 'Height(mm)' : select_tag = "高度(毫米)";
                 break;
-            case 2 :
-                select_tag = 'Diameter(")';
+            case 2:
+                item === 'en' ? select_tag = 'Diameter(")' : select_tag = "輪圈直徑(英寸)";
                 break;
-            case 3 :
-                select_tag = 'All Brand';
+            case 3:
+                item === 'en' ? select_tag = 'All Brand' : select_tag = "全部品牌";
                 break;
         }
 
         $(this).find('option')
             .remove()
             .end()
-            .append('<option value="">'+select_tag+'</option>');
+            .append('<option class="trn" data-trn-key="' + select_tag + '" value="">' + select_tag + '</option>');
         $(this).addClass('is-active');
-        i = i+1;
+        i = i + 1;
     })
 }
-

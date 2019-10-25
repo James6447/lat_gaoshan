@@ -174,3 +174,9 @@ function hideImg(img) {
   document.getElementById(img).style.border = "5px solid #fff";
 }
 
+$(document).ready(function () {
+  let heighting = window.innerHeight
+  let div = document.querySelector('#footercontainer').offsetHeight
+  document.querySelector('body').style.minHeight = heighting-div +'px'
+  document.querySelector('#map').style.minHeight = heighting-div +'px'
+})

@@ -31,7 +31,7 @@ switch ($pattern) {
 
     case '5';
         $column = 'bolt_pattern';
-        $condition = " WHERE inch=$typeModel and rim_width=$rimWitdh and offset=$offset and centre_bore=$CenterBore group by $column order by $column desc";
+        $condition = " WHERE inch=$typeModel and rim_width=$rimWitdh and offset=$offset group by $column order by $column desc";
         break;
 }
 

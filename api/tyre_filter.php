@@ -44,7 +44,7 @@ if( $page ){
 
 
 if( $search_details ) {
-    $column_join .= " LEFT JOIN tyre_details AS b ON b.name = a.name_tyre";
+    $column_join .= "LEFT JOIN tyre_details AS b ON b.name = a.name_tyre";
 
     $count_page = ",(SELECT COUNT(*)
         FROM(
@@ -92,7 +92,7 @@ if ($result-> num_rows >0)
             $param['height'] = $row['height'];
             $param['diameter'] = $row['diameter'];
             $param['total_page'] = ceil($row['total']/$page_size);
-
+            $param['page'] = $page;
             $return[] = $param;
         } else{
             $return[] =  $row["{$current_get}"];
@@ -100,9 +100,9 @@ if ($result-> num_rows >0)
     }
 }
 
-if ( $search_details ){
-    $return['page'] = $page;
-}
+// if ( $search_details ){
+//     $return['page'] = $page;
+// }
 
 echo json_encode($return);
 
